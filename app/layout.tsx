@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import ClientProviders from "@/components/ClientProviders";
@@ -18,6 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             {children}
           </main>
         </ClientProviders>
+        <Script src="/cms.js" strategy="afterInteractive" />
       </body>
     </html>
   );

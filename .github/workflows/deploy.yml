@@ -24,7 +24,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-      - run: node fix-paths.js
+      - run: cp public/cms.js out/cms.js
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out
