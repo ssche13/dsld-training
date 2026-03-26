@@ -29,12 +29,17 @@ export default function Shelving() {
         <li>Measure the width of each shelving run shown on the plan.</li>
         <li>Count the number of shelf tiers if multiple levels are indicated.</li>
         <li>Wherever there are multiple shelves/rods called out in the closet elevations, the CAD sketch should be copied over to match the count in the PDF drawing.</li>
-        <li>Total the linear footage by shelving type and enter into the spreadsheet.</li>
       </ul>
 
       <Note>
         Example: If there are 5 shelves in the Pantry, the shelving sketch for the pantry in CAD should be copied 5 times.
       </Note>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Once you have finished drawing the shelving and copying the appropriate quantities, keep one set unedited and copy over another set.</li>
+        <li>The set you copied will be exploded into a 16x40 rectangle, and you will repeat the process you did for crown. Group each color together to minimize confusion.</li>
+        <li>Total the linear footage by shelving type and enter into the spreadsheet.</li>
+      </ul>
 
       <SpreadsheetRef section="Trim" cell="Shelving" />
     </div>

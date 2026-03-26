@@ -27,6 +27,11 @@ export default function Walls() {
         lumber and sheetrock quantities.
       </p>
 
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/manual-notes/imageb.png" alt="Knee wall and random lengths spreadsheet section" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Knee wall / random lengths spreadsheet section</p>
+      </div>
+
       <Note>
         When joists from a 10ft room do not land on an adjacent 9ft wall,
         trainees should go with the higher ceiling height of the two.
@@ -41,11 +46,6 @@ export default function Walls() {
         The calculations for knee walls in regular walls and knee walls for
         kitchen bars will go in separate places on the spreadsheet.
       </Note>
-
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/imageb.png" alt="Knee wall and random lengths spreadsheet section" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Knee wall / random lengths spreadsheet section</p>
-      </div>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/image9.png" alt="Wall Takeoffs spreadsheet color coded by ceiling height" className="w-full rounded" />

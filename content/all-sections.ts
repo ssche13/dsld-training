@@ -27,6 +27,8 @@ import Baseboards from "./sections/baseboards";
 import Crown from "./sections/crown";
 import Shelving from "./sections/shelving";
 import CasedOpenings from "./sections/cased-openings";
+import CypressPosts from "./sections/cypress-posts";
+import AtticStairs from "./sections/attic-stairs";
 import TrimSection from "./sections/trim-section";
 import Granite from "./sections/granite";
 import Elevations from "./sections/elevations";
@@ -77,6 +79,8 @@ export const sectionContent: Record<string, React.ComponentType> = {
   "crown": Crown,
   "shelving": Shelving,
   "cased-openings": CasedOpenings,
+  "cypress-posts": CypressPosts,
+  "attic-stairs": AtticStairs,
   "trim-section": TrimSection,
   "granite": Granite,
   "elevations": Elevations,

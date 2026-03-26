@@ -86,8 +86,12 @@ export function EditModeProvider({ children }: { children: React.ReactNode }) {
   );
 
   const exportAll = useCallback((): string => {
-    return JSON.stringify({ sections, images }, null, 2);
-  }, [sections, images]);
+    // Read directly from localStorage to capture all edits
+    // (components may write to localStorage without updating React state)
+    const currentSections = readJson(SECTIONS_KEY);
+    const currentImages = readJson(IMAGES_KEY);
+    return JSON.stringify({ sections: currentSections, images: currentImages }, null, 2);
+  }, []);
 
   const importAll = useCallback((json: string) => {
     try {
