@@ -32,7 +32,7 @@ export default function PlanName() {
       </Note>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/image2.png" alt="PDF drawing title section showing ABBEY-A/G/S-4 plan name, elevation letters, and version number" className="w-full rounded" />
+        <img src="/images/manual-notes/plan-name-label.jpg" alt="PDF drawing title section showing ABBEY-A/G/S-4 plan name, elevation letters, and version number" className="w-full rounded" />
         <p className="mt-1 text-center text-xs text-gray-500">PDF drawing title section showing plan name, letter, and version number</p>
       </div>
 
@@ -45,7 +45,7 @@ export default function PlanName() {
       </p>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/image.png" alt="Estimating spreadsheet showing Plan-A-II and Plan2 header sections" className="w-full rounded" />
+        <img src="/images/manual-notes/plan-spreadsheet-header.jpg" alt="Estimating spreadsheet showing Plan-A-II and Plan2 header sections" className="w-full rounded" />
         <p className="mt-1 text-center text-xs text-gray-500">Estimating spreadsheet Plan-A-II and Plan2 sections</p>
       </div>
 

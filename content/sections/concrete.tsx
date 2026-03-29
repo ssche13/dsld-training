@@ -21,7 +21,7 @@ export default function Concrete() {
       </ul>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/image3.png" alt="PDF drawing title section showing porch, garage, and living area square footage" className="w-full rounded" />
+        <img src="/images/manual-notes/sq-footage-pdf.jpg" alt="PDF drawing title section showing porch, garage, and living area square footage" className="w-full rounded" />
         <p className="mt-1 text-center text-xs text-gray-500">PDF drawing title section with porch, garage, and living area square footage</p>
       </div>
 
@@ -32,7 +32,7 @@ export default function Concrete() {
       </p>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/image4.png" alt="Estimating spreadsheet concrete section input location" className="w-full rounded" />
+        <img src="/images/manual-notes/concrete-spreadsheet.jpg" alt="Estimating spreadsheet concrete section input location" className="w-full rounded" />
         <p className="mt-1 text-center text-xs text-gray-500">Estimating spreadsheet concrete section input fields</p>
       </div>
 
