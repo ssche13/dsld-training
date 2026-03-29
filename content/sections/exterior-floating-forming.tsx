@@ -14,9 +14,7 @@ export default function ExteriorFloatingForming() {
         the <strong>floating (interior) forming</strong>.
       </p>
 
-      <h3 className="font-semibold text-base text-dsld-teal">
-        Exterior Forming — <ColorSwatch color="red" /> Red Lines
-      </h3>
+      <h3 className="font-semibold text-base text-dsld-teal">Exterior Forming</h3>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
@@ -30,11 +28,13 @@ export default function ExteriorFloatingForming() {
         <li>
           <strong>Include</strong> the garage opening.
         </li>
+        <li>
+          Use the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines to
+          fill out the <strong>Exterior Forming</strong> cell under the Concrete header.
+        </li>
       </ul>
 
-      <h3 className="font-semibold text-base text-dsld-teal">
-        Floating Forming — <ColorSwatch color="yellow" /> Yellow Lines
-      </h3>
+      <h3 className="font-semibold text-base text-dsld-teal">Floating Forming</h3>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
@@ -47,29 +47,23 @@ export default function ExteriorFloatingForming() {
         <li>
           <strong>Include</strong> walls that border the garage and interior of the home.
         </li>
+        <li>
+          Use the <strong>total linear feet</strong> of the <ColorSwatch color="yellow" /> yellow
+          lines to fill out the <strong>Floating Forming</strong> cell under the Concrete header.
+        </li>
       </ul>
+
+      <ImagePlaceholder label="Exterior and Floating Forming CAD" />
 
       <Tip>
         Remember: red is for the full outside perimeter (including porches and the garage opening),
         while yellow captures every interior wall segment.
       </Tip>
 
-      <h3 className="font-semibold text-base text-dsld-teal">Entering the Values</h3>
-
-      <p className="text-sm leading-relaxed">
-        Use the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines to
-        fill out the <strong>Exterior Forming</strong> cell under the Concrete header.
-      </p>
-
-      <p className="text-sm leading-relaxed">
-        Use the <strong>total linear feet</strong> of the <ColorSwatch color="yellow" /> yellow lines
-        to fill out the <strong>Floating Forming</strong> cell under the Concrete header.
-      </p>
+      <ImagePlaceholder label="Exterior and Floating Forming XL" />
 
       <SpreadsheetRef section="Concrete" cell="Exterior Forming" />
       <SpreadsheetRef section="Concrete" cell="Floating Forming" />
-
-      <ImagePlaceholder label="Foundation forming drawing — red exterior perimeter, yellow interior walls" />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
+import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function RidgeVents() {
   return (
@@ -12,6 +13,8 @@ export default function RidgeVents() {
         Vent counts and lengths are found on the{" "}
         <strong>elevation page</strong> of the PDF.
       </p>
+
+      <ImagePlaceholder label="Off Ridge Vents and Ridge Vents" />
 
       <h3 className="font-medium text-base text-dsld-text">Off Ridge Vents</h3>
 
@@ -50,9 +53,11 @@ export default function RidgeVents() {
         </li>
       </ul>
 
+      <ImagePlaceholder label="Ridge and Off Ridge Vents XL" />
+
       <Note>
-        For Ridge Vents, trainees should pay close attention to the elevations
-        page to ensure that the same ridge vent is not calculated twice.
+        For Ridge Vents, pay close attention to the elevations to ensure that the same ridge vent
+        is not calculated twice.
       </Note>
 
       <SpreadsheetRef section="Vents" cell="Ridge Vents" />

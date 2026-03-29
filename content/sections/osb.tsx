@@ -9,7 +9,8 @@ export default function Osb() {
 
       <p className="text-sm leading-relaxed">
         OSB is used as wall sheathing on exterior walls and as gable-end sheathing. You will trace
-        exterior walls in AutoCAD and calculate the gable area using the HATCH command.
+        exterior walls in AutoCAD for the linear footage and calculate the gable area using the{" "}
+        <strong>HATCH</strong> command.
       </p>
 
       <Note>
@@ -20,8 +21,8 @@ export default function Osb() {
       <h3 className="font-medium text-base text-dsld-text">Exterior Wall Sheathing</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Trace the exterior wall perimeter on the OSB layer, skipping garage door openings.</li>
-        <li>Multiply the linear footage by the wall height to get the total exterior wall sheathing area.</li>
-        <li>Include all <strong>outcroppings</strong> in your trace.</li>
+        <li>Take each total linear run of matching plate heights and add them together, then divide by 4 rounding up to the next whole number.</li>
+        <li>Include all <strong>outcroppings</strong> in your trace, including gables that are hatched to 16&apos;&apos; O.C.</li>
       </ul>
 
       <p className="text-sm leading-relaxed">
@@ -30,19 +31,36 @@ export default function Osb() {
         must be included in your OSB measurement.
       </p>
 
-      <Note>
-        Hatch lines will be needed for calculating wall sheathing for gables for studs.
-      </Note>
+      <ImagePlaceholder label="OSB CAD" />
 
-      <h3 className="font-medium text-base text-dsld-text">Gable Hatch Lines</h3>
+      <p className="text-sm leading-relaxed">
+        Place your number into the Wall Sheathing section of the spreadsheet next to its
+        corresponding ceiling height.
+      </p>
+
+      <ImagePlaceholder label="Wall Sheathing XL" />
+
+      <h3 className="font-medium text-base text-dsld-text">Wall Sheathing for Gables</h3>
       <ol className="list-decimal pl-6 space-y-1 text-sm">
-        <li>Switch to the <strong>OSB/Gable</strong> layer in AutoCAD.</li>
-        <li>Use the <strong>HATCH</strong> command to fill the triangular gable area.</li>
-        <li>Set the hatch pattern spacing to <strong>16&quot; O.C.</strong> (on center).</li>
-        <li>Record the hatched area as the gable OSB square footage.</li>
+        <li>Use <strong>POLYAREA</strong> to calculate the area of the gable(s).</li>
+        <li>Divide by 32.</li>
+        <li>Multiply by 1.1.</li>
+        <li>Round to the next whole number.</li>
+        <li>Add 1 for the garage.</li>
+        <li>Add 4 for the catwalk in the attic.</li>
+        <li>Put your total in the <strong>Extra Areas</strong> section of the spreadsheet.</li>
       </ol>
 
-      <ImagePlaceholder label="CAD image showing OSB tracing with garage door exclusion and outcroppings" />
+      <ImagePlaceholder label="Extra Areas XL" />
+
+      <h3 className="font-medium text-base text-dsld-text">Studs</h3>
+      <ol className="list-decimal pl-6 space-y-1 text-sm">
+        <li>Take the total linear feet of the hatch lines you placed inside the gable(s).</li>
+        <li>Divide by 30.</li>
+        <li>Enter your number in the 2 appropriate cells in the spreadsheet:</li>
+      </ol>
+
+      <ImagePlaceholder label="OSB Studs XL" />
 
       <SpreadsheetRef section="OSB" cell="Exterior Walls" />
       <SpreadsheetRef section="OSB" cell="Gable Hatch" />

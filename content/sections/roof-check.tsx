@@ -1,5 +1,6 @@
 import Note from "@/components/callouts/Note";
 import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
+import ColorSwatch from "@/components/ColorSwatch";
 
 export default function RoofCheck() {
   return (
@@ -23,20 +24,28 @@ export default function RoofCheck() {
         <strong>valleys</strong>.
       </p>
 
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li><ColorSwatch color="red" /> <strong>Red</strong> = Ridge</li>
+        <li><ColorSwatch color="yellow" /> <strong>Yellow</strong> = Hip</li>
+        <li><ColorSwatch color="green" /> <strong>Green</strong> = Valley</li>
+      </ul>
+
       <p className="text-sm leading-relaxed">
         Taking this line drawing and transposing it over the parent roofline highlights any
         potential changes.
       </p>
 
-      <Note>
-        It is critical that this is done first — you do not want to continue estimations if there
-        is a red flag regarding roofline changes or errors.
-      </Note>
+      <ImagePlaceholder label="Roof Check" />
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/roof-plan.jpg" alt="Roof plan showing ridges, hips, and valleys" className="w-full rounded" />
         <p className="mt-1 text-center text-xs text-gray-500">Roof plan — trace ridges, hips, and valleys</p>
       </div>
+
+      <Note>
+        It is critical that this is done first — you do not want to continue estimations if there
+        is a red flag regarding roofline changes or errors.
+      </Note>
     </div>
   );
 }

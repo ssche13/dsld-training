@@ -1,6 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Tip from "@/components/callouts/Tip";
-
+import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function Gables() {
   return (
@@ -20,6 +20,8 @@ export default function Gables() {
         <li>Also trace the <strong>top plate</strong> of all gables and pull those out.</li>
       </ol>
 
+      <ImagePlaceholder label="Gables for Walls" />
+
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/imagea.png" alt="AutoCAD gable sketch with 16-inch hatch lines" className="w-full rounded" />
         <p className="mt-1 text-center text-xs text-gray-500">Gable CAD sketch with hatch lines</p>
@@ -36,6 +38,8 @@ export default function Gables() {
       <p className="text-sm leading-relaxed">
         Place the resulting count in the appropriate section of the estimating spreadsheet.
       </p>
+
+      <ImagePlaceholder label="Gables for Walls XL" />
 
       <SpreadsheetRef section="Gables" cell="Gable Count" />
 

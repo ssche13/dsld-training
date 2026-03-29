@@ -1,4 +1,5 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
+import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function FlashingDoorsWindows() {
   return (
@@ -8,59 +9,44 @@ export default function FlashingDoorsWindows() {
       </h2>
 
       <p className="text-sm leading-relaxed">
-        Door/window flashing and water table flashing use{" "}
-        <strong>different sizes</strong> and must be entered as{" "}
-        <strong>separate line items</strong>. See the two subsections below.
+        Door/window flashing and water table flashing use different sizes and must be entered as
+        separate line items.
       </p>
 
-      {/* (A) 5/8" Galvanized Steel Flashing */}
       <h3 className="font-medium text-base text-dsld-text">
-        (A) 5/8&quot; Galvanized Steel Flashing — Windows &amp; Doors
+        5/8&quot; Galvanized Steel Flashing
       </h3>
 
       <p className="text-sm leading-relaxed">
-        <strong>5/8&quot; Galvanized Steel Flashing</strong> is used for all
-        window and door flashing.
+        5/8&quot; Galvanized Steel Flashing is used for all window and door flashing.
       </p>
 
-      <ol className="list-decimal pl-6 space-y-1 text-sm">
-        <li>
-          <strong>Measure</strong> the total linear feet of all window and door
-          flashing.
-        </li>
-        <li>
-          <strong>Divide</strong> the total linear feet by <strong>10</strong>.
-        </li>
-        <li>
-          <strong>Round up</strong> to the next whole number.
-        </li>
-      </ol>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Measure the total linear feet of the door polylines, then divide by 10. Round up to the next whole number.</li>
+        <li>Two windows can be covered by one piece. Count the windows, divide by 2, then round up to the next whole number.</li>
+        <li>Add both counts together and enter into the spreadsheet.</li>
+      </ul>
+
+      <ImagePlaceholder label="Flashing 5/8 XL" />
 
       <SpreadsheetRef section="Flashing" cell='5/8" Galv. Steel' />
 
-      {/* (B) 1" Galvanized Steel Flashing */}
       <h3 className="font-medium text-base text-dsld-text">
-        (B) 1&quot; Galvanized Steel Flashing — Water Tables Only
+        1&quot; Galvanized Steel Flashing
       </h3>
 
       <p className="text-sm leading-relaxed">
-        <strong>1&quot; Galvanized Steel Flashing</strong> is used for{" "}
-        <strong>water tables only</strong> — do not mix with door/window
-        flashing.
+        1&quot; Galvanized Steel Flashing is used for water tables only.
       </p>
 
-      <ol className="list-decimal pl-6 space-y-1 text-sm">
-        <li>
-          <strong>Measure</strong> the total linear feet of all water table
-          flashing.
-        </li>
-        <li>
-          <strong>Divide</strong> the total linear feet by <strong>10</strong>.
-        </li>
-        <li>
-          <strong>Round up</strong> to the next whole number.
-        </li>
-      </ol>
+      <ImagePlaceholder label="Water Table PDF" />
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Measure the total linear feet of the water tables, then divide by 10. Round up to the next whole number.</li>
+        <li>Enter into the spreadsheet.</li>
+      </ul>
+
+      <ImagePlaceholder label="Flashing 1 XL" />
 
       <SpreadsheetRef section="Flashing" cell='1" Galv. Steel' />
     </div>

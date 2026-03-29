@@ -15,8 +15,6 @@ export default function SillSealExterior() {
         directly into the Wall Takeoffs section of the estimating spreadsheet.
       </p>
 
-      <h3 className="font-semibold text-base text-dsld-teal">Drawing Instructions</h3>
-
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
           Use a <ColorSwatch color="red" /> <strong>red PolyLine</strong> to trace the exterior walls
@@ -26,28 +24,25 @@ export default function SillSealExterior() {
           <strong>Include</strong> garage walls that meet the interior of the home.
         </li>
         <li>
-          <strong>Exclude</strong> porches from this trace.
+          <strong>Exclude</strong> porches and garage doors from this trace.
         </li>
       </ul>
+
+      <ImagePlaceholder label="Sill Seal CAD" />
 
       <Tip>
         Focus only on walls where sill seal material will actually be installed. Porches do not
         receive sill seal, so they are excluded from this measurement.
       </Tip>
 
-      <h3 className="font-semibold text-base text-dsld-teal">Entering the Value</h3>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Take the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines.</li>
+        <li>Round up and enter into the Exterior Perimeter (Including Garage Wall) Seal cell of the spreadsheet.</li>
+      </ul>
 
-      <p className="text-sm leading-relaxed">
-        Take the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines and
-        enter it into the <strong>Exterior Perimeter (Including Garage Wall) Seal</strong> field in
-        the Wall Takeoffs section of the estimating spreadsheet.
-      </p>
+      <ImagePlaceholder label="Sill Seal XL" />
 
       <SpreadsheetRef section="Wall Takeoffs" cell="Exterior Perimeter Seal" />
-
-      <Note>
-        The AutoCAD sketch will exclude garage doors along with porches.
-      </Note>
 
       <Note>
         Double-check that the garage wall segments are included in your trace. Missing these is a

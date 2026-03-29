@@ -36,6 +36,8 @@ export default function ExteriorInteriorFootings() {
         accounted for without double-estimating.
       </p>
 
+      <ImagePlaceholder label="Exterior and Interior Footings CAD" />
+
       <Note>
         Do not center the line on the footing — this causes inaccurate corner measurements. Always
         use top-of-footing for horizontal runs and left-of-footing for vertical runs.
@@ -54,10 +56,10 @@ export default function ExteriorInteriorFootings() {
         cell.
       </p>
 
+      <ImagePlaceholder label="Exterior and Interior Footings XL" />
+
       <SpreadsheetRef section="Concrete" cell="Exterior Footings" />
       <SpreadsheetRef section="Concrete" cell="Interior Footings" />
-
-      <ImagePlaceholder label="Foundation footings drawing — red exterior, yellow interior" />
     </div>
   );
 }

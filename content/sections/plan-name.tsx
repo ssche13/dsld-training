@@ -1,14 +1,14 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
-
+import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function PlanName() {
   return (
     <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Plan Name, Letter, and Family</h2>
+      <h2 className="font-semibold text-lg text-dsld-teal">Plan Name, Letter, and Number</h2>
 
       <p className="text-sm leading-relaxed">
-        The plan name, letter, and family will be found in the title section of the corresponding
+        The plan name, letter, and number will be found in the title section of the corresponding
         plan&apos;s PDF drawing. These PDF drawings are located in the Shared Files folder under
         <strong> House Plans</strong>.
       </p>
@@ -31,6 +31,8 @@ export default function PlanName() {
         exterior layouts that share the same interior layout.
       </Note>
 
+      <ImagePlaceholder label="Plan Name Version and Number" />
+
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/plan-name-label.jpg" alt="PDF drawing title section showing ABBEY-A/G/S-4 plan name, elevation letters, and version number" className="w-full rounded" />
         <p className="mt-1 text-center text-xs text-gray-500">PDF drawing title section showing plan name, letter, and version number</p>
@@ -43,6 +45,8 @@ export default function PlanName() {
         auto-populate in columns <strong>I</strong> and <strong>J</strong> throughout the entire
         spreadsheet.
       </p>
+
+      <ImagePlaceholder label="Plan Name" />
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/plan-spreadsheet-header.jpg" alt="Estimating spreadsheet showing Plan-A-II and Plan2 header sections" className="w-full rounded" />

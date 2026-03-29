@@ -14,22 +14,27 @@ export default function AutocadOverview() {
 
       <h3 className="font-medium text-base text-dsld-text">Organizing Your Workspace</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use the correct layer for each element type (walls, roof, foundation, etc.).</li>
-        <li>Color-code polylines according to the DSLD standard layer scheme.</li>
-        <li>Keep reference drawings (elevations, cabinets) off to the side of your main floor plan.</li>
-        <li>Lock layers you are not actively editing to prevent accidental changes.</li>
+        <li>The organization structure of your estimate should mimic what is depicted in the image below.</li>
+        <li>Color-code lines according to the DSLD standard color scheme.</li>
+        <li>Keep your PDF plan drawing as a reference when working in AutoCAD at all times.</li>
       </ul>
+
+      <ImagePlaceholder label="AutoCAD Project Organization Layout" />
 
       <h3 className="font-medium text-base text-dsld-text">Common Commands</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li><strong>PLINE</strong> — Draw polylines for tracing walls and outlines.</li>
-        <li><strong>AREA</strong> — Calculate enclosed area from a polyline.</li>
-        <li><strong>DIST</strong> — Measure distance between two points.</li>
-        <li><strong>HATCH</strong> — Fill enclosed regions for area calculations.</li>
-        <li><strong>LAYER</strong> — Switch between drawing layers.</li>
+        <li><strong>PLINE</strong> — A connected sequence of line segments created as a single object</li>
+        <li><strong>LINE</strong> — A single straight distance between 2 points</li>
+        <li><strong>POLYAREA</strong> — Calculates an enclosed area from a polyline</li>
+        <li><strong>TLEN</strong> — Calculates the linear feet of a line</li>
+        <li><strong>HATCH</strong> — Fills enclosed regions with lines for area calculations</li>
+        <li><strong>ROTATE</strong> — Rotates lines or shapes to any desired orientation</li>
+        <li><strong>X-CLIP</strong> — Allows you to crop a reference</li>
+        <li><strong>X-LINE</strong> — Creates a line of infinite length</li>
+        <li><strong>LAYOFF</strong> — Hides selected elements from view within your drawing</li>
+        <li><strong>F3</strong> — Toggles SNAP on and off</li>
+        <li><strong>F8</strong> — Toggles ORTHO on and off</li>
       </ul>
-
-      <ImagePlaceholder label="AutoCAD project organization layout" />
 
       <Note>
         Always verify your drawing units are set to feet and inches before starting any measurements.

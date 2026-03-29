@@ -38,6 +38,8 @@ export default function HipsRidgesValleys() {
         <strong>two pieces</strong> of that size.
       </p>
 
+      <ImagePlaceholder label="Length on Pitch from Plans" />
+
       <h3 className="font-medium text-base text-dsld-text">
         Starter Shingles — Hip Calculation
       </h3>
@@ -48,6 +50,8 @@ export default function HipsRidgesValleys() {
         ridges = total ridges &amp; hips.
       </p>
 
+      <ImagePlaceholder label="Total Ridges & Hips XL" />
+
       <h3 className="font-medium text-base text-dsld-text">
         Hips/Ridges/Valleys 2x8
       </h3>
@@ -55,18 +59,18 @@ export default function HipsRidgesValleys() {
       <p className="text-sm leading-relaxed">
         Refer to the same call outs on the PDF drawing to count how many 2x8s
         are represented at each pitch length, then insert your count into the
-        corresponding cell on the spreadsheet.
+        corresponding cell on the spreadsheet. This count should include hips, ridges, and valleys.
       </p>
 
+      <ImagePlaceholder label="Hips/Ridges/Valleys" />
+
       <Note>
-        The hips and valleys "on pitch" are already calculated in the callouts
+        The hips and valleys &quot;on pitch&quot; are already calculated in the callouts
         from the PDF drawing.
       </Note>
 
       <SpreadsheetRef section="Hips/Ridges/Valleys" cell="Total Linear Feet" />
       <SpreadsheetRef section="Hips/Ridges/Valleys" cell="2x8 Counts" />
-
-      <ImagePlaceholder label="CAD diagram showing horizontal vs. on-pitch measurement" />
     </div>
   );
 }

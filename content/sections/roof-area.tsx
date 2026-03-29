@@ -16,6 +16,8 @@ export default function RoofArea() {
         </li>
       </ul>
 
+      <ImagePlaceholder label="Roof Area CAD" />
+
       <h3 className="font-semibold text-base text-dsld-teal">Entering the Value</h3>
 
       <p className="text-sm leading-relaxed">
@@ -23,9 +25,9 @@ export default function RoofArea() {
         spreadsheet.
       </p>
 
-      <SpreadsheetRef section="Roof" cell="Roof Area" />
+      <ImagePlaceholder label="Roof Area XL" />
 
-      <ImagePlaceholder label="Roof area tracing — green polyline around outermost roof outline" />
+      <SpreadsheetRef section="Roof" cell="Roof Area" />
     </div>
   );
 }
