@@ -19,6 +19,13 @@ export default function Mirrors() {
         <li>Master bathrooms may have one large mirror or two separate mirrors depending on vanity layout.</li>
       </ul>
 
+      <h3 className="font-medium text-base text-dsld-text">Counting Linear Feet for Frames</h3>
+      <p className="text-sm leading-relaxed">
+        Mirrors need linear feet for frames. In the cabinet elevations, trace out each mirror using
+        rectangles. Once all mirrors are traced, get the total linear feet of the traced rectangles
+        and enter that value into the spreadsheet.
+      </p>
+
       <h3 className="font-medium text-base text-dsld-text">Entering the Count</h3>
       <p className="text-sm leading-relaxed">
         Enter the total mirror count and sizes in the Mirrors section of the spreadsheet. If mirrors

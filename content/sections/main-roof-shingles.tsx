@@ -42,8 +42,9 @@ export default function MainRoofShingles() {
 
       <p className="text-sm leading-relaxed">
         Once all pitches are drawn, <strong>adjust the position</strong> of each shape so there is a
-        small gap between each pitch shape. This prevents overlapping lines from skewing area
-        calculations.
+        small gap between each pitch shape. The reason for separating them is to make sure all areas
+        are fully closed with no loose ends — if shapes aren&apos;t closed, the area calculation will be
+        incorrect. This also prevents overlapping lines from skewing area calculations.
       </p>
 
       <Tip>

@@ -56,14 +56,14 @@ export default function Walls() {
       <h3 className="font-medium text-base text-dsld-text">Exterior Walls</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
-          Trace the full perimeter of the exterior walls using a polyline on
-          the correct layer.
+          Trace the full perimeter of the exterior walls using regular lines
+          (LINE command) on the correct layer.
         </li>
         <li>
           Include all bump-outs, bay windows, and garage walls in your trace.
         </li>
         <li>
-          Record the total linear footage from the polyline properties.
+          Record the total linear footage from the line properties.
         </li>
       </ul>
 
@@ -84,7 +84,7 @@ export default function Walls() {
       <SpreadsheetRef section="Wall Takeoffs" cell="Interior LF" />
 
       <Tip>
-        Use the DIST command to spot-check your polyline measurements against
+        Use the DIST command to spot-check your line measurements against
         the dimensioned plan to catch tracing errors early.
       </Tip>
     </div>

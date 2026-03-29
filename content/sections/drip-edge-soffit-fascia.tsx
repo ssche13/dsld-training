@@ -43,16 +43,23 @@ export default function DripEdgeSoffitFascia() {
       <h3 className="font-semibold text-base text-dsld-teal">Soffit</h3>
 
       <p className="text-sm leading-relaxed">
-        The overhang size determines whether <strong>6"</strong>, <strong>12"</strong>, or{" "}
-        <strong>16" soffit</strong> is used. Use different colors for vented vs. non-vented soffit
-        as well (e.g., <ColorSwatch color="orange" /> orange line for 12" non-vented soffit on a
-        gable vs. <ColorSwatch color="red" /> red for 12" vented soffit).
+        The overhang size determines the soffit product used:
       </p>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li><strong>Vented soffit</strong> is on the perimeter of the home.</li>
-        <li>Gables and pitches are <strong>not vented</strong>.</li>
-        <li>Dormers are <strong>not vented</strong>.</li>
+        <li><strong>12" overhang on flat (eave)</strong> = 12"x12' <strong>vented</strong> soffit.</li>
+        <li><strong>12" overhang on pitch (gable/dormer)</strong> = 12"x12' <strong>solid (non-vented)</strong> soffit.</li>
+        <li><strong>16" overhang on flat</strong> = 16" <strong>vented</strong> soffit.</li>
+        <li><strong>16" overhang on pitch</strong> = 16" <strong>solid (non-vented)</strong> soffit.</li>
+        <li><strong>6" overhang</strong> = 6" lap siding is used under the soffit (not counted in this section).</li>
+      </ul>
+
+      <p className="text-sm leading-relaxed">
+        The rule is simple: <strong>flat areas (eaves) get vented soffit</strong> and{" "}
+        <strong>pitched areas (gables, dormers) get solid (non-vented) soffit</strong>.
+      </p>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>If overhang is less than 6", count in <strong>vinyl</strong> instead of in this section.</li>
       </ul>
 
@@ -94,7 +101,7 @@ export default function DripEdgeSoffitFascia() {
         <p className="mt-1 text-center text-xs text-gray-500">Soffit & Fascia spreadsheet section</p>
       </div>
 
-      <ImagePlaceholder label="Drip edge drawing with corrected color coding" />
+      <ImagePlaceholder label="Drip edge drawing with color coding" />
     </div>
   );
 }

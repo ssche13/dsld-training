@@ -48,6 +48,8 @@ import Paint from "./sections/paint";
 import Mirrors from "./sections/mirrors";
 import RegionalConsiderations from "./sections/regional-considerations";
 import Porches from "./sections/porches";
+import StoneElevations from "./sections/stone-elevations";
+import CedarShakes from "./sections/cedar-shakes";
 
 export const sectionContent: Record<string, React.ComponentType> = {
   "workflow-overview": WorkflowOverview,
@@ -100,4 +102,6 @@ export const sectionContent: Record<string, React.ComponentType> = {
   "mirrors": Mirrors,
   "regional-considerations": RegionalConsiderations,
   "porches": Porches,
+  "stone-elevations": StoneElevations,
+  "cedar-shakes": CedarShakes,
 };

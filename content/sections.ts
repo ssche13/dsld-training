@@ -71,26 +71,28 @@ export const sections: SectionDef[] = [
   { slug: "stucco", title: "Stucco", category: "Exterior", order: 34 },
   { slug: "siding", title: "Siding", category: "Exterior", order: 35 },
   { slug: "flashing-doors-windows", title: "Doors & Windows vs Water Tables", category: "Exterior", order: 36 },
-  { slug: "trim-section", title: "Trim Section", category: "Exterior", order: 37 },
-  { slug: "posts-beams", title: "Posts & Beams", category: "Exterior", order: 38 },
-  { slug: "windows", title: "Windows", category: "Exterior", order: 39 },
-  { slug: "doors", title: "Doors", category: "Exterior", order: 40 },
+  { slug: "stone-elevations", title: "Stone", category: "Exterior", order: 37 },
+  { slug: "cedar-shakes", title: "Cedar Shakes", category: "Exterior", order: 38 },
+  { slug: "trim-section", title: "5/4x4x12 Cement Smooth Trim", category: "Exterior", order: 39 },
+  { slug: "posts-beams", title: "Posts & Beams", category: "Exterior", order: 40 },
+  { slug: "windows", title: "Windows", category: "Exterior", order: 41 },
+  { slug: "doors", title: "Doors", category: "Exterior", order: 42 },
 
   // Beams & Framing
-  { slug: "bracing", title: "Bracing", category: "Beams & Framing", order: 41 },
-  { slug: "beams", title: "Beams", category: "Beams & Framing", order: 42 },
-  { slug: "ceiling-joists", title: "Ceiling Joists", category: "Beams & Framing", order: 43 },
-  { slug: "rafters", title: "Rafters", category: "Beams & Framing", order: 44 },
+  { slug: "bracing", title: "Bracing", category: "Beams & Framing", order: 43 },
+  { slug: "beams", title: "Beams", category: "Beams & Framing", order: 44 },
+  { slug: "ceiling-joists", title: "Ceiling Joists", category: "Beams & Framing", order: 45 },
+  { slug: "rafters", title: "Rafters", category: "Beams & Framing", order: 46 },
 
   // Finishing
-  { slug: "lighting", title: "Lighting", category: "Finishing", order: 45 },
-  { slug: "plumbing", title: "Plumbing", category: "Finishing", order: 46 },
-  { slug: "hvac", title: "HVAC", category: "Finishing", order: 47 },
-  { slug: "paint", title: "Paint", category: "Finishing", order: 48 },
-  { slug: "mirrors", title: "Mirrors", category: "Finishing", order: 49 },
+  { slug: "lighting", title: "Lighting", category: "Finishing", order: 47 },
+  { slug: "plumbing", title: "Plumbing", category: "Finishing", order: 48 },
+  { slug: "hvac", title: "HVAC", category: "Finishing", order: 49 },
+  { slug: "paint", title: "Paint", category: "Finishing", order: 50 },
+  { slug: "mirrors", title: "Mirrors", category: "Finishing", order: 51 },
 
   // Regional
-  { slug: "regional-considerations", title: "Regional Considerations", category: "Regional", order: 50 },
+  { slug: "regional-considerations", title: "Regional Considerations", category: "Regional", order: 52 },
 ];
 
 export function getSectionsByCategory(): Record<string, SectionDef[]> {

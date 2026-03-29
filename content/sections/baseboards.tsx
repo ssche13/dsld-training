@@ -7,7 +7,7 @@ export default function Baseboards() {
 
       <p className="text-sm leading-relaxed">
         Baseboards are installed along the bottom of interior walls to cover the joint between the
-        wall surface and the floor. Nearly every finished room in the house receives baseboard trim.
+        wall surface and the floor. The entire house receives baseboard trim, including the garage.
       </p>
 
       <h3 className="font-medium text-base text-dsld-text">Measuring Baseboards</h3>
@@ -15,7 +15,8 @@ export default function Baseboards() {
         <li>Measure the perimeter of each room that receives baseboard.</li>
         <li>Subtract door openings, sliding glass doors, and areas behind built-in cabinetry.</li>
         <li>Include closet interiors — they typically receive baseboard as well.</li>
-        <li>Garages and unfinished utility rooms generally do not receive baseboard.</li>
+        <li>Garages are included — they receive baseboard as well.</li>
+        <li>Unfinished utility rooms generally do not receive baseboard.</li>
       </ul>
 
       <h3 className="font-medium text-base text-dsld-text">Baseboard Sizes</h3>

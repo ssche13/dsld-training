@@ -11,10 +11,15 @@ export default function Paint() {
       </p>
 
       <h3 className="font-medium text-base text-dsld-text">Calculating Paintable Area</h3>
+      <p className="text-sm leading-relaxed">
+        Paint area is calculated as the total area minus openings. Use the lines already drawn for
+        siding from the elevation takeoff to get the total area, then subtract all openings (doors,
+        windows, etc.) from that total. Enter the net area into the spreadsheet.
+      </p>
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Start with the total interior wall area from your wall measurements.</li>
         <li>Add ceiling area for all painted ceilings (exclude areas with other finishes like wood planking).</li>
-        <li>Subtract areas that will not be painted: tile backsplashes, shower surrounds, and built-in cabinetry.</li>
+        <li>Subtract all openings — doors, windows, and any other non-painted areas — from the total.</li>
         <li>Include closet interiors — walls and ceilings inside closets are painted.</li>
       </ul>
 

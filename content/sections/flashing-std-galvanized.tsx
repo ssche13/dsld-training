@@ -1,22 +1,17 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
-import Tip from "@/components/callouts/Tip";
 
 
 export default function FlashingStdGalvanized() {
   return (
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">
-        Standard Galvanized Flashing (Correction #15)
+        Standard Galvanized Flashing
       </h2>
 
       <p className="text-sm leading-relaxed">
-        Standard Galvanized Flashing — labeled{" "}
-        <strong>20x50 STD GALV FLASHING</strong> in the estimating
-        spreadsheet — is used to line <strong>roof valleys</strong>. Each
-        piece is 20&Prime; wide and 50&Prime; (approximately 4.17&prime;)
-        long. Because every valley requires flashing on{" "}
-        <strong>both sides</strong>, you need <strong>two pieces per
-        valley length</strong> covered.
+        Standard Galvanized Flashing is used to line <strong>roof valleys</strong>.
+        Each piece is <strong>50 feet long</strong>. The goal is to make solid runs
+        per valley — you want continuous coverage without seams where possible.
       </p>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
@@ -25,26 +20,21 @@ export default function FlashingStdGalvanized() {
       </div>
 
       <h3 className="font-medium text-base text-dsld-text">
-        Calculation Steps
+        Counting Method
       </h3>
 
       <ol className="list-decimal pl-6 space-y-2 text-sm">
         <li>
-          <strong>Measure</strong> the total linear feet of all roof
-          valleys from the roof plan in AutoCAD.
+          <strong>Measure</strong> each valley run from the roof plan in AutoCAD.
         </li>
         <li>
-          <strong>Divide</strong> the total linear feet by{" "}
-          <strong>50</strong> (each piece covers roughly 50&Prime; of
-          valley length).
+          <strong>Determine pieces per valley:</strong> If a valley run is under
+          50&prime;, it needs <strong>1 piece</strong>. If over 50&prime;, it needs{" "}
+          <strong>2 pieces</strong>.
         </li>
         <li>
-          <strong>Multiply</strong> the result by <strong>2</strong>{" "}
-          because each valley needs a piece on each side.
-        </li>
-        <li>
-          <strong>Round up</strong> to the next whole number — you cannot
-          order a fraction of a piece.
+          <strong>Combine shorter valleys:</strong> If two shorter valleys together
+          total 50&prime; or less, they can share a single piece of flashing.
         </li>
       </ol>
 
@@ -52,27 +42,21 @@ export default function FlashingStdGalvanized() {
 
       <div className="bg-gray-50 border rounded-md p-4 text-sm space-y-2">
         <p>
-          <strong>Given:</strong> 3 valleys, each 20&prime; long.
+          <strong>Given:</strong> 4 valleys — A (22&prime;), B (23&prime;), C (26&prime;), D (25&prime;).
         </p>
         <p>
-          <strong>Step 1:</strong> Total linear feet = 3 &times; 20 ={" "}
-          <strong>60&prime;</strong>
+          <strong>Valley A + Valley B:</strong> 22 + 23 = 45&prime; — these can share{" "}
+          <strong>1 piece</strong> (under 50&prime;).
         </p>
         <p>
-          <strong>Step 2:</strong> 60 &divide; 50 = <strong>1.2</strong>
+          <strong>Valley C + Valley D:</strong> 26 + 25 = 51&prime; — these{" "}
+          <strong>cannot</strong> share one piece (over 50&prime;), so they need{" "}
+          <strong>2 pieces</strong>.
         </p>
         <p>
-          <strong>Step 3:</strong> 1.2 &times; 2 = <strong>2.4</strong>
-        </p>
-        <p>
-          <strong>Step 4:</strong> Round up &rarr; <strong>3 pieces</strong>
+          <strong>Grand total: 3 pieces</strong> of standard galvanized flashing.
         </p>
       </div>
-
-      <Tip>
-        Simplified formula: total valley lnft &divide; 50 &times; 2, then
-        round up to the nearest whole number.
-      </Tip>
 
       <SpreadsheetRef section="Flashing" cell="Std. Galvanized Flashing" />
     </div>

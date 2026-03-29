@@ -1,5 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Tip from "@/components/callouts/Tip";
+import Note from "@/components/callouts/Note";
 
 export default function Windows() {
   return (
@@ -31,6 +32,11 @@ export default function Windows() {
         Cross-check the window count on the floor plan against the schedule. Discrepancies are
         common and should be flagged for your team leader.
       </Tip>
+
+      <Note>
+        Always cross-check window counts and sizes between the CAD drawing and the floor plan to
+        catch any discrepancies.
+      </Note>
     </div>
   );
 }
