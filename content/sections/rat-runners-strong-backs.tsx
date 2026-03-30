@@ -32,22 +32,25 @@ export default function RatRunnersStrongBacks() {
         continuous horizontal member.
       </p>
 
-      <p className="text-sm leading-relaxed">
-        Pull in the Ceiling Framing construct into your AutoCAD drawing.
-      </p>
-
-      <p className="text-sm leading-relaxed">
-        Trace everything circled in red in the image below.
-      </p>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Pull the Ceiling Framing construct into your AutoCAD drawing.</li>
+        <li>Use <strong>LINE</strong> to trace <strong>yellow lines</strong> for everything circled in red in the image below:</li>
+      </ul>
 
       <ImagePlaceholder label="Strong Backs from Plans" />
 
-      <p className="text-sm leading-relaxed">
-        Measure the total linear footage of the lines you traced, round up, and insert into the
-        spreadsheet.
-      </p>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Pull those lines off to the side.</li>
+      </ul>
 
       <ImagePlaceholder label="Strong Backs CAD" />
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Get the <strong>total linear feet</strong> of all lines traced.</li>
+        <li>Round up, then place your number into the <strong>Strong Back Materials</strong> section of the spreadsheet.</li>
+      </ul>
+
+      <ImagePlaceholder label="Strong Backs XL" />
 
       <p className="text-sm leading-relaxed">
         <strong><u>NOTE:</u></strong> Strong backs are not needed for areas that are 3&apos; or smaller.

@@ -8,16 +8,16 @@ export default function Sheetrock() {
       <h2 className="font-semibold text-lg text-dsld-teal">Sheetrock</h2>
 
       <p className="text-sm leading-relaxed">
-        Sheetrock (drywall) is sent off to JDK construction for estimation.
+        Sheetrock (drywall) is sent off to <strong>JDK Construction</strong> for estimation.
       </p>
 
       <p className="text-sm leading-relaxed">
-        1. Email eric@jdk-construction.com a PDF attachment of the plan with the name of the plan as
+        1. Email <u>eric@jdk-construction.com</u> a PDF attachment of the plan with the name of the plan as
         the subject.
       </p>
 
       <p className="text-sm leading-relaxed">
-        2. Add the plan to the JDK dropbox in a new folder with the current date.
+        2. Add the plan to the <u>JDK Dropbox</u> in a new folder with the current date.
       </p>
 
       <p className="text-sm leading-relaxed">
@@ -30,25 +30,21 @@ export default function Sheetrock() {
         at a framing member.
       </p>
 
-      <p className="text-sm leading-relaxed">
-        Copy over your wall takeoff sketch and count the number of 2x6 sheetrock nailers by drawing
-        a circle at each location.
-      </p>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Copy over your wall takeoff sketch.</li>
+        <li>Count the number of 2x6 sheetrock nailers by using the <strong>CIRCLE</strong> command at each location.</li>
+        <li>Color code your circles to <strong>match the color of the wall that it is on.</strong> This makes it easier to verify counts and ensures nailers are assigned to the correct height category in the spreadsheet.</li>
+      </ul>
 
       <ImagePlaceholder label="Sheetrock Nailers CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Any wall intersection that looks like a &quot;T&quot; needs a sheetrock nailer added.</li>
-        <li>Any wall intersection that looks like a &quot;t&quot; does not need a sheetrock nailer.</li>
-        <li>Nailers are not needed on 6&apos;&apos; walls.</li>
-        <li>If there are 2 ceiling heights at a nailer location, go with the higher ceiling height of the 2.</li>
+        <li>Any wall intersection that looks like a <strong>&quot;T&quot;</strong> needs a sheetrock nailer.</li>
+        <li>Any wall intersection that looks like a <strong>&quot;t&quot;</strong> does not need a sheetrock nailer.</li>
+        <li>Sheetrock nailers are <strong>not</strong> needed on <strong>6&quot; walls</strong>.</li>
+        <li>If there are <strong>two ceiling heights</strong> represented at a nailer location, go with the <strong>higher</strong> ceiling height of the two to assign the appropriate color.</li>
+        <li>Place the count of each based on ceiling height into the corresponding <strong>Wall Intersections</strong> cells of the spreadsheet.</li>
       </ul>
-
-      <p className="text-sm leading-relaxed">
-        Color code your circles based on the corresponding ceiling height you used for the walls.
-        This makes it easier to verify counts and ensures nailers are assigned to the correct height
-        category in the spreadsheet.
-      </p>
 
       <ImagePlaceholder label="Sheetrock Nailers XL" />
 

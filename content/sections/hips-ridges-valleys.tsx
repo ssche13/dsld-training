@@ -45,10 +45,14 @@ export default function HipsRidgesValleys() {
       </h3>
 
       <p className="text-sm leading-relaxed">
-        Refer to the call outs on the PDF drawing representing the lengths of
-        the hips on pitch. The sum of all hip call outs + total linear feet of
-        ridges = total ridges &amp; hips.
+        Refer to the call outs on the PDF drawing representing <strong>the lengths of the hips on pitch</strong>.
       </p>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Add all hip call outs together, doubling if the call out(s) is circled twice.</li>
+        <li>Add the sum of all hip call outs to the total linear feet of ridges.</li>
+        <li>Round up, then place your number into the <strong>Total Ridges and Hips</strong> cell of the spreadsheet.</li>
+      </ul>
 
       <ImagePlaceholder label="Total Ridges & Hips XL" />
 

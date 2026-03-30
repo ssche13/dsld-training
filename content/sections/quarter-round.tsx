@@ -1,5 +1,4 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
-import Note from "@/components/callouts/Note";
+import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function QuarterRound() {
   return (
@@ -8,33 +7,33 @@ export default function QuarterRound() {
 
       <p className="text-sm leading-relaxed">
         Quarter round is a small molding profile installed at the base of walls where the flooring
-        meets the baseboard. It is installed anywhere with hard floors — hardwood, laminate, vinyl
-        plank, and tile.
+        meets the baseboard. It covers the expansion gap left for tile, hardwood, or laminate flooring.
       </p>
 
       <h3 className="font-medium text-base text-dsld-text">Where Quarter Round Is Used</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Any room with hard flooring (hardwood, laminate, vinyl plank, or tile) receives quarter round.</li>
-        <li>Check the flooring plan to determine which rooms have hard floors.</li>
+        <li>Rooms with tile, hardwood, laminate, or vinyl plank flooring typically receive quarter round.</li>
+        <li>Carpeted rooms usually do not require quarter round.</li>
+        <li>Check the flooring plan to determine which rooms need it.</li>
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Exclusions</h3>
+      <h3 className="font-medium text-base text-dsld-text">Estimation</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Doorways and cased openings.</li>
-        <li>Garages.</li>
-        <li>Tubs and showers.</li>
-        <li>Areas behind cabinets.</li>
-        <li>Carpeted areas.</li>
+        <li>Use <strong>POLYLINE</strong> to trace <strong>yellow lines</strong> along the outside of sheetrock, or <strong>everywhere that you see flooring.</strong> (You can use AutoCAD for this. Note at the beginning when you pulled in the Flooring construct into the drawing.)</li>
+        <li>Exclude doorways, cased openings, garages, tubs, showers, cabinets, and carpeted areas.</li>
+        <li><strong>Do not move these lines yet.</strong></li>
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">How to Measure</h3>
+      <ImagePlaceholder label="Qtr Rnd CAD" />
+
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Measure the perimeter of each room that requires quarter round.</li>
-        <li>Subtract all exclusions listed above.</li>
-        <li>Total all rooms and enter the linear footage in the spreadsheet.</li>
+        <li>Get the <strong>total linear footage</strong> of all yellow lines you traced.</li>
+        <li>Multiply by 1.1.</li>
+        <li>Divide by 16.</li>
+        <li>Round up, then place the resulting total into the <strong>Trim Punch</strong> section of the spreadsheet.</li>
       </ul>
 
-      <SpreadsheetRef section="Trim" cell="Quarter Round" />
+      <ImagePlaceholder label="Qtr Rnd XL" />
     </div>
   );
 }

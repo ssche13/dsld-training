@@ -41,13 +41,14 @@ export default function GatheringInfo() {
 
       <h3 className="font-medium text-base text-dsld-text">Estimating Spreadsheet</h3>
       <p className="text-sm leading-relaxed">
-        Open the estimating spreadsheet from the Shared-Admin Drive. Navigate as follows: Shared Admin &gt; Estimating &gt; Worksheets &gt; New
+        Open the estimating spreadsheet from the Shared-Admin Drive.
       </p>
 
-      <p className="text-sm leading-relaxed">
-        Use <strong>Save As</strong> and name the file using the standard plan name format so it can
-        be identified later.
-      </p>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Navigate as follows: <strong>Shared Admin &gt; Estimating &gt; Worksheets &gt; New &gt; Z spreadsheets currently being used</strong></li>
+        <li>Find the blank spreadsheet in correspondence with the state your plans will be built in.</li>
+        <li>Use <strong>Save As</strong> and name the file using the standard plan name format so it can be identified later.</li>
+      </ul>
 
       <h3 className="font-medium text-base text-dsld-text">Elevation Correlations</h3>
       <p className="text-sm leading-relaxed">

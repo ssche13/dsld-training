@@ -1,4 +1,5 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
+import ColorSwatch from "@/components/ColorSwatch";
+import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import Note from "@/components/callouts/Note";
 
 export default function Shelving() {
@@ -8,44 +9,73 @@ export default function Shelving() {
 
       <p className="text-sm leading-relaxed">
         Shelving includes wire shelving and wood shelving installed in closets, pantries, and laundry
-        rooms. Quantities are counted by sorting color-coded lines into a 16&rsquo; rectangle using the
-        same method as crown counting.
+        rooms. It is important that you use the <strong>Closet Elevations</strong> on the{" "}
+        <strong>Finishes</strong> page of the PDF plan drawing for this section.
       </p>
 
-      <h3 className="font-medium text-base text-dsld-text">Color Coding</h3>
+      <ImagePlaceholder label="Closet Elevations PDF" />
+
+      <h3 className="font-medium text-base text-dsld-text">Types of Shelving</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li><strong className="text-green-600">Green</strong> — Shelf Support</li>
-        <li><strong className="text-red-600">Red</strong> — Shelf</li>
-        <li><strong className="text-blue-600">Blue</strong> — Rod</li>
+        <li><strong>Wire shelving</strong> &mdash; Standard in most closets. Measured by linear feet of shelf and rod.</li>
+        <li><strong>Wood shelving</strong> &mdash; Used in pantries and linen closets. Measured by linear feet per shelf tier.</li>
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">How to Measure</h3>
+      <h3 className="font-medium text-base text-dsld-text">Estimation</h3>
+      <p className="text-sm leading-relaxed">
+        Color-coded lines are used to depict the different shelf types:
+      </p>
+
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use the closet elevations to aid with shelving calculations.
-          <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-            <img src="/images/manual-notes/imagec.png" alt="Closet elevation drawings showing shelf and rod layout" className="w-full rounded" />
-            <p className="mt-1 text-center text-xs text-gray-500">Closet elevations showing shelf and rod layout</p>
-          </div>
-        </li>
-        <li>Open the floor plan and identify all closets, pantries, and laundry rooms.</li>
-        <li>Draw color-coded lines for each shelving component (Green = Shelf Support, Red = Shelf, Blue = Rod).</li>
-        <li>Wherever there are multiple shelves/rods called out in the closet elevations, the CAD sketch should be copied over to match the count in the PDF drawing.</li>
+        <li><ColorSwatch color="red" /> <strong>Red</strong> = Shelf</li>
+        <li><ColorSwatch color="cyan" /> <strong>Cyan</strong> = Rod</li>
+        <li><ColorSwatch color="green" /> <strong>Green</strong> = Shelf Support</li>
+      </ul>
+
+      <p className="text-sm leading-relaxed">
+        Use the closet elevations to aid in drawing your color-coded lines.
+      </p>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Use <strong>LINE</strong> to trace shelving using the different colors indicated above to represent their respective shelf components.</li>
+        <li>Count the number of shelf tiers <strong>if multiple levels are indicated.</strong> Wherever there are multiple shelves/rods called out in the closet elevations, the shelving sketch in AutoCAD should be copied over to match the count in the PDF.</li>
       </ul>
 
       <Note>
-        Example: If there are 5 shelves in the Pantry, the shelving sketch for the pantry in CAD should be copied 5 times.
+        Example: If there are 5 shelves in the Pantry, the shelving sketch for the pantry in CAD should be copied 4 times to total 5 shelves.
       </Note>
 
-      <h3 className="font-medium text-base text-dsld-text">Counting Method</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Once you have finished drawing the shelving and copying the appropriate quantities, keep one set unedited and copy over another set.</li>
-        <li>Sort the color-coded lines into a closed 16&rsquo; rectangle. This is the same method used for crown counting.</li>
-        <li>Use the <strong>&ldquo;Group Lines by Boundary&rdquo;</strong> command to count the lines inside the rectangle.</li>
-        <li>Group each color together to minimize confusion.</li>
-        <li>Enter the counts into the spreadsheet.</li>
+        <li>Once you have finished drawing the shelving and copying the appropriate quantities, keep one set unedited and copy over another set to the side.</li>
       </ul>
 
-      <SpreadsheetRef section="Trim" cell="Shelving" />
+      <ImagePlaceholder label="Shelving CAD" />
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Draw a <strong>white 16x40 rectangle.</strong></li>
+        <li>Repeat the process you did for crown.</li>
+        <li>Group each color together to minimize confusion.</li>
+      </ul>
+
+      <ImagePlaceholder label="Shelving count cad" />
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Count the green lines and place them here:</li>
+      </ul>
+
+      <ImagePlaceholder label="Shelf Support Count XL" />
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Count the red lines and place them here:</li>
+      </ul>
+
+      <ImagePlaceholder label="Shelf count XL" />
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Count the blue lines and place them here:</li>
+      </ul>
+
+      <ImagePlaceholder label="Rod Count XL" />
     </div>
   );
 }

@@ -14,7 +14,8 @@ export default function RidgeVents() {
         <strong>elevation page</strong> of the PDF.
       </p>
 
-      <ImagePlaceholder label="Off Ridge Vents and Ridge Vents" />
+      <ImagePlaceholder label="Off Ridge Vents" />
+      <ImagePlaceholder label="Ridge Vents" />
 
       <h3 className="font-medium text-base text-dsld-text">Off Ridge Vents</h3>
 

@@ -20,45 +20,39 @@ export default function Osb() {
 
       <h3 className="font-medium text-base text-dsld-text">Exterior Wall Sheathing</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Trace the exterior wall perimeter on the OSB layer, skipping garage door openings.</li>
-        <li>Take each total linear run of matching plate heights and add them together, then divide by 4 rounding up to the next whole number.</li>
-        <li>Include all <strong>outcroppings</strong> in your trace, including gables that are hatched to 16&apos;&apos; O.C.</li>
+        <li>Use <strong>POLYLINE</strong> to trace along the exterior wall perimeter on the OSB layer in a color of your choice, skipping garage door openings.</li>
+        <li>Include all <strong>outcroppings</strong> in your trace, including gables that you will hatch at <strong>16&quot; O.C.</strong> Be sure to trace these lines in a <strong>separate color</strong> than what you used for the perimeter. (Outcroppings are any exterior wall projections that extend beyond the main building footprint, such as bay windows, fireplace chases, or cantilevered bump-outs. These <strong>must</strong> be included in your OSB measurement.)</li>
       </ul>
-
-      <p className="text-sm leading-relaxed">
-        <strong>Outcroppings</strong> are any exterior wall projections that extend beyond the main
-        building footprint, such as bay windows, fireplace chases, or cantilevered bump-outs. These
-        must be included in your OSB measurement.
-      </p>
 
       <ImagePlaceholder label="OSB CAD" />
 
-      <p className="text-sm leading-relaxed">
-        Place your number into the Wall Sheathing section of the spreadsheet next to its
-        corresponding ceiling height.
-      </p>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Get the <strong>total linear feet</strong> of each run of matching plate heights and add them together.</li>
+        <li>Divide by 4.</li>
+        <li>Round up, then place the resulting count based on plate height into the <strong>Wall Sheathing</strong> section of the spreadsheet.</li>
+      </ul>
 
       <ImagePlaceholder label="Wall Sheathing XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Wall Sheathing for Gables</h3>
-      <ol className="list-decimal pl-6 space-y-1 text-sm">
-        <li>Use <strong>POLYAREA</strong> to calculate the area of the gable(s).</li>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Use <strong>POLYAREA</strong> to calculate the total square footage of the gable(s).</li>
         <li>Divide by 32.</li>
-        <li>Multiply by 1.1.</li>
+        <li>Multiply by 1.1</li>
         <li>Round to the next whole number.</li>
-        <li>Add 1 for the garage.</li>
-        <li>Add 4 for the catwalk in the attic.</li>
-        <li>Put your total in the <strong>Extra Areas</strong> section of the spreadsheet.</li>
-      </ol>
+        <li>Add 1 for each garage.</li>
+        <li>Add 4 for the catwalk in the attic. If there are two locations for attic access, add 7.</li>
+        <li>Place the resulting total into the <strong>Extra Areas</strong> section of the spreadsheet.</li>
+      </ul>
 
       <ImagePlaceholder label="Extra Areas XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Studs</h3>
-      <ol className="list-decimal pl-6 space-y-1 text-sm">
-        <li>Take the total linear feet of the hatch lines you placed inside the gable(s).</li>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Get the <strong>total linear feet</strong> of the hatch lines you placed inside the gable(s).</li>
         <li>Divide by 30.</li>
-        <li>Enter your number in the 2 appropriate cells in the spreadsheet:</li>
-      </ol>
+        <li>Place the resulting total into these two cells in the spreadsheet:</li>
+      </ul>
 
       <ImagePlaceholder label="OSB Studs XL" />
 

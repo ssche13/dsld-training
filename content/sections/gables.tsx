@@ -13,12 +13,12 @@ export default function Gables() {
       </p>
 
       <h3 className="font-medium text-base text-dsld-text">Tracing Gables in AutoCAD</h3>
-      <ol className="list-decimal pl-6 space-y-1 text-sm">
-        <li>Using the elevation drawings, trace all gables.</li>
-        <li>Place <strong>16&quot; hatch lines</strong> inside each traced gable area.</li>
-        <li>Explode the hatch pattern, then pull the hatch lines out.</li>
-        <li>Also trace the <strong>top plate</strong> of all gables and pull those out.</li>
-      </ol>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Trace all gables using the <strong>Elevations</strong> page of the PDF.</li>
+        <li>Place <strong>16&quot; hatch lines O.C.</strong></li>
+        <li><strong>Explode</strong> the hatch pattern, then pull those lines out.</li>
+        <li>Trace the <strong>top plate</strong> of all gables, then pull those lines out.</li>
+      </ul>
 
       <ImagePlaceholder label="Gables for Walls" />
 
@@ -28,16 +28,11 @@ export default function Gables() {
       </div>
 
       <h3 className="font-medium text-base text-dsld-text">Calculating the Count</h3>
-      <p className="text-sm leading-relaxed">
-        Once you have the total measurements, use the following formula:
-      </p>
-      <div className="bg-gray-50 border border-gray-200 rounded-md p-3 text-sm font-mono">
-        Total linear feet of gable + hatch lines + top plate / 30 = your count
-      </div>
-
-      <p className="text-sm leading-relaxed">
-        Place the resulting count in the appropriate section of the estimating spreadsheet.
-      </p>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Get the <strong>total linear footage</strong> of the gable(s), hatch lines, and top plate(s) together.</li>
+        <li>Divide by 30.</li>
+        <li>Round up, then place the resulting count into the appropriate cell of the spreadsheet.</li>
+      </ul>
 
       <ImagePlaceholder label="Gables for Walls XL" />
 

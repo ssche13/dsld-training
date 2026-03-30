@@ -5,6 +5,8 @@ const colorMap: Record<string, string> = {
   blue: "#2563EB",
   orange: "#EA580C",
   purple: "#9333EA",
+  cyan: "#00BCD4",
+  magenta: "#E91E63",
   teal: "#1A6E8C",
 };
 
