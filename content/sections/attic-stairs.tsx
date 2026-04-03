@@ -1,5 +1,5 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
+
 import Note from "@/components/callouts/Note";
 
 export default function AtticStairs() {
@@ -13,7 +13,10 @@ export default function AtticStairs() {
         rectangle labeled with the attic stair callout.
       </p>
 
-      <ImagePlaceholder label="Attic Stairs PDF" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/attic-stairs--docx_0.png" alt="Attic Stairs PDF" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Attic Stairs PDF</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">Locating Attic Stairs</h3>
 
@@ -27,7 +30,10 @@ export default function AtticStairs() {
         <li><strong>For 8&apos; garage ceilings</strong> — put the count of attic stairs called out on the plan in the Attic Stair — Fire rated 25-1/2x54x8&apos;9&quot; Metal.</li>
       </ul>
 
-      <ImagePlaceholder label="Attic Stairs XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/attic-stairs--attic-stairs_1.png" alt="Attic Stairs XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Attic Stairs XL</p>
+      </div>
 
       <Note>
         Most plans have one attic stair, but larger homes or homes with detached garages may
@@ -40,7 +46,10 @@ export default function AtticStairs() {
         plan and input it here:
       </p>
 
-      <ImagePlaceholder label="Attic Stairs Bid Rates XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/attic-stairs--attic-stairs_0.png" alt="Attic Stairs Bid Rates XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Attic Stairs Bid Rates XL</p>
+      </div>
 
       <SpreadsheetRef section="Trim" cell="Attic Stairs" />
     </div>

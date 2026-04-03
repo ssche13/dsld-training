@@ -1,5 +1,4 @@
 import Note from "@/components/callouts/Note";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import ColorSwatch from "@/components/ColorSwatch";
 
 export default function RoofCheck() {
@@ -35,7 +34,10 @@ export default function RoofCheck() {
         potential changes.
       </p>
 
-      <ImagePlaceholder label="Roof Check" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/roof-check--docx_0.png" alt="Roof Check" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Roof Check</p>
+      </div>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/roof-plan.jpg" alt="Roof plan showing ridges, hips, and valleys" className="w-full rounded" />

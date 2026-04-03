@@ -1,6 +1,5 @@
 import Note from "@/components/callouts/Note";
 import Tip from "@/components/callouts/Tip";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import ColorSwatch from "@/components/ColorSwatch";
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 
@@ -31,12 +30,14 @@ export default function ExteriorInteriorFootings() {
       <h3 className="font-semibold text-base text-dsld-teal">Line Placement</h3>
 
       <p className="text-sm leading-relaxed">
-        Draw at the <strong>TOP</strong> of the footing for horizontal runs and on the{" "}
-        <strong>LEFT</strong> of the footing for vertical runs. This ensures every corner is
-        accounted for without double-estimating.
+        Footings should never intersect another footing. A line gap should always be between two
+        separate footings to ensure every corner is accounted for without double-estimating.
       </p>
 
-      <ImagePlaceholder label="Exterior and Interior Footings CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/exterior-interior-footings--docx_0.png" alt="Exterior and Interior Footings CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Exterior and Interior Footings CAD</p>
+      </div>
 
       <Note>
         Do not center the line on the footing — this causes inaccurate corner measurements. Always
@@ -45,18 +46,17 @@ export default function ExteriorInteriorFootings() {
 
       <h3 className="font-semibold text-base text-dsld-teal">Entering the Values</h3>
 
-      <p className="text-sm leading-relaxed">
-        The <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines goes into
-        the <strong>Exterior Footings</strong> cell under the Concrete header.
-      </p>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the <ColorSwatch color="red" /> red lines.</li>
+        <li>Round up, then place the resulting total into the <strong>Exterior Footings</strong> cell under the Concrete header.</li>
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the <ColorSwatch color="yellow" /> yellow lines.</li>
+        <li>Round up, place the resulting total into the <strong>Interior Footings</strong> cell, located below the Exterior Footings cell.</li>
+      </ul>
 
-      <p className="text-sm leading-relaxed">
-        The <strong>total linear feet</strong> of the <ColorSwatch color="yellow" /> yellow lines
-        goes into the <strong>Interior Footings</strong> section, located below the Exterior Footings
-        cell.
-      </p>
-
-      <ImagePlaceholder label="Exterior and Interior Footings XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/exterior-interior-footings--exterior-interior-footings_0.png" alt="Exterior and Interior Footings XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Exterior and Interior Footings XL</p>
+      </div>
 
       <SpreadsheetRef section="Concrete" cell="Exterior Footings" />
       <SpreadsheetRef section="Concrete" cell="Interior Footings" />

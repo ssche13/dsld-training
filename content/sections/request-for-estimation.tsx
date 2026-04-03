@@ -25,9 +25,9 @@ export default function RequestForEstimation() {
 
       <h3 className="font-medium text-base text-dsld-text">Plan Tracking by Area</h3>
       <p className="text-sm leading-relaxed">
-        Plans are tracked by geographic area using Microsoft Teams channels. Each area has its own
-        channel where plan files, updates, and questions are posted. Make sure you are monitoring the
-        correct Teams channel for your assigned area.
+        Plans are tracked by geographic area using Microsoft Teams buckets. Each area has its own
+        bucket where plan files, updates, and questions are posted. Make sure you are monitoring the
+        correct Teams bucket for your assigned area.
       </p>
 
       <Note>

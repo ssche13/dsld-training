@@ -1,6 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
+
 
 export default function PlanName() {
   return (
@@ -31,7 +31,10 @@ export default function PlanName() {
         exterior layouts that share the same interior layout.
       </Note>
 
-      <ImagePlaceholder label="Plan Name Version and Number" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/plan-name--plan-name_0.png" alt="Plan Name Version and Number" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Plan Name Version and Number</p>
+      </div>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/plan-name-label.jpg" alt="PDF drawing title section showing ABBEY-A/G/S-4 plan name, elevation letters, and version number" className="w-full rounded" />
@@ -46,7 +49,10 @@ export default function PlanName() {
         spreadsheet.
       </p>
 
-      <ImagePlaceholder label="Plan Name" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/plan-name--plan-name_1.png" alt="Plan Name" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Plan Name</p>
+      </div>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/plan-spreadsheet-header.jpg" alt="Estimating spreadsheet showing Plan-A-II and Plan2 header sections" className="w-full rounded" />

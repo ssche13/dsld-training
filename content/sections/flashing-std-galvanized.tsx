@@ -1,4 +1,3 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
 
 
 export default function FlashingStdGalvanized() {
@@ -9,56 +8,24 @@ export default function FlashingStdGalvanized() {
       </h2>
 
       <p className="text-sm leading-relaxed">
-        Standard Galvanized Flashing is used to line <strong>roof valleys</strong>.
-        Each piece is <strong>50 feet long</strong>. The goal is to make solid runs
-        per valley — you want continuous coverage without seams where possible.
+        Standard Galvanized Flashing is used to line <strong>roof valleys</strong>. Each piece is
+        20&Prime; wide and <strong>50&apos; long</strong>. For this section, you will also utilize the
+        Roof Plan for your valley lengths on pitch. Note in the Hips/Ridges/Valleys Module where you
+        identified numbers in circles.
       </p>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/image8.png" alt="Shingles and Flashing spreadsheet section" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Shingles &amp; Flashing spreadsheet section</p>
+        <img src="/images/cms/flashing-std-galvanized--flashing-std-galvanized_0.png" alt="Standard Galvanized Flashing XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Standard Galvanized Flashing XL</p>
       </div>
 
-      <h3 className="font-medium text-base text-dsld-text">
-        Counting Method
-      </h3>
+      <h3 className="font-medium text-base text-dsld-text">Calculation Steps</h3>
 
-      <ol className="list-decimal pl-6 space-y-2 text-sm">
-        <li>
-          <strong>Measure</strong> each valley run from the roof plan in AutoCAD.
-        </li>
-        <li>
-          <strong>Determine pieces per valley:</strong> If a valley run is under
-          50&prime;, it needs <strong>1 piece</strong>. If over 50&prime;, it needs{" "}
-          <strong>2 pieces</strong>.
-        </li>
-        <li>
-          <strong>Combine shorter valleys:</strong> If two shorter valleys together
-          total 50&prime; or less, they can share a single piece of flashing.
-        </li>
-      </ol>
-
-      <h3 className="font-medium text-base text-dsld-text">Worked Example</h3>
-
-      <div className="bg-gray-50 border rounded-md p-4 text-sm space-y-2">
-        <p>
-          <strong>Given:</strong> 4 valleys — A (22&prime;), B (23&prime;), C (26&prime;), D (25&prime;).
-        </p>
-        <p>
-          <strong>Valley A + Valley B:</strong> 22 + 23 = 45&prime; — these can share{" "}
-          <strong>1 piece</strong> (under 50&prime;).
-        </p>
-        <p>
-          <strong>Valley C + Valley D:</strong> 26 + 25 = 51&prime; — these{" "}
-          <strong>cannot</strong> share one piece (over 50&prime;), so they need{" "}
-          <strong>2 pieces</strong>.
-        </p>
-        <p>
-          <strong>Grand total: 3 pieces</strong> of standard galvanized flashing.
-        </p>
-      </div>
-
-      <SpreadsheetRef section="Flashing" cell="Std. Galvanized Flashing" />
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Use the Roof Plan to identify the valley lengths on pitch.</li>
+        <li>Tally how many valley runs you can add together to be equal to or less than 50&apos;. (e.g. A 25&apos; valley + another 25&apos; valley would need 1 piece, totaling 50&apos;. A 26&apos; valley + a 25&apos; valley would need 2 pieces. You can use the cutoff from these valleys to find a valley that can be added without exceeding 50&apos;.)</li>
+        <li>Place the resulting count in the appropriate cell of <strong>Standard Shingles and Flashing</strong> section of the estimating sheet.</li>
+      </ul>
     </div>
   );
 }

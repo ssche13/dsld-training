@@ -1,7 +1,4 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
-import Tip from "@/components/callouts/Tip";
 import Note from "@/components/callouts/Note";
-
 
 export default function Walls() {
   return (
@@ -11,82 +8,104 @@ export default function Walls() {
       <p className="text-sm leading-relaxed">
         Wall measurements are one of the most critical parts of the estimate.
         You will trace both interior and exterior walls in AutoCAD to calculate
-        total linear footage and wall area for framing, sheetrock, and other
-        trades.
+        total linear footage for framing, sheetrock, and other trades. It is important
+        that you utilize the <strong>Ceiling Framing Layout</strong> from the PDF plan
+        drawing for this section as well.
       </p>
 
-      {/* ---- Regular Walls & Knee Walls ---- */}
       <h3 className="font-medium text-base text-dsld-text">
         Regular Walls &amp; Knee Walls
       </h3>
 
       <p className="text-sm leading-relaxed">
         Regular walls are standard full-height walls. Knee walls are shorter
-        walls — commonly found in attic spaces, bonus rooms, and at kitchen
-        bars. Both must be measured accurately because they affect framing
+        walls &mdash; commonly found in attic spaces, bonus rooms, and at kitchen
+        bars. Knee walls are also used to step up walls to catch beams or ceiling joists.
+        Both must be measured accurately because they affect framing
         lumber and sheetrock quantities.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/imageb.png" alt="Knee wall and random lengths spreadsheet section" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Knee wall / random lengths spreadsheet section</p>
-      </div>
-
-      <Note>
-        When joists from a 10ft room do not land on an adjacent 9ft wall,
-        trainees should go with the higher ceiling height of the two.
-      </Note>
-
-      <Note>
-        In rooms where there are tray ceilings, trainees should always honor
-        the actual ceiling height and ignore the tray height.
-      </Note>
-
-      <Note>
-        The calculations for knee walls in regular walls and knee walls for
-        kitchen bars will go in separate places on the spreadsheet.
-      </Note>
-
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/manual-notes/image9.png" alt="Wall Takeoffs spreadsheet color coded by ceiling height" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Wall Takeoffs spreadsheet - color coded by ceiling height</p>
-      </div>
-
-      {/* ---- Exterior Walls ---- */}
-      <h3 className="font-medium text-base text-dsld-text">Exterior Walls</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
-          Trace the full perimeter of the exterior walls using regular lines
-          (LINE command) on the correct layer.
+          Use <strong>LINE</strong> to trace each wall in the corresponding color that
+          it is represented by on the spreadsheet, for regular walls and knee walls.
         </li>
         <li>
-          Include all bump-outs, bay windows, and garage walls in your trace.
-        </li>
-        <li>
-          Record the total linear footage from the line properties.
+          Use <strong>TLEN</strong> to put the total linear footage for your regular walls
+          here based on the corresponding ceiling height:
         </li>
       </ul>
 
-      {/* ---- Interior Walls ---- */}
-      <h3 className="font-medium text-base text-dsld-text">Interior Walls</h3>
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/walls--walls_0.png" alt="Regular Wall Takeoffs" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Regular Wall Takeoffs</p>
+      </div>
+
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Trace each interior wall segment individually.</li>
-        <li>
-          Pay attention to wall height callouts — some interior walls may be
-          different heights.
-        </li>
-        <li>
-          Do not double-count walls that are shared between rooms.
-        </li>
+        <li>Pull your knee walls out so that they are separate from your regular walls.</li>
       </ul>
 
-      <SpreadsheetRef section="Wall Takeoffs" cell="Exterior LF" />
-      <SpreadsheetRef section="Wall Takeoffs" cell="Interior LF" />
+      <p className="text-sm leading-relaxed">
+        There will be common scenarios where you will trace a wall that has rooms on either side of it
+        at different ceiling heights. Pay attention to ceiling heights from the floor plan and where
+        the ceiling joists are landing. It is important that you use the <strong>Ceiling Framing Layout</strong> from
+        the PDF to keep these 3 important notes in mind. We&apos;ll use a 10&apos; room and a 9&apos; room
+        on either side of a wall you&apos;re measuring as an example:
+      </p>
 
-      <Tip>
-        Use the DIST command to spot-check your line measurements against
-        the dimensioned plan to catch tracing errors early.
-      </Tip>
+      <ol className="list-decimal pl-6 space-y-2 text-sm">
+        <li>
+          If ceiling joists from both the 10&apos; room and 9&apos; room land on the same wall,
+          a <strong>knee wall</strong> would be needed to make up the difference between the two
+          ceiling heights. In this case, the knee wall would be 1&apos;. (e.g. In a case where there
+          is an 11&apos; room instead of a 10&apos; room, the knee wall would be 2&apos;.)
+        </li>
+        <li>
+          If only the ceiling joists from the 10&apos; room land on the wall, you will go with
+          the <strong>higher height</strong> of the two rooms. In this case, your wall would be
+          measured at 10&apos;.
+        </li>
+        <li>
+          If only the ceiling joists from the 9&apos; room land on the wall, you will go with
+          the <strong>lower height</strong> of the two rooms. In this case, your wall would be
+          measured at 9&apos;.
+        </li>
+      </ol>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/walls--docx_0.png" alt="Walls CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Walls CAD</p>
+      </div>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Run through all door frames except for garage doors and large cased openings.</li>
+        <li>Pay attention to ceiling height callouts in each room.</li>
+        <li>Do not double-count walls that are shared between rooms.</li>
+      </ul>
+
+      <Note>
+        In rooms where there are tray ceilings, always honor the actual ceiling height.
+        Ignore the height called out for the tray ceiling.
+      </Note>
+
+      <p className="text-sm leading-relaxed">
+        Knee walls have 2 separate places in the spreadsheet. The total linear footage
+        for knee walls in kitchen bars will go here:
+      </p>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/walls--walls_1.png" alt="Knee Walls Kitchen" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Knee Walls Kitchen</p>
+      </div>
+
+      <p className="text-sm leading-relaxed">
+        The total linear footage for knee walls to make up differences in regular walls will go here:
+      </p>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/walls--walls_2.png" alt="Knee Walls for Diff" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Knee Walls for Diff</p>
+      </div>
     </div>
   );
 }

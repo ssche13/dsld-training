@@ -1,48 +1,86 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
-import Tip from "@/components/callouts/Tip";
-
 export default function Beams() {
   return (
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Load-Bearing Beams</h2>
 
       <p className="text-sm leading-relaxed">
-        Beam estimation covers all structural and decorative beams in the plan, including Hardie
-        wrapped beams used on exterior porches and entries. Accurate beam measurement requires careful
-        reading of the framing plan and beam schedule.
+        Beam estimation covers all structural beams in the plan. Accurate measurement requires
+        careful reading of the <strong>ceiling framing plan</strong> on the PDF.
       </p>
+
+      <h3 className="font-medium text-base text-dsld-text">Under-Beams Studs</h3>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/beams--docx_0.png" alt="Under-Beams Studs PDF" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Under-Beams Studs PDF</p>
+      </div>
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>
+          From the ceiling framing plan on the PDF, count where beam ends fall on{" "}
+          <strong>both</strong> sides.
+        </li>
+        <li>
+          Exclude when a beam lands on another beam, in the middle of a doorway or cased opening, or
+          on a corner.
+        </li>
+        <li>Determine the height of the beam by the ceiling height of the room it is in.</li>
+        <li>
+          Place total counts for <strong>each beam end at each plate height</strong> into the{" "}
+          <strong>2x4 under beams</strong> section of the spreadsheet.
+        </li>
+      </ul>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/beams--docx_1.png" alt="Under stud beams XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Under stud beams XL</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">Beams</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Identify all beams on the framing plan (porch beams, header beams, ridge beams).</li>
-        <li>Measure the linear length of each beam in AutoCAD.</li>
-        <li>Record the beam size and length in the spreadsheet.</li>
+        <li>Count each beam from the ceiling framing plan on the PDF.</li>
+        <li>
+          Any that call for doubles, count for <strong>2</strong> instead of 1.
+        </li>
+        <li>
+          Floating beams are indicated by &quot;<strong>F.B.</strong>&quot; at the end of the beam
+          callout.
+        </li>
+        <li>
+          Attics receive <strong>1 2x12x10</strong>.
+        </li>
+        <li>
+          Place the count into the <strong>Beams</strong> section of the spreadsheet.
+        </li>
       </ul>
 
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/beams--docx_2.png" alt="Beams XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Beams XL</p>
+      </div>
+
       <p className="text-sm leading-relaxed">
-        Get total counts for each beam <strong>END</strong> (not the beam itself).
+        Beams often need to be added from the parts list as placeholders in the spreadsheet.
       </p>
 
-      <h3 className="font-medium text-base text-dsld-text">Measuring Beams</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Identify each beam on the framing plan by its callout tag.</li>
-        <li>Measure the linear length of each beam using AutoCAD.</li>
-        <li>Record the beam size (e.g., 2-2x10, 3-2x12, LVL) and length.</li>
+        <li>
+          Go to the <strong>Master Parts List</strong> sheet within the Excel workbook.
+        </li>
+        <li>
+          Find the part number and place it in the part number section of the spreadsheet — the next
+          cell will auto-populate.
+        </li>
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Hardie Wrapped Beams</h3>
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/beams--docx_3.png" alt="Parts list XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Parts list XL</p>
+      </div>
+
       <p className="text-sm leading-relaxed">
-        Hardie wrapped beams are structural beams covered with Hardie board trim for a finished
-        exterior appearance. After measuring the linear length, apply the waste factor and unit
-        conversion before entering the value.
+        Refer to this section from other modules if you need help navigating items from the parts
+        list.
       </p>
-
-      <Tip>
-        Multiply the linear length by 1.10 (waste factor), then divide by 12 to convert to feet
-        before entering into the spreadsheet.
-      </Tip>
-
-      <SpreadsheetRef section="Beams" cell="Hardie Wrapped Beams" />
     </div>
   );
 }

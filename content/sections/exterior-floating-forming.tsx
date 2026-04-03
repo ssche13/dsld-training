@@ -29,8 +29,10 @@ export default function ExteriorFloatingForming() {
           <strong>Include</strong> the garage opening.
         </li>
         <li>
-          Use the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines to
-          fill out the <strong>Exterior Forming</strong> cell under the Concrete header.
+          Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the <ColorSwatch color="red" /> red lines.
+        </li>
+        <li>
+          Place the resulting total in the <strong>Exterior Forming</strong> cell under the Concrete header.
         </li>
       </ul>
 
@@ -48,12 +50,17 @@ export default function ExteriorFloatingForming() {
           <strong>Include</strong> walls that border the garage and interior of the home.
         </li>
         <li>
-          Use the <strong>total linear feet</strong> of the <ColorSwatch color="yellow" /> yellow
-          lines to fill out the <strong>Floating Forming</strong> cell under the Concrete header.
+          Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the <ColorSwatch color="yellow" /> yellow lines.
+        </li>
+        <li>
+          Round up, then place the resulting total in the <strong>Floating Forming</strong> cell under the Concrete header.
         </li>
       </ul>
 
-      <ImagePlaceholder label="Exterior and Floating Forming CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/exterior-floating-forming--exterior-floating-forming_0.png" alt="Exterior and Floating Forming CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Exterior and Floating Forming CAD</p>
+      </div>
 
       <Tip>
         Remember: red is for the full outside perimeter (including porches and the garage opening),

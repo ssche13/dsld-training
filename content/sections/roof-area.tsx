@@ -1,6 +1,5 @@
 import ColorSwatch from "@/components/ColorSwatch";
 import SpreadsheetRef from "@/components/SpreadsheetRef";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function RoofArea() {
   return (
@@ -16,7 +15,10 @@ export default function RoofArea() {
         </li>
       </ul>
 
-      <ImagePlaceholder label="Roof Area CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/roof-area--docx_0.png" alt="Roof Area CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Roof Area CAD</p>
+      </div>
 
       <h3 className="font-semibold text-base text-dsld-teal">Entering the Value</h3>
 
@@ -25,7 +27,10 @@ export default function RoofArea() {
         spreadsheet.
       </p>
 
-      <ImagePlaceholder label="Roof Area XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/roof-area--roof-area_0.png" alt="Roof Area XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Roof Area XL</p>
+      </div>
 
       <SpreadsheetRef section="Roof" cell="Roof Area" />
     </div>

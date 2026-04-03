@@ -1,6 +1,4 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function Osb() {
   return (
@@ -8,9 +6,8 @@ export default function Osb() {
       <h2 className="font-semibold text-lg text-dsld-teal">OSB (Oriented Strand Board)</h2>
 
       <p className="text-sm leading-relaxed">
-        OSB is used as wall sheathing on exterior walls and as gable-end sheathing. You will trace
-        exterior walls in AutoCAD for the linear footage and calculate the gable area using the{" "}
-        <strong>HATCH</strong> command.
+        OSB is used as wall sheathing on exterior walls, as gable-end sheathing, and interior walls
+        that touch exterior walls.
       </p>
 
       <Note>
@@ -20,19 +17,25 @@ export default function Osb() {
 
       <h3 className="font-medium text-base text-dsld-text">Exterior Wall Sheathing</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use <strong>POLYLINE</strong> to trace along the exterior wall perimeter on the OSB layer in a color of your choice, skipping garage door openings.</li>
-        <li>Include all <strong>outcroppings</strong> in your trace, including gables that you will hatch at <strong>16&quot; O.C.</strong> Be sure to trace these lines in a <strong>separate color</strong> than what you used for the perimeter. (Outcroppings are any exterior wall projections that extend beyond the main building footprint, such as bay windows, fireplace chases, or cantilevered bump-outs. These <strong>must</strong> be included in your OSB measurement.)</li>
+        <li>Use <strong>POLYLINE</strong> to trace along the exterior wall perimeter on top of the floor plan in a color of your choice, skipping garage door openings.</li>
+        <li>Include all <strong>outcroppings</strong> in your trace, including gables. Be sure to trace these lines in a <strong>separate color</strong> than what you used for the perimeter. (Outcroppings are any exterior wall projections that extend beyond the main building footprint, such as bay windows, fireplace chases, or cantilevered bump-outs. These <strong>must</strong> be included in your OSB measurement.)</li>
       </ul>
 
-      <ImagePlaceholder label="OSB CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/osb--docx_0.png" alt="OSB CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">OSB CAD</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Get the <strong>total linear feet</strong> of each run of matching plate heights and add them together.</li>
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of each run of matching plate heights and add them together.</li>
         <li>Divide by 4.</li>
         <li>Round up, then place the resulting count based on plate height into the <strong>Wall Sheathing</strong> section of the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Wall Sheathing XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/osb--osb_0.png" alt="Wall Sheathing XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Wall Sheathing XL</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">Wall Sheathing for Gables</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -45,19 +48,39 @@ export default function Osb() {
         <li>Place the resulting total into the <strong>Extra Areas</strong> section of the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Extra Areas XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/osb--osb_1.png" alt="Extra Areas XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Extra Areas XL</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">Studs</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Get the <strong>total linear feet</strong> of the hatch lines you placed inside the gable(s).</li>
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the hatch lines you placed inside the gable(s) previously.</li>
         <li>Divide by 30.</li>
         <li>Place the resulting total into these two cells in the spreadsheet:</li>
       </ul>
 
-      <ImagePlaceholder label="OSB Studs XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/osb--osb_2.png" alt="OSB Studs XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">OSB Studs XL</p>
+      </div>
 
-      <SpreadsheetRef section="OSB" cell="Exterior Walls" />
-      <SpreadsheetRef section="OSB" cell="Gable Hatch" />
+      <h3 className="font-medium text-base text-dsld-text">Zero Lot Line Walls</h3>
+      <p className="text-sm leading-relaxed">
+        <strong>5/8x4x9 OSB</strong> must be used where these walls appear. Rare occasion, but should be noted.
+      </p>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Identify all zero lot line walls. A common indication is a wall that has no roof overhang.</li>
+        <li>Use <strong>TLEN</strong> to get the total linear footage of all zero lot line walls.</li>
+        <li>Divide by 4.</li>
+        <li>Place the resulting total into the <strong>Zero Lot Line Exterior Firerock</strong> section of the spreadsheet.</li>
+      </ul>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/osb--osb_3.png" alt="Zero Lot XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Zero Lot XL</p>
+      </div>
     </div>
   );
 }

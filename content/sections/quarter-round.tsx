@@ -1,4 +1,3 @@
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function QuarterRound() {
   return (
@@ -24,16 +23,22 @@ export default function QuarterRound() {
         <li><strong>Do not move these lines yet.</strong></li>
       </ul>
 
-      <ImagePlaceholder label="Qtr Rnd CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/quarter-round--docx_0.png" alt="Qtr Rnd CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Qtr Rnd CAD</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Get the <strong>total linear footage</strong> of all yellow lines you traced.</li>
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of all <strong>yellow lines</strong> you traced.</li>
         <li>Multiply by 1.1.</li>
         <li>Divide by 16.</li>
         <li>Round up, then place the resulting total into the <strong>Trim Punch</strong> section of the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Qtr Rnd XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/quarter-round--quarter-round_0.png" alt="Qtr Rnd XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Qtr Rnd XL</p>
+      </div>
     </div>
   );
 }

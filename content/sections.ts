@@ -45,7 +45,7 @@ export const sections: SectionDef[] = [
 
   // Flashing
   { slug: "flashing-std-galvanized", title: "Standard Galvanized Flashing", category: "Flashing", order: 16 },
-  { slug: "flashing-apron-hem", title: "Galvanized Apron & Hem Flashing", category: "Flashing", order: 17 },
+  { slug: "flashing-apron-hem", title: "Gutter Apron & Hem Flashing", category: "Flashing", order: 17 },
 
   // Structural
   { slug: "rat-runners-strong-backs", title: "Rat Runners & Strong Backs", category: "Structural", order: 18 },
@@ -61,37 +61,39 @@ export const sections: SectionDef[] = [
   { slug: "baseboards", title: "Baseboards", category: "Shelving & Trim", order: 26 },
   { slug: "crown", title: "Crown", category: "Shelving & Trim", order: 27 },
   { slug: "shelving", title: "Shelving", category: "Shelving & Trim", order: 28 },
-  { slug: "cased-openings", title: "Cased Openings", category: "Shelving & Trim", order: 29 },
-  { slug: "cypress-posts", title: "Cypress Posts", category: "Shelving & Trim", order: 30 },
-  { slug: "attic-stairs", title: "Attic Stairs", category: "Shelving & Trim", order: 31 },
+  { slug: "attic-stairs", title: "Attic Stairs", category: "Shelving & Trim", order: 29 },
 
   // Exterior
-  { slug: "granite", title: "Granite", category: "Exterior", order: 32 },
-  { slug: "elevations", title: "Elevations", category: "Exterior", order: 33 },
-  { slug: "stucco", title: "Stucco", category: "Exterior", order: 34 },
-  { slug: "brick", title: "Brick", category: "Exterior", order: 35 },
-  { slug: "siding", title: "Siding", category: "Exterior", order: 36 },
-  { slug: "flashing-doors-windows", title: "Doors & Windows vs Water Tables", category: "Exterior", order: 37 },
-  { slug: "trim-section", title: "5/4x4x12 Cement Smooth Trim", category: "Exterior", order: 38 },
-  { slug: "posts-beams", title: "Posts & Beams", category: "Exterior", order: 39 },
-  { slug: "windows", title: "Windows", category: "Exterior", order: 40 },
-  { slug: "doors", title: "Doors", category: "Exterior", order: 41 },
+  { slug: "granite", title: "Granite", category: "Exterior", order: 30 },
+  { slug: "elevations", title: "Elevations", category: "Exterior", order: 31 },
+  { slug: "stucco", title: "Stucco", category: "Exterior", order: 32 },
+  { slug: "brick", title: "Brick", category: "Exterior", order: 33 },
+  { slug: "siding", title: "Siding", category: "Exterior", order: 34 },
+  { slug: "flashing-doors-windows", title: "Doors & Windows vs Water Tables", category: "Exterior", order: 35 },
+  { slug: "trim-section", title: "Stone", category: "Exterior", order: 36 },
+  { slug: "posts-beams", title: "Posts & Beams", category: "Exterior", order: 37 },
+  { slug: "windows", title: "Windows", category: "Exterior", order: 38 },
+  { slug: "home-wrap", title: "Home Wrap", category: "Exterior", order: 39 },
+  { slug: "doors", title: "Doors", category: "Exterior", order: 40 },
+  { slug: "cased-openings", title: "Cased Openings", category: "Exterior", order: 41 },
 
   // Beams & Framing
   { slug: "bracing", title: "Bracing", category: "Beams & Framing", order: 42 },
   { slug: "beams", title: "Beams", category: "Beams & Framing", order: 43 },
   { slug: "ceiling-joists", title: "Ceiling Joists", category: "Beams & Framing", order: 44 },
-  { slug: "rafters", title: "Rafters", category: "Beams & Framing", order: 45 },
+  { slug: "collar-ties", title: "Collar Ties", category: "Beams & Framing", order: 45 },
+  { slug: "purlins", title: "Purlins", category: "Beams & Framing", order: 46 },
+  { slug: "rafters", title: "Rafters", category: "Beams & Framing", order: 47 },
 
   // Finishing
-  { slug: "lighting", title: "Lighting", category: "Finishing", order: 46 },
-  { slug: "plumbing", title: "Plumbing", category: "Finishing", order: 47 },
-  { slug: "hvac", title: "HVAC", category: "Finishing", order: 48 },
-  { slug: "paint", title: "Paint", category: "Finishing", order: 49 },
-  { slug: "mirrors", title: "Mirrors", category: "Finishing", order: 50 },
+  { slug: "lighting", title: "Lighting", category: "Finishing", order: 48 },
+  { slug: "plumbing", title: "Plumbing", category: "Finishing", order: 49 },
+  { slug: "hvac", title: "HVAC", category: "Finishing", order: 50 },
+  { slug: "paint", title: "Paint", category: "Finishing", order: 51 },
+  { slug: "mirrors", title: "Mirrors", category: "Finishing", order: 52 },
 
   // Regional
-  { slug: "regional-considerations", title: "Regional Considerations", category: "Regional", order: 51 },
+  { slug: "regional-considerations", title: "Regional Considerations", category: "Regional", order: 53 },
 ];
 
 export function getSectionsByCategory(): Record<string, SectionDef[]> {

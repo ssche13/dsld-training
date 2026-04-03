@@ -1,5 +1,5 @@
 import ColorSwatch from "@/components/ColorSwatch";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
+
 import Note from "@/components/callouts/Note";
 
 export default function Shelving() {
@@ -8,18 +8,15 @@ export default function Shelving() {
       <h2 className="font-semibold text-lg text-dsld-teal">Shelving</h2>
 
       <p className="text-sm leading-relaxed">
-        Shelving includes wire shelving and wood shelving installed in closets, pantries, and laundry
+        Shelving includes wood shelving installed in closets, pantries, and laundry
         rooms. It is important that you use the <strong>Closet Elevations</strong> on the{" "}
         <strong>Finishes</strong> page of the PDF plan drawing for this section.
       </p>
 
-      <ImagePlaceholder label="Closet Elevations PDF" />
-
-      <h3 className="font-medium text-base text-dsld-text">Types of Shelving</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li><strong>Wire shelving</strong> &mdash; Standard in most closets. Measured by linear feet of shelf and rod.</li>
-        <li><strong>Wood shelving</strong> &mdash; Used in pantries and linen closets. Measured by linear feet per shelf tier.</li>
-      </ul>
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/shelving--docx_0.png" alt="Closet Elevations PDF" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Closet Elevations PDF</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">Estimation</h3>
       <p className="text-sm leading-relaxed">
@@ -38,18 +35,22 @@ export default function Shelving() {
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>LINE</strong> to trace shelving using the different colors indicated above to represent their respective shelf components.</li>
-        <li>Count the number of shelf tiers <strong>if multiple levels are indicated.</strong> Wherever there are multiple shelves/rods called out in the closet elevations, the shelving sketch in AutoCAD should be copied over to match the count in the PDF.</li>
+        <li>Count the number of shelf tiers if multiple levels are indicated. Wherever there are multiple shelves/rods called out in the closet elevations, the shelving sketch in AutoCAD should be copied over to match the count in the PDF.</li>
       </ul>
 
       <Note>
-        Example: If there are 5 shelves in the Pantry, the shelving sketch for the pantry in CAD should be copied 4 times to total 5 shelves.
+        If there are 5 shelves called out on the plans in the pantry, the shelving sketch for the pantry
+        in CAD should be copied 4 times to total 5 shelves.
       </Note>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Once you have finished drawing the shelving and copying the appropriate quantities, keep one set unedited and copy over another set to the side.</li>
       </ul>
 
-      <ImagePlaceholder label="Shelving CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/shelving--docx_1.png" alt="Shelving CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Shelving CAD</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Draw a <strong>white 16x40 rectangle.</strong></li>
@@ -57,25 +58,37 @@ export default function Shelving() {
         <li>Group each color together to minimize confusion.</li>
       </ul>
 
-      <ImagePlaceholder label="Shelving count cad" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/shelving--docx_2.png" alt="Shelving count cad" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Shelving count cad</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Count the green lines and place them here:</li>
+        <li>Count the <ColorSwatch color="green" /> green lines and place them here:</li>
       </ul>
 
-      <ImagePlaceholder label="Shelf Support Count XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/shelving--shelving_0.png" alt="Shelf Support Count XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Shelf Support Count XL</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Count the red lines and place them here:</li>
+        <li>Count the <ColorSwatch color="red" /> red lines and place them here:</li>
       </ul>
 
-      <ImagePlaceholder label="Shelf count XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/shelving--shelving_1.png" alt="Shelf count XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Shelf count XL</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Count the blue lines and place them here:</li>
+        <li>Count the <ColorSwatch color="cyan" /> cyan lines and place them here:</li>
       </ul>
 
-      <ImagePlaceholder label="Rod Count XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/shelving--shelving_2.png" alt="Rod Count XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Rod Count XL</p>
+      </div>
     </div>
   );
 }

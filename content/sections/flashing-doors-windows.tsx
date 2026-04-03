@@ -1,5 +1,5 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
+
 
 export default function FlashingDoorsWindows() {
   return (
@@ -27,7 +27,10 @@ export default function FlashingDoorsWindows() {
         <li>Add both counts together and enter into the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Flashing 5/8 XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/siding--siding_1.png" alt="Flashing 5/8 XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Flashing 5/8 XL</p>
+      </div>
 
       <SpreadsheetRef section="Flashing" cell='5/8" Galv. Steel' />
 
@@ -39,14 +42,20 @@ export default function FlashingDoorsWindows() {
         1&quot; Galvanized Steel Flashing is used for water tables only.
       </p>
 
-      <ImagePlaceholder label="Water Table PDF" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/flashing-doors-windows--docx_0.png" alt="Water Table PDF" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Water Table PDF</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Measure the total linear feet of the water tables, then divide by 10. Round up to the next whole number.</li>
         <li>Enter into the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Flashing 1 XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/flashing-doors-windows--flashing-doors-windows_1.png" alt="Flashing 1 XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Flashing 1 XL</p>
+      </div>
 
       <SpreadsheetRef section="Flashing" cell='1" Galv. Steel' />
     </div>

@@ -27,7 +27,6 @@ import Baseboards from "./sections/baseboards";
 import Crown from "./sections/crown";
 import Shelving from "./sections/shelving";
 import CasedOpenings from "./sections/cased-openings";
-import CypressPosts from "./sections/cypress-posts";
 import AtticStairs from "./sections/attic-stairs";
 import TrimSection from "./sections/trim-section";
 import Granite from "./sections/granite";
@@ -36,10 +35,13 @@ import Stucco from "./sections/stucco";
 import Siding from "./sections/siding";
 import PostsBeams from "./sections/posts-beams";
 import Windows from "./sections/windows";
+import HomeWrap from "./sections/home-wrap";
 import Doors from "./sections/doors";
 import Bracing from "./sections/bracing";
 import Beams from "./sections/beams";
 import CeilingJoists from "./sections/ceiling-joists";
+import Purlins from "./sections/purlins";
+import CollarTies from "./sections/collar-ties";
 import Rafters from "./sections/rafters";
 import Lighting from "./sections/lighting";
 import Plumbing from "./sections/plumbing";
@@ -80,7 +82,6 @@ export const sectionContent: Record<string, React.ComponentType> = {
   "crown": Crown,
   "shelving": Shelving,
   "cased-openings": CasedOpenings,
-  "cypress-posts": CypressPosts,
   "attic-stairs": AtticStairs,
   "trim-section": TrimSection,
   "granite": Granite,
@@ -89,10 +90,13 @@ export const sectionContent: Record<string, React.ComponentType> = {
   "siding": Siding,
   "posts-beams": PostsBeams,
   "windows": Windows,
+  "home-wrap": HomeWrap,
   "doors": Doors,
   "bracing": Bracing,
   "beams": Beams,
   "ceiling-joists": CeilingJoists,
+  "collar-ties": CollarTies,
+  "purlins": Purlins,
   "rafters": Rafters,
   "lighting": Lighting,
   "plumbing": Plumbing,

@@ -1,6 +1,3 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
-import Note from "@/components/callouts/Note";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function Sheetrock() {
   return (
@@ -11,17 +8,19 @@ export default function Sheetrock() {
         Sheetrock (drywall) is sent off to <strong>JDK Construction</strong> for estimation.
       </p>
 
-      <p className="text-sm leading-relaxed">
-        1. Email <u>eric@jdk-construction.com</u> a PDF attachment of the plan with the name of the plan as
-        the subject.
-      </p>
-
-      <p className="text-sm leading-relaxed">
-        2. Add the plan to the <u>JDK Dropbox</u> in a new folder with the current date.
-      </p>
+      <ol className="list-decimal pl-6 space-y-1 text-sm">
+        <li>Email <u>eric@jdk-construction.com</u> a PDF attachment of the plan with the name of the plan as the subject.</li>
+        <li>Add the plan to the <u>JDK Dropbox</u> in a new folder with the current date.</li>
+      </ol>
 
       <p className="text-sm leading-relaxed">
         <strong><u>NOTE:</u></strong> The only area that we do takeoffs for sheetrock is Tennessee.
+      </p>
+
+      <p className="text-sm leading-relaxed">
+        If zero lot line walls are present, sheetrock would need to be updated to have a run on
+        the inside of the fire rock while backing out the regular sheetrock for that run. Refer to
+        the <strong>Zero Lot Line Walls</strong> section of the OSB Module for more information.
       </p>
 
       <h3 className="font-medium text-base text-dsld-text">Nailers</h3>
@@ -32,11 +31,14 @@ export default function Sheetrock() {
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Copy over your wall takeoff sketch.</li>
-        <li>Count the number of 2x6 sheetrock nailers by using the <strong>CIRCLE</strong> command at each location.</li>
+        <li>Use the <strong>CIRCLE</strong> command to count the number of 2x6 sheetrock nailers at each location.</li>
         <li>Color code your circles to <strong>match the color of the wall that it is on.</strong> This makes it easier to verify counts and ensures nailers are assigned to the correct height category in the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Sheetrock Nailers CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/sheetrock--docx_0.png" alt="Sheetrock Nailers CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Sheetrock Nailers CAD</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Any wall intersection that looks like a <strong>&quot;T&quot;</strong> needs a sheetrock nailer.</li>
@@ -46,9 +48,26 @@ export default function Sheetrock() {
         <li>Place the count of each based on ceiling height into the corresponding <strong>Wall Intersections</strong> cells of the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Sheetrock Nailers XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/sheetrock--sheetrock_0.png" alt="Sheetrock Nailers XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Sheetrock Nailers XL</p>
+      </div>
 
-      <SpreadsheetRef section="Sheetrock" cell="Total SF" />
+      <h3 className="font-medium text-base text-dsld-text">Two-Story Homes</h3>
+      <p className="text-sm leading-relaxed">
+        If you are estimating a two-story home, <strong>1/8x4x8 Structural Sheathing</strong> is
+        needed as a draft stop where the second story wall meets the attic space.
+      </p>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Use <strong>TLEN</strong> to get the total linear footage.</li>
+        <li>Place the resulting count into the <strong>Decking and Felt</strong> section of the spreadsheet.</li>
+      </ul>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/sheetrock--sheetrock_1.png" alt="2 story sheathing XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">2 story sheathing XL</p>
+      </div>
     </div>
   );
 }

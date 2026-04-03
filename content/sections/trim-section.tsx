@@ -50,6 +50,11 @@ export default function TrimSection() {
         and enter the total count in the spreadsheet.
       </p>
 
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/trim-section--docx_0.png" alt="Stone column reference" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Stone column reference</p>
+      </div>
+
       <Note>
         The current spreadsheet image for Hardi Post Cap &amp; Base has the wrong cell circled. This
         will be updated in the next image revision.

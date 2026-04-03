@@ -1,4 +1,3 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
 
 export default function Rafters() {
@@ -7,9 +6,8 @@ export default function Rafters() {
       <h2 className="font-semibold text-lg text-dsld-teal">Rafters</h2>
 
       <p className="text-sm leading-relaxed">
-        Rafters are the sloped framing members that form the roof structure. Estimation includes
-        counting common rafters, hip rafters, valley rafters, and jack rafters as shown on the roof
-        framing plan.
+        Rafters are the sloped framing members that form the roof structure. Count common rafters, hip
+        rafters, valley rafters, and jack rafters from the <strong>roof plan</strong>.
       </p>
 
       <h3 className="font-medium text-base text-dsld-text">Types of Rafters</h3>
@@ -22,19 +20,38 @@ export default function Rafters() {
 
       <h3 className="font-medium text-base text-dsld-text">How to Count</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use the roof framing plan to identify each rafter type and its spacing.</li>
-        <li>Calculate counts for common rafters by dividing the ridge length by the spacing and adding one.</li>
-        <li>Count hip, valley, and jack rafters individually from the plan.</li>
-        <li>Record sizes and lengths for each rafter type in the spreadsheet.</li>
+        <li>
+          Use the roof plan from the PDF to count each rafter type <strong>by number.</strong> Those
+          numbers indicate the 2x6 length of each rafter.
+        </li>
       </ul>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/rafters--docx_0.png" alt="Rafters PDF" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Rafters PDF</p>
+      </div>
+
+      <ul className="list-disc pl-6 space-y-1 text-sm">
+        <li>Be careful not to include any pitch numbers into your count.</li>
+        <li>
+          Place each count into the <strong>Rafters</strong> section of the spreadsheet based on length.
+        </li>
+      </ul>
+
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/rafters--docx_1.png" alt="Rafters XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Rafters XL</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">
         Pitch Multiplier Table
       </h3>
 
       <p className="text-sm leading-relaxed">
-        Multiply the <strong>horizontal run</strong> by the pitch multiplier below to get the{" "}
-        <strong>true sloped length</strong>.
+        This is a reference chart for calculating lengths on pitch. The multiplier is already in the
+        spreadsheet under the <strong>Main Roof Shingles - SqFt on FLAT</strong> section. It is only
+        needed in rare occasions since lengths on the plans are already on pitch, but it is important
+        to know.
       </p>
 
       <div className="overflow-x-auto">
@@ -91,13 +108,6 @@ export default function Rafters() {
           horizontal measurement) when sizing lumber for this run.
         </p>
       </div>
-
-      <SpreadsheetRef section="Framing" cell="Rafters" />
-
-      <Note>
-        In truss-frame construction, individual rafters are replaced by pre-fabricated trusses. Check
-        whether your plan uses stick framing or trusses before counting rafters.
-      </Note>
     </div>
   );
 }

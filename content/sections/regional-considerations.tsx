@@ -10,7 +10,7 @@ export default function RegionalConsiderations() {
         Construction methods and code requirements vary significantly between regions.
       </Note>
 
-      <h3 className="font-medium text-base text-dsld-text">Stick &amp; Frame vs. Truss Frame</h3>
+      <h3 className="font-medium text-base text-dsld-text">Stick &amp; Frame vs Truss Frame</h3>
       <p className="text-sm leading-relaxed">
         DSLD uses two primary roof framing methods. <strong>Stick &amp; Frame</strong> construction
         uses individual rafters, ridge boards, and ceiling joists built on-site. <strong>Truss

@@ -1,6 +1,5 @@
 import ColorSwatch from "@/components/ColorSwatch";
 import Note from "@/components/callouts/Note";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 
 export default function Elevations() {
   return (
@@ -51,7 +50,10 @@ export default function Elevations() {
         <li>Your polylines should always be inside the trim line, not outside of it.</li>
       </ul>
 
-      <ImagePlaceholder label="Elevations CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/elevations--docx_0.png" alt="Elevations CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Elevations CAD</p>
+      </div>
 
       <p className="text-sm leading-relaxed">
         Use <strong>POLYLINE</strong> in the appropriate colors to trace each side of the elevation.
@@ -61,13 +63,19 @@ export default function Elevations() {
         <li>For <strong>porches and hidden areas,</strong> draw a line from the foundation to the plate height. Make a rectangle from that line based on the length of wall section the cladding would need to cover.</li>
       </ul>
 
-      <ImagePlaceholder label="Elevations Porches CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/elevations--docx_1.png" alt="Elevations Porches CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Elevations Porches CAD</p>
+      </div>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>For <strong>gables/dormers,</strong> trace separately from the walls.</li>
       </ul>
 
-      <ImagePlaceholder label="Elevations Gables CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/elevations--docx_2.png" alt="Elevations Gables CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Elevations Gables CAD</p>
+      </div>
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/image6.png" alt="Brick elevation with gable" className="w-full rounded" />

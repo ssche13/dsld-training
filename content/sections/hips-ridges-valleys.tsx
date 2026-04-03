@@ -1,5 +1,4 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import Note from "@/components/callouts/Note";
 import ColorSwatch from "@/components/ColorSwatch";
 
@@ -38,7 +37,10 @@ export default function HipsRidgesValleys() {
         <strong>two pieces</strong> of that size.
       </p>
 
-      <ImagePlaceholder label="Length on Pitch from Plans" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/hips-ridges-valleys--docx_0.png" alt="Length on Pitch from Plans" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Length on Pitch from Plans</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">
         Starter Shingles — Hip Calculation
@@ -54,7 +56,10 @@ export default function HipsRidgesValleys() {
         <li>Round up, then place your number into the <strong>Total Ridges and Hips</strong> cell of the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Total Ridges & Hips XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/hips-ridges-valleys--hips-ridges-valleys_0.png" alt="Total Ridges & Hips XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Total Ridges &amp; Hips XL</p>
+      </div>
 
       <h3 className="font-medium text-base text-dsld-text">
         Hips/Ridges/Valleys 2x8
@@ -66,7 +71,10 @@ export default function HipsRidgesValleys() {
         corresponding cell on the spreadsheet. This count should include hips, ridges, and valleys.
       </p>
 
-      <ImagePlaceholder label="Hips/Ridges/Valleys" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/hips-ridges-valleys--hips-ridges-valleys_1.png" alt="Hips/Ridges/Valleys" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Hips/Ridges/Valleys</p>
+      </div>
 
       <Note>
         The hips and valleys &quot;on pitch&quot; are already calculated in the callouts

@@ -1,6 +1,5 @@
 import Note from "@/components/callouts/Note";
 import Tip from "@/components/callouts/Tip";
-import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import ColorSwatch from "@/components/ColorSwatch";
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 
@@ -28,7 +27,10 @@ export default function SillSealExterior() {
         </li>
       </ul>
 
-      <ImagePlaceholder label="Sill Seal CAD" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/sill-seal-exterior--docx_0.png" alt="Sill Seal CAD" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Sill Seal CAD</p>
+      </div>
 
       <Tip>
         Focus only on walls where sill seal material will actually be installed. Porches do not
@@ -36,11 +38,14 @@ export default function SillSealExterior() {
       </Tip>
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Take the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines.</li>
-        <li>Round up and enter into the Exterior Perimeter (Including Garage Wall) Seal cell of the spreadsheet.</li>
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines.</li>
+        <li>Round up, then enter the resulting total into the <strong>Exterior Perimeter (Including Garage Wall) Seal</strong> cell of the spreadsheet.</li>
       </ul>
 
-      <ImagePlaceholder label="Sill Seal XL" />
+      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
+        <img src="/images/cms/sill-seal-exterior--sill-seal-exterior_0.png" alt="Sill Seal XL" className="w-full rounded" />
+        <p className="mt-1 text-center text-xs text-gray-500">Sill Seal XL</p>
+      </div>
 
       <SpreadsheetRef section="Wall Takeoffs" cell="Exterior Perimeter Seal" />
 
