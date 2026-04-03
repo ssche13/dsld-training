@@ -1,4 +1,4 @@
-const basePath = process.env.GITHUB_ACTIONS === "true" ? "/dsld-training" : "";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export default function CmsImage({ src, alt }: { src: string; alt: string }) {
   return (
