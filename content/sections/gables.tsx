@@ -1,4 +1,5 @@
 import Tip from "@/components/callouts/Tip";
+import CmsImage from "@/components/CmsImage";
 
 export default function Gables() {
   return (
@@ -18,10 +19,7 @@ export default function Gables() {
         <li>Copy the top plate lines directly above to represent your <strong>double top plate</strong>.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/gables--docx_0.png" alt="Gables for Walls" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Gables for Walls</p>
-      </div>
+      <CmsImage src="/images/cms/gables--docx_0.png" alt="Gables for Walls" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the total linear footage of the gable(s), hatch lines, and double top plate together.</li>
@@ -30,10 +28,7 @@ export default function Gables() {
         <li>Round up, then place the resulting count into the <strong>2x4 16&apos; knee</strong> cell of the <strong>Wall Takeoffs</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/gables--gables_0.png" alt="Gables for Walls XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Gables for Walls XL</p>
-      </div>
+      <CmsImage src="/images/cms/gables--gables_0.png" alt="Gables for Walls XL" />
 
       <Tip>
         Make sure you explode the hatch lines before measuring. If you skip the explode step, the

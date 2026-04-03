@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 export default function Plumbing() {
   return (
     <div className="space-y-4">
@@ -23,10 +24,7 @@ export default function Plumbing() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/plumbing--docx_0.png" alt="Tub Shower TubShower XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Tub Shower TubShower XL</p>
-      </div>
+      <CmsImage src="/images/cms/plumbing--docx_0.png" alt="Tub Shower TubShower XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Toilets</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -39,10 +37,7 @@ export default function Plumbing() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/plumbing--docx_1.png" alt="Toilets XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Toilets XL</p>
-      </div>
+      <CmsImage src="/images/cms/plumbing--docx_1.png" alt="Toilets XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Vanity Sinks</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -54,10 +49,7 @@ export default function Plumbing() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/plumbing--docx_2.png" alt="Vanity Sinks Plumb XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Vanity Sinks Plumb XL</p>
-      </div>
+      <CmsImage src="/images/cms/plumbing--docx_2.png" alt="Vanity Sinks Plumb XL" />
     </div>
   );
 }

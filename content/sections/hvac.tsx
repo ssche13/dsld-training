@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Hvac() {
   return (
@@ -18,11 +19,8 @@ export default function Hvac() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/hvac--docx_0.png" alt="HVAC PDF" className="w-full rounded" />
-        <img src="/images/cms/hvac--docx_1.png" alt="HVAC PDF" className="mt-2 w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">HVAC PDF</p>
-      </div>
+      <CmsImage src="/images/cms/hvac--docx_0.png" alt="HVAC PDF" />
+      <CmsImage src="/images/cms/hvac--docx_1.png" alt="HVAC PDF" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
@@ -31,10 +29,7 @@ export default function Hvac() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/hvac--docx_2.png" alt="HVAC Tonnage XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">HVAC Tonnage XL</p>
-      </div>
+      <CmsImage src="/images/cms/hvac--docx_2.png" alt="HVAC Tonnage XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Secondary Returns</h3>
 
@@ -50,10 +45,7 @@ export default function Hvac() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/hvac--docx_3.png" alt="Return HVAC XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Return HVAC XL</p>
-      </div>
+      <CmsImage src="/images/cms/hvac--docx_3.png" alt="Return HVAC XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Hood Vents</h3>
 
@@ -61,10 +53,7 @@ export default function Hvac() {
         <li>Look at the HVAC plan for micro-hood kitchen venting.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/hvac--docx_4.png" alt="Micro Hood PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Micro Hood PDF</p>
-      </div>
+      <CmsImage src="/images/cms/hvac--docx_4.png" alt="Micro Hood PDF" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
@@ -73,10 +62,7 @@ export default function Hvac() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/hvac--docx_5.png" alt="Micro Hood XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Micro Hood XL</p>
-      </div>
+      <CmsImage src="/images/cms/hvac--docx_5.png" alt="Micro Hood XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Zoning Kit</h3>
 
@@ -84,10 +70,7 @@ export default function Hvac() {
         For a two-story home without a dual unit, enter <strong>1</strong> zoning kit.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/hvac--docx_6.png" alt="HVAC zoning XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">HVAC zoning XL</p>
-      </div>
+      <CmsImage src="/images/cms/hvac--docx_6.png" alt="HVAC zoning XL" />
 
       <Note>
         HVAC system sizing is determined by the mechanical engineer. Record the specified size and

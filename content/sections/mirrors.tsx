@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 export default function Mirrors() {
   return (
     <div className="space-y-4">
@@ -15,10 +16,7 @@ export default function Mirrors() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/mirrors--docx_0.png" alt="Mirrors XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Mirrors XL</p>
-      </div>
+      <CmsImage src="/images/cms/mirrors--docx_0.png" alt="Mirrors XL" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
@@ -37,10 +35,7 @@ export default function Mirrors() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/mirrors--docx_1.png" alt="Framed Mirrors XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Framed Mirrors XL</p>
-      </div>
+      <CmsImage src="/images/cms/mirrors--docx_1.png" alt="Framed Mirrors XL" />
     </div>
   );
 }

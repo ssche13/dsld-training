@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Lighting() {
   return (
@@ -27,10 +28,7 @@ export default function Lighting() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/lighting--docx_0.png" alt="Lighting XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Lighting XL</p>
-      </div>
+      <CmsImage src="/images/cms/lighting--docx_0.png" alt="Lighting XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Fixture Types</h3>
 
@@ -76,10 +74,7 @@ export default function Lighting() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/lighting--docx_1.png" alt="Under Cabinet XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Under Cabinet XL</p>
-      </div>
+      <CmsImage src="/images/cms/lighting--docx_1.png" alt="Under Cabinet XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Bathroom Vent Lighting</h3>
 
@@ -91,10 +86,7 @@ export default function Lighting() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/lighting--docx_2.png" alt="Bathroom Vents XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bathroom Vents XL</p>
-      </div>
+      <CmsImage src="/images/cms/lighting--docx_2.png" alt="Bathroom Vents XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Electrical Labor</h3>
 
@@ -117,10 +109,7 @@ export default function Lighting() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/lighting--docx_3.png" alt="Electrical Labor XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Electrical Labor XL</p>
-      </div>
+      <CmsImage src="/images/cms/lighting--docx_3.png" alt="Electrical Labor XL" />
     </div>
   );
 }

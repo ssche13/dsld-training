@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 
 export default function Sheetrock() {
   return (
@@ -35,10 +36,7 @@ export default function Sheetrock() {
         <li>Color code your circles to <strong>match the color of the wall that it is on.</strong> This makes it easier to verify counts and ensures nailers are assigned to the correct height category in the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/sheetrock--docx_0.png" alt="Sheetrock Nailers CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Sheetrock Nailers CAD</p>
-      </div>
+      <CmsImage src="/images/cms/sheetrock--docx_0.png" alt="Sheetrock Nailers CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Any wall intersection that looks like a <strong>&quot;T&quot;</strong> needs a sheetrock nailer.</li>
@@ -48,10 +46,7 @@ export default function Sheetrock() {
         <li>Place the count of each based on ceiling height into the corresponding <strong>Wall Intersections</strong> cells of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/sheetrock--sheetrock_0.png" alt="Sheetrock Nailers XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Sheetrock Nailers XL</p>
-      </div>
+      <CmsImage src="/images/cms/sheetrock--sheetrock_0.png" alt="Sheetrock Nailers XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Two-Story Homes</h3>
       <p className="text-sm leading-relaxed">
@@ -64,10 +59,7 @@ export default function Sheetrock() {
         <li>Place the resulting count into the <strong>Decking and Felt</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/sheetrock--sheetrock_1.png" alt="2 story sheathing XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">2 story sheathing XL</p>
-      </div>
+      <CmsImage src="/images/cms/sheetrock--sheetrock_1.png" alt="2 story sheathing XL" />
     </div>
   );
 }

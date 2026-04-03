@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 
 
 export default function FlashingStdGalvanized() {
@@ -14,10 +15,7 @@ export default function FlashingStdGalvanized() {
         identified numbers in circles.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/flashing-std-galvanized--flashing-std-galvanized_0.png" alt="Standard Galvanized Flashing XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Standard Galvanized Flashing XL</p>
-      </div>
+      <CmsImage src="/images/cms/flashing-std-galvanized--flashing-std-galvanized_0.png" alt="Standard Galvanized Flashing XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Calculation Steps</h3>
 

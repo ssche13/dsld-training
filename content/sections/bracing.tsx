@@ -1,6 +1,7 @@
 import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import Note from "@/components/callouts/Note";
 import ColorSwatch from "@/components/ColorSwatch";
+import CmsImage from "@/components/CmsImage";
 
 export default function Bracing() {
   return (
@@ -49,10 +50,7 @@ export default function Bracing() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_0.png" alt="Bracing Setup CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bracing Setup CAD</p>
-      </div>
+      <CmsImage src="/images/cms/bracing--docx_0.png" alt="Bracing Setup CAD" />
 
       <h3 className="font-medium text-base text-dsld-text">Estimation</h3>
 
@@ -62,10 +60,7 @@ export default function Bracing() {
         <strong>with no tail</strong>.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_1.png" alt="Circles Bracing PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Circles Bracing PDF</p>
-      </div>
+      <CmsImage src="/images/cms/bracing--docx_1.png" alt="Circles Bracing PDF" />
 
       <p className="text-sm leading-relaxed">
         Also notice lines running through the circles, indicated as <strong>purlins</strong>.
@@ -107,10 +102,7 @@ export default function Bracing() {
         <li>Place another x-line at the midpoint of the circle.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_2.png" alt="Bracing 1st Step CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bracing 1st Step CAD</p>
-      </div>
+      <CmsImage src="/images/cms/bracing--docx_2.png" alt="Bracing 1st Step CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
@@ -123,10 +115,7 @@ export default function Bracing() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_3.png" alt="Bracing 2nd step CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bracing 2nd step CAD</p>
-      </div>
+      <CmsImage src="/images/cms/bracing--docx_3.png" alt="Bracing 2nd step CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
@@ -142,10 +131,7 @@ export default function Bracing() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_4.png" alt="Bracing 3rd Step CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bracing 3rd Step CAD</p>
-      </div>
+      <CmsImage src="/images/cms/bracing--docx_4.png" alt="Bracing 3rd Step CAD" />
 
       <p className="text-sm leading-relaxed">
         Color coding for recorded linear footage:
@@ -190,14 +176,8 @@ export default function Bracing() {
         <li>Repeat for each individual circle without a tail.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_5.png" alt="Bracing 4th step CAD — No Tail" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bracing 4th step CAD — No Tail</p>
-      </div>
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_6.png" alt="Bracing 4th step CAD — With Tail" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bracing 4th step CAD — With Tail</p>
-      </div>
+      <CmsImage src="/images/cms/bracing--docx_5.png" alt="Bracing 4th step CAD — No Tail" />
+      <CmsImage src="/images/cms/bracing--docx_6.png" alt="Bracing 4th step CAD — With Tail" />
 
       <h3 className="font-medium text-base text-dsld-text">
         Individual Circles with Tail Not on Purlins
@@ -229,10 +209,7 @@ export default function Bracing() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/bracing--docx_7.png" alt="Bracing XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Bracing XL</p>
-      </div>
+      <CmsImage src="/images/cms/bracing--docx_7.png" alt="Bracing XL" />
     </div>
   );
 }

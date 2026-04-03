@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Rafters() {
   return (
@@ -26,10 +27,7 @@ export default function Rafters() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/rafters--docx_0.png" alt="Rafters PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Rafters PDF</p>
-      </div>
+      <CmsImage src="/images/cms/rafters--docx_0.png" alt="Rafters PDF" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Be careful not to include any pitch numbers into your count.</li>
@@ -38,10 +36,7 @@ export default function Rafters() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/rafters--docx_1.png" alt="Rafters XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Rafters XL</p>
-      </div>
+      <CmsImage src="/images/cms/rafters--docx_1.png" alt="Rafters XL" />
 
       <h3 className="font-medium text-base text-dsld-text">
         Pitch Multiplier Table

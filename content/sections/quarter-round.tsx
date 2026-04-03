@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 
 export default function QuarterRound() {
   return (
@@ -23,10 +24,7 @@ export default function QuarterRound() {
         <li><strong>Do not move these lines yet.</strong></li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/quarter-round--docx_0.png" alt="Qtr Rnd CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Qtr Rnd CAD</p>
-      </div>
+      <CmsImage src="/images/cms/quarter-round--docx_0.png" alt="Qtr Rnd CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of all <strong>yellow lines</strong> you traced.</li>
@@ -35,10 +33,7 @@ export default function QuarterRound() {
         <li>Round up, then place the resulting total into the <strong>Trim Punch</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/quarter-round--quarter-round_0.png" alt="Qtr Rnd XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Qtr Rnd XL</p>
-      </div>
+      <CmsImage src="/images/cms/quarter-round--quarter-round_0.png" alt="Qtr Rnd XL" />
     </div>
   );
 }

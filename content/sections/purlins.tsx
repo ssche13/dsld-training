@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Purlins() {
   return (
@@ -18,10 +19,7 @@ export default function Purlins() {
         <li>They are separate from the bracing calculation but are identified during the same process.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/purlins--docx_0.png" alt="Purlins PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Purlins PDF</p>
-      </div>
+      <CmsImage src="/images/cms/purlins--docx_0.png" alt="Purlins PDF" />
 
       <h3 className="font-medium text-base text-dsld-text">How to Count</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -30,10 +28,7 @@ export default function Purlins() {
         <li>Place the total counts based on size into their respective cells of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/purlins--docx_1.png" alt="Purlins XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Purlins XL</p>
-      </div>
+      <CmsImage src="/images/cms/purlins--docx_1.png" alt="Purlins XL" />
 
       <Note>
         Purlins are only used in stick-frame construction (Louisiana, Mississippi, and South Alabama).

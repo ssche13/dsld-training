@@ -1,5 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 
 export default function Concrete() {
@@ -19,10 +20,7 @@ export default function Concrete() {
         <li>Verify the values match what is shown on the floor plan dimensions.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/concrete--concrete_0.png" alt="Concrete - Plan Info" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Concrete - Plan Info</p>
-      </div>
+      <CmsImage src="/images/cms/concrete--concrete_0.png" alt="Concrete - Plan Info" />
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/sq-footage-pdf.jpg" alt="PDF drawing title section showing porch, garage, and living area square footage" className="w-full rounded" />
@@ -34,10 +32,7 @@ export default function Concrete() {
         area type (porch, garage, living) has its own input field in the concrete section.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/concrete--concrete_1.png" alt="Concrete - Given Info from Plans" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Concrete - Given Info from Plans</p>
-      </div>
+      <CmsImage src="/images/cms/concrete--concrete_1.png" alt="Concrete - Given Info from Plans" />
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/concrete-spreadsheet.jpg" alt="Estimating spreadsheet concrete section input location" className="w-full rounded" />

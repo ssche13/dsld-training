@@ -1,4 +1,5 @@
 import ColorSwatch from "@/components/ColorSwatch";
+import CmsImage from "@/components/CmsImage";
 
 export default function DripEdgeSoffitFascia() {
   return (
@@ -18,20 +19,14 @@ export default function DripEdgeSoffitFascia() {
         <li><ColorSwatch color="yellow" /> <strong>Yellow</strong> indicates 6&quot; overhang</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--docx_0.png" alt="Total Drip Edge CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Total Drip Edge CAD</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--docx_0.png" alt="Total Drip Edge CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the total linear footage of all lines.</li>
         <li>Round up, then place the resulting total into the <strong>Total Drip Edge Length</strong> cell of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_0.png" alt="Total Drip Edge XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Total Drip Edge XL</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_0.png" alt="Total Drip Edge XL" />
 
       <h3 className="font-semibold text-base text-dsld-teal">Fascia Calculation</h3>
 
@@ -53,10 +48,7 @@ export default function DripEdgeSoffitFascia() {
         1x6x12 Cement Smooth Trim.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_1.png" alt="1x6x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">1x6x12 XL</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_1.png" alt="1x6x12 XL" />
 
       <h3 className="font-semibold text-base text-dsld-teal">Soffit</h3>
 
@@ -71,10 +63,7 @@ export default function DripEdgeSoffitFascia() {
         <li>Porches will have a 16&quot; soffit in most cases, not all.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--docx_1.png" alt="Soffit PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Soffit PDF</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--docx_1.png" alt="Soffit PDF" />
 
       <p className="text-sm leading-relaxed">
         Copy your drip edge sketch off to the side and adjust with the following colors:
@@ -87,10 +76,7 @@ export default function DripEdgeSoffitFascia() {
         <li><strong>White</strong> - 16x12 Vented Soffit (where porches are located)</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--docx_2.png" alt="Soffit CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Soffit CAD</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--docx_2.png" alt="Soffit CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the total linear footage of each run of the same soffit type.</li>
@@ -104,10 +90,7 @@ export default function DripEdgeSoffitFascia() {
         &rarr; Rounded up = <strong>18</strong> 12x12 non-vented pieces
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_2.png" alt="Soffit XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Soffit XL</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_2.png" alt="Soffit XL" />
 
       <h3 className="font-semibold text-base text-dsld-teal">Birdboxes</h3>
 
@@ -116,14 +99,8 @@ export default function DripEdgeSoffitFascia() {
         <strong>1x12x12 Cement Smooth Trim</strong>.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_3.png" alt="Front Birdbox" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Front Birdbox</p>
-      </div>
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_4.png" alt="Side Birdbox" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Side Birdbox</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_3.png" alt="Front Birdbox" />
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_4.png" alt="Side Birdbox" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Count birdboxes from the elevation page.</li>
@@ -135,10 +112,7 @@ export default function DripEdgeSoffitFascia() {
         Example: 6 birdboxes &rarr; 6 / 4 = 1.5 &rarr; <strong>2 pieces</strong>
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_5.png" alt="Birdbox XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Birdbox XL</p>
-      </div>
+      <CmsImage src="/images/cms/drip-edge-soffit-fascia--drip-edge-soffit-fascia_5.png" alt="Birdbox XL" />
     </div>
   );
 }

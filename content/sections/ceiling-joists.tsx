@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 export default function CeilingJoists() {
   return (
     <div className="space-y-4">
@@ -8,10 +9,7 @@ export default function CeilingJoists() {
         storage loads above. The ceiling framing layout from the PDF will be used.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/ceiling-joists--docx_0.png" alt="Ceiling Joists PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Ceiling Joists PDF</p>
-      </div>
+      <CmsImage src="/images/cms/ceiling-joists--docx_0.png" alt="Ceiling Joists PDF" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Count ceiling joists from the ceiling framing plan on the PDF.</li>
@@ -21,10 +19,7 @@ export default function CeilingJoists() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/ceiling-joists--docx_1.png" alt="Ceiling Joists XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Ceiling Joists XL</p>
-      </div>
+      <CmsImage src="/images/cms/ceiling-joists--docx_1.png" alt="Ceiling Joists XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Floor Joists</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -42,10 +37,7 @@ export default function CeilingJoists() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/ceiling-joists--docx_2.png" alt="Floor Joists XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Floor Joists XL</p>
-      </div>
+      <CmsImage src="/images/cms/ceiling-joists--docx_2.png" alt="Floor Joists XL" />
     </div>
   );
 }

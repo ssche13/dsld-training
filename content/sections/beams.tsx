@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 export default function Beams() {
   return (
     <div className="space-y-4">
@@ -10,10 +11,7 @@ export default function Beams() {
 
       <h3 className="font-medium text-base text-dsld-text">Under-Beams Studs</h3>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/beams--docx_0.png" alt="Under-Beams Studs PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Under-Beams Studs PDF</p>
-      </div>
+      <CmsImage src="/images/cms/beams--docx_0.png" alt="Under-Beams Studs PDF" />
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>
           From the ceiling framing plan on the PDF, count where beam ends fall on{" "}
@@ -30,10 +28,7 @@ export default function Beams() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/beams--docx_1.png" alt="Under stud beams XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Under stud beams XL</p>
-      </div>
+      <CmsImage src="/images/cms/beams--docx_1.png" alt="Under stud beams XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Beams</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -53,10 +48,7 @@ export default function Beams() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/beams--docx_2.png" alt="Beams XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Beams XL</p>
-      </div>
+      <CmsImage src="/images/cms/beams--docx_2.png" alt="Beams XL" />
 
       <p className="text-sm leading-relaxed">
         Beams often need to be added from the parts list as placeholders in the spreadsheet.
@@ -72,10 +64,7 @@ export default function Beams() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/beams--docx_3.png" alt="Parts list XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Parts list XL</p>
-      </div>
+      <CmsImage src="/images/cms/beams--docx_3.png" alt="Parts list XL" />
 
       <p className="text-sm leading-relaxed">
         Refer to this section from other modules if you need help navigating items from the parts

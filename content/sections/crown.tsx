@@ -1,4 +1,5 @@
 import ColorSwatch from "@/components/ColorSwatch";
+import CmsImage from "@/components/CmsImage";
 
 
 export default function Crown() {
@@ -30,20 +31,14 @@ export default function Crown() {
         <li>Begin placing lines in the first rectangle one on top of the other. The goal is for the lines to make runs that do not exceed 16&apos;, or the width of the rectangle. Some lines will be long, some lines will be short. Because of this, you will be able to connect lines together to try to get as close to 16&apos; as possible.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/crown--docx_0.png" alt="Crown CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Crown CAD</p>
-      </div>
+      <CmsImage src="/images/cms/crown--docx_0.png" alt="Crown CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Count the <ColorSwatch color="red" /> red lines in each rectangle. (There will be instances where a singular line exceeds the 16&apos; threshold of one rectangle and continues into the next.)</li>
         <li>Place your count into the <strong>Trim</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/crown--crown_0.png" alt="Crown XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Crown XL</p>
-      </div>
+      <CmsImage src="/images/cms/crown--crown_0.png" alt="Crown XL" />
     </div>
   );
 }

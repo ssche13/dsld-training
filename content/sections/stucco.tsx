@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 
 export default function Stucco() {
   return (
@@ -23,10 +24,7 @@ export default function Stucco() {
         <li>All related stucco calculations go in the spreadsheet:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/stucco--stucco_0.png" alt="Stucco XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Stucco XL</p>
-      </div>
+      <CmsImage src="/images/cms/stucco--stucco_0.png" alt="Stucco XL" />
 
       <p className="text-sm leading-relaxed">
         Flat bands refer to trim call outs on the elevations.

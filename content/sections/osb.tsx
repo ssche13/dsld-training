@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Osb() {
   return (
@@ -21,10 +22,7 @@ export default function Osb() {
         <li>Include all <strong>outcroppings</strong> in your trace, including gables. Be sure to trace these lines in a <strong>separate color</strong> than what you used for the perimeter. (Outcroppings are any exterior wall projections that extend beyond the main building footprint, such as bay windows, fireplace chases, or cantilevered bump-outs. These <strong>must</strong> be included in your OSB measurement.)</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/osb--docx_0.png" alt="OSB CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">OSB CAD</p>
-      </div>
+      <CmsImage src="/images/cms/osb--docx_0.png" alt="OSB CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of each run of matching plate heights and add them together.</li>
@@ -32,10 +30,7 @@ export default function Osb() {
         <li>Round up, then place the resulting count based on plate height into the <strong>Wall Sheathing</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/osb--osb_0.png" alt="Wall Sheathing XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Wall Sheathing XL</p>
-      </div>
+      <CmsImage src="/images/cms/osb--osb_0.png" alt="Wall Sheathing XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Wall Sheathing for Gables</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -48,10 +43,7 @@ export default function Osb() {
         <li>Place the resulting total into the <strong>Extra Areas</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/osb--osb_1.png" alt="Extra Areas XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Extra Areas XL</p>
-      </div>
+      <CmsImage src="/images/cms/osb--osb_1.png" alt="Extra Areas XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Studs</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -60,10 +52,7 @@ export default function Osb() {
         <li>Place the resulting total into these two cells in the spreadsheet:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/osb--osb_2.png" alt="OSB Studs XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">OSB Studs XL</p>
-      </div>
+      <CmsImage src="/images/cms/osb--osb_2.png" alt="OSB Studs XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Zero Lot Line Walls</h3>
       <p className="text-sm leading-relaxed">
@@ -77,10 +66,7 @@ export default function Osb() {
         <li>Place the resulting total into the <strong>Zero Lot Line Exterior Firerock</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/osb--osb_3.png" alt="Zero Lot XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Zero Lot XL</p>
-      </div>
+      <CmsImage src="/images/cms/osb--osb_3.png" alt="Zero Lot XL" />
     </div>
   );
 }

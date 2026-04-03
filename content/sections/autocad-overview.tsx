@@ -1,5 +1,6 @@
 
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function AutocadOverview() {
   return (
@@ -19,10 +20,7 @@ export default function AutocadOverview() {
         <li>Keep your PDF plan drawing as a reference when working in AutoCAD at all times.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/autocad-overview--autocad-overview_0.png" alt="AutoCAD Project Organization Layout" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">AutoCAD Project Organization Layout</p>
-      </div>
+      <CmsImage src="/images/cms/autocad-overview--autocad-overview_0.png" alt="AutoCAD Project Organization Layout" />
 
       <h3 className="font-medium text-base text-dsld-text">Common Commands</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">

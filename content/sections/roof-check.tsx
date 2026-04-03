@@ -1,5 +1,6 @@
 import Note from "@/components/callouts/Note";
 import ColorSwatch from "@/components/ColorSwatch";
+import CmsImage from "@/components/CmsImage";
 
 export default function RoofCheck() {
   return (
@@ -34,10 +35,7 @@ export default function RoofCheck() {
         potential changes.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/roof-check--docx_0.png" alt="Roof Check" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Roof Check</p>
-      </div>
+      <CmsImage src="/images/cms/roof-check--docx_0.png" alt="Roof Check" />
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/roof-plan.jpg" alt="Roof plan showing ridges, hips, and valleys" className="w-full rounded" />

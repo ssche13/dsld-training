@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Walls() {
   return (
@@ -36,10 +37,7 @@ export default function Walls() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/walls--walls_0.png" alt="Regular Wall Takeoffs" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Regular Wall Takeoffs</p>
-      </div>
+      <CmsImage src="/images/cms/walls--walls_0.png" alt="Regular Wall Takeoffs" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Pull your knee walls out so that they are separate from your regular walls.</li>
@@ -72,10 +70,7 @@ export default function Walls() {
         </li>
       </ol>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/walls--docx_0.png" alt="Walls CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Walls CAD</p>
-      </div>
+      <CmsImage src="/images/cms/walls--docx_0.png" alt="Walls CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Run through all door frames except for garage doors and large cased openings.</li>
@@ -93,19 +88,13 @@ export default function Walls() {
         for knee walls in kitchen bars will go here:
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/walls--walls_1.png" alt="Knee Walls Kitchen" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Knee Walls Kitchen</p>
-      </div>
+      <CmsImage src="/images/cms/walls--walls_1.png" alt="Knee Walls Kitchen" />
 
       <p className="text-sm leading-relaxed">
         The total linear footage for knee walls to make up differences in regular walls will go here:
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/walls--walls_2.png" alt="Knee Walls for Diff" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Knee Walls for Diff</p>
-      </div>
+      <CmsImage src="/images/cms/walls--walls_2.png" alt="Knee Walls for Diff" />
     </div>
   );
 }

@@ -1,15 +1,13 @@
 import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function MainRoofShingles() {
   return (
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Main Roof Shingles</h2>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/main-roof-shingles--docx_0.png" alt="Pitch Examples for Plans" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Pitch Examples for Plans</p>
-      </div>
+      <CmsImage src="/images/cms/main-roof-shingles--docx_0.png" alt="Pitch Examples for Plans" />
 
       <p className="text-sm leading-relaxed">
         Refer to the picture of the roof plan showing the pitches. You will use this page in your
@@ -28,10 +26,7 @@ export default function MainRoofShingles() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/main-roof-shingles--main-roof-shingles_0.png" alt="Main Roof Shingles CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Main Roof Shingles CAD</p>
-      </div>
+      <CmsImage src="/images/cms/main-roof-shingles--main-roof-shingles_0.png" alt="Main Roof Shingles CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>POLYAREA</strong> to get the total square footage of each color, or pitch.</li>

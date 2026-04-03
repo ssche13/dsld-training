@@ -2,6 +2,7 @@ import Note from "@/components/callouts/Note";
 import Tip from "@/components/callouts/Tip";
 import ColorSwatch from "@/components/ColorSwatch";
 import SpreadsheetRef from "@/components/SpreadsheetRef";
+import CmsImage from "@/components/CmsImage";
 
 export default function ExteriorInteriorFootings() {
   return (
@@ -34,10 +35,7 @@ export default function ExteriorInteriorFootings() {
         separate footings to ensure every corner is accounted for without double-estimating.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/exterior-interior-footings--docx_0.png" alt="Exterior and Interior Footings CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Exterior and Interior Footings CAD</p>
-      </div>
+      <CmsImage src="/images/cms/exterior-interior-footings--docx_0.png" alt="Exterior and Interior Footings CAD" />
 
       <Note>
         Do not center the line on the footing — this causes inaccurate corner measurements. Always
@@ -53,10 +51,7 @@ export default function ExteriorInteriorFootings() {
         <li>Round up, place the resulting total into the <strong>Interior Footings</strong> cell, located below the Exterior Footings cell.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/exterior-interior-footings--exterior-interior-footings_0.png" alt="Exterior and Interior Footings XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Exterior and Interior Footings XL</p>
-      </div>
+      <CmsImage src="/images/cms/exterior-interior-footings--exterior-interior-footings_0.png" alt="Exterior and Interior Footings XL" />
 
       <SpreadsheetRef section="Concrete" cell="Exterior Footings" />
       <SpreadsheetRef section="Concrete" cell="Interior Footings" />

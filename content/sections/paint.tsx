@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 export default function Paint() {
   return (
     <div className="space-y-4">
@@ -27,10 +28,7 @@ export default function Paint() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/paint--docx_0.png" alt="Garage door LS XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Garage door LS XL</p>
-      </div>
+      <CmsImage src="/images/cms/paint--docx_0.png" alt="Garage door LS XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Exterior Brick</h3>
 
@@ -42,10 +40,7 @@ export default function Paint() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/paint--docx_1.png" alt="Ext Brick Paint XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Ext Brick Paint XL</p>
-      </div>
+      <CmsImage src="/images/cms/paint--docx_1.png" alt="Ext Brick Paint XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Trim Nails and Trim Labor</h3>
 
@@ -65,10 +60,7 @@ export default function Paint() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/paint--docx_2.png" alt="Trim Nails XL and Trim Labor XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Trim Nails XL and Trim Labor XL</p>
-      </div>
+      <CmsImage src="/images/cms/paint--docx_2.png" alt="Trim Nails XL and Trim Labor XL" />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Windows() {
   return (
@@ -35,10 +36,7 @@ export default function Windows() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/windows--windows_0.png" alt="Windows Perimeter XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Windows Perimeter XL</p>
-      </div>
+      <CmsImage src="/images/cms/windows--windows_0.png" alt="Windows Perimeter XL" />
 
       <p className="text-sm leading-relaxed">
         Window trim is also needed.
@@ -64,10 +62,7 @@ export default function Windows() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/doors--docx_0.png" alt="Header Calculator XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Header Calculator XL</p>
-      </div>
+      <CmsImage src="/images/cms/doors--docx_0.png" alt="Header Calculator XL" />
 
       <p className="text-sm leading-relaxed">
         Rain windows also need to be accounted for. They are typically 36x36 and used in bathrooms.
@@ -84,10 +79,7 @@ export default function Windows() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/windows--docx_2.png" alt="Misc Rain Windows XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Misc Rain Windows XL</p>
-      </div>
+      <CmsImage src="/images/cms/windows--docx_2.png" alt="Misc Rain Windows XL" />
 
       <p className="text-sm leading-relaxed">
         Blinds will also need to be calculated in this section.
@@ -118,10 +110,7 @@ export default function Windows() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/windows--docx_4.png" alt="Casing for Windows XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Casing for Windows XL</p>
-      </div>
+      <CmsImage src="/images/cms/windows--docx_4.png" alt="Casing for Windows XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Vents</h3>
       <p className="text-sm leading-relaxed">
@@ -137,10 +126,7 @@ export default function Windows() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/windows--docx_6.png" alt="Fypon Vents XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Fypon Vents XL</p>
-      </div>
+      <CmsImage src="/images/cms/windows--docx_6.png" alt="Fypon Vents XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Shutters</h3>
       <p className="text-sm leading-relaxed">
@@ -157,10 +143,7 @@ export default function Windows() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/windows--docx_8.png" alt="Real Material Shutters XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Real Material Shutters XL</p>
-      </div>
+      <CmsImage src="/images/cms/windows--docx_8.png" alt="Real Material Shutters XL" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Divide the previous count by 8.</li>
@@ -169,10 +152,7 @@ export default function Windows() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/windows--docx_9.png" alt="Shutters pair XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Shutters pair XL</p>
-      </div>
+      <CmsImage src="/images/cms/windows--docx_9.png" alt="Shutters pair XL" />
 
       <Note>
         If you add or change a window from the parts list, be sure to carry that update across all

@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Siding() {
   return (
@@ -16,10 +17,7 @@ export default function Siding() {
         <li>Place the resulting totals here:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_0.png" alt="Siding XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Siding XL</p>
-      </div>
+      <CmsImage src="/images/cms/siding--siding_0.png" alt="Siding XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Board and Batten</h3>
 
@@ -33,10 +31,7 @@ export default function Siding() {
         <li>Round up to the next whole number, then place the resulting count here:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_1.png" alt="Flashing 5/8 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Flashing 5/8 XL</p>
-      </div>
+      <CmsImage src="/images/cms/siding--siding_1.png" alt="Flashing 5/8 XL" />
 
       <p className="text-sm leading-relaxed">
         Board and Batten sheets are count items.
@@ -49,14 +44,8 @@ export default function Siding() {
         <li>For <strong>9&apos; or 10&apos;</strong> plate heights, place the count in the <strong>4x10 Smooth Hardie Panel</strong> cell.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_2.png" alt="4x10 hardie XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">4x10 hardie XL</p>
-      </div>
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_3.png" alt="4x8 1/4 soffit XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">4x8 1/4 soffit XL</p>
-      </div>
+      <CmsImage src="/images/cms/siding--siding_2.png" alt="4x10 hardie XL" />
+      <CmsImage src="/images/cms/siding--siding_3.png" alt="4x8 1/4 soffit XL" />
 
       <p className="text-sm leading-relaxed">
         Board and Batten strips also need to be accounted for.
@@ -72,10 +61,7 @@ export default function Siding() {
         <li>Round up to the next whole number, then place your count here:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_4.png" alt="1x2x12 Trim XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">1x2x12 Trim XL</p>
-      </div>
+      <CmsImage src="/images/cms/siding--siding_4.png" alt="1x2x12 Trim XL" />
 
       <h3 className="font-medium text-base text-dsld-text">5/4x4x12 Cement Smooth Trim</h3>
       <p className="text-sm leading-relaxed">
@@ -93,14 +79,8 @@ export default function Siding() {
         <li>Place the total count in the following cells:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_5.png" alt="5/4x4x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">5/4x4x12 XL</p>
-      </div>
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_6.png" alt="5/6x4x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">5/6x4x12 XL</p>
-      </div>
+      <CmsImage src="/images/cms/siding--siding_5.png" alt="5/4x4x12 XL" />
+      <CmsImage src="/images/cms/siding--siding_6.png" alt="5/6x4x12 XL" />
 
       <p className="text-sm leading-relaxed">
         You will only insert a count in the 5/6x4x12 cell if you&apos;re dealing with windows that have less than 6&quot; of separation between them. The separation will be handled by the <strong>5/6x4x12 Cement Smooth Trim</strong>.
@@ -119,10 +99,7 @@ export default function Siding() {
         <li>Round to the next whole number and enter into the <strong>Real Material Soffit and Fascia</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/siding--siding_7.png" alt="6 1/4x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">6 1/4x12 XL</p>
-      </div>
+      <CmsImage src="/images/cms/siding--siding_7.png" alt="6 1/4x12 XL" />
 
       <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
         <img src="/images/manual-notes/imagee.png" alt="Soffit, Fascia and Cement Trim spreadsheet section" className="w-full rounded" />

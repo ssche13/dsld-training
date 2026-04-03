@@ -1,5 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function RidgeVents() {
   return (
@@ -13,14 +14,8 @@ export default function RidgeVents() {
         <strong>elevation page</strong> of the PDF.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/ridge-vents--ridge-vents_0.png" alt="Off Ridge Vents" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Off Ridge Vents</p>
-      </div>
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/ridge-vents--docx_0.png" alt="Ridge Vents" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Ridge Vents</p>
-      </div>
+      <CmsImage src="/images/cms/ridge-vents--ridge-vents_0.png" alt="Off Ridge Vents" />
+      <CmsImage src="/images/cms/ridge-vents--docx_0.png" alt="Ridge Vents" />
 
       <h3 className="font-medium text-base text-dsld-text">Off Ridge Vents</h3>
 
@@ -59,10 +54,7 @@ export default function RidgeVents() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/ridge-vents--ridge-vents_1.png" alt="Ridge and Off Ridge Vents XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Ridge and Off Ridge Vents XL</p>
-      </div>
+      <CmsImage src="/images/cms/ridge-vents--ridge-vents_1.png" alt="Ridge and Off Ridge Vents XL" />
 
       <Note>
         For Ridge Vents, pay close attention to the elevations to ensure that the same ridge vent

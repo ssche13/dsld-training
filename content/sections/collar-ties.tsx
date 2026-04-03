@@ -1,5 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function CollarTies() {
   return (
@@ -14,19 +15,13 @@ export default function CollarTies() {
         Wherever there are ridges, count every other rafter.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/collar-ties--docx_0.png" alt="Collar Ties — count every other rafter" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Collar Ties — count every other rafter</p>
-      </div>
+      <CmsImage src="/images/cms/collar-ties--docx_0.png" alt="Collar Ties — count every other rafter" />
 
       <p className="text-sm leading-relaxed">
         In AutoCAD, use <strong>LINE</strong> and <strong>TLEN</strong> to measure the linear length from the top of the roof to the plate height where the rafter lands.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/collar-ties--docx_1.png" alt="Collar Ties — AutoCAD measurement" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Collar Ties — AutoCAD measurement</p>
-      </div>
+      <CmsImage src="/images/cms/collar-ties--docx_1.png" alt="Collar Ties — AutoCAD measurement" />
 
       <h3 className="font-medium text-base text-dsld-text">8/12 Pitch Ridges</h3>
       <p className="text-sm leading-relaxed">
@@ -53,10 +48,7 @@ export default function CollarTies() {
         Add together all totals for each ridge/rafter calculation and place into the Bracing section of the spreadsheet:
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/collar-ties--docx_2.png" alt="Collar Ties XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Collar Ties XL</p>
-      </div>
+      <CmsImage src="/images/cms/collar-ties--docx_2.png" alt="Collar Ties XL" />
 
       <SpreadsheetRef section="Bracing" cell="Collar Ties" />
     </div>

@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Doors() {
   return (
@@ -26,10 +27,7 @@ export default function Doors() {
         <li>Add the same resulting total counts into the <strong>Header Calculator</strong> based on width.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/doors--docx_0.png" alt="Header Calculator XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Header Calculator XL</p>
-      </div>
+      <CmsImage src="/images/cms/doors--docx_0.png" alt="Header Calculator XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Exterior Doors</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -38,10 +36,7 @@ export default function Doors() {
         <li>Ensure the correct part is in the RH section and the correct counterpart is in the LH section.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/doors--doors_0.png" alt="Ext Doors XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Ext Doors XL</p>
-      </div>
+      <CmsImage src="/images/cms/doors--doors_0.png" alt="Ext Doors XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Garage Doors</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -57,10 +52,7 @@ export default function Doors() {
         <li>Each home is allotted 5 for the Black Aluminum House Number.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/doors--docx_4.png" alt="Trim Hardware XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Trim Hardware XL</p>
-      </div>
+      <CmsImage src="/images/cms/doors--docx_4.png" alt="Trim Hardware XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Shower Doors</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -70,10 +62,7 @@ export default function Doors() {
         <li>Place the counts based on size in the <strong>Mirrors and Shower Doors</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/doors--docx_8.png" alt="Mirrors and Shower doors XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Mirrors and Shower doors XL</p>
-      </div>
+      <CmsImage src="/images/cms/doors--docx_8.png" alt="Mirrors and Shower doors XL" />
 
       <Note>
         If there is a door under any of these sections that you do not see already listed in the

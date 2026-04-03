@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 
 export default function CasedOpenings() {
@@ -17,10 +18,7 @@ export default function CasedOpenings() {
         <li>Count how many of each cased opening type, then place each count into its corresponding cell in the <strong>Interior Doors and Trim</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/cased-openings--cased-openings_0.png" alt="Interior doors XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Interior doors XL</p>
-      </div>
+      <CmsImage src="/images/cms/cased-openings--cased-openings_0.png" alt="Interior doors XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Cased Openings Over 6&apos;</h3>
       <p className="text-sm leading-relaxed">
@@ -33,10 +31,7 @@ export default function CasedOpenings() {
         <li>Place the resulting total into the <strong>1x8x16 Primed PJ Pine</strong> cell in the <strong>Trim</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/cased-openings--cased-openings_1.png" alt="Cased openings 6 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Cased openings 6 XL</p>
-      </div>
+      <CmsImage src="/images/cms/cased-openings--cased-openings_1.png" alt="Cased openings 6 XL" />
 
       <Note>
         Do not confuse cased openings with doorways. If a door is scheduled for an opening, it is not

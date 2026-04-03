@@ -1,4 +1,5 @@
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function FlashingApronHem() {
   return (
@@ -15,11 +16,8 @@ export default function FlashingApronHem() {
         and clipped gables.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/flashing-apron-hem--docx_0.png" alt="Gutter Apron from Plans" className="w-full rounded" />
-        <img src="/images/cms/flashing-apron-hem--docx_1.png" alt="Gutter Apron from Plans" className="mt-2 w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Gutter Apron from Plans</p>
-      </div>
+      <CmsImage src="/images/cms/flashing-apron-hem--docx_0.png" alt="Gutter Apron from Plans" />
+      <CmsImage src="/images/cms/flashing-apron-hem--docx_1.png" alt="Gutter Apron from Plans" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Identify any dormers or clipped gables from the elevations page.</li>
@@ -31,10 +29,7 @@ export default function FlashingApronHem() {
         <li>Round up, then place the result into the appropriate cell in the <strong>Flashing For Real Material Touching Roof</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/flashing-apron-hem--flashing-apron-hem_0.png" alt="Gutter Flashing XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Gutter Flashing XL</p>
-      </div>
+      <CmsImage src="/images/cms/flashing-apron-hem--flashing-apron-hem_0.png" alt="Gutter Flashing XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Hem Angle Flashing</h3>
 
@@ -43,11 +38,8 @@ export default function FlashingApronHem() {
         You will find this type of flashing on the same components as the gutter apron flashing.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/flashing-apron-hem--docx_2.png" alt="Hem Angle from Plans" className="w-full rounded" />
-        <img src="/images/cms/flashing-apron-hem--docx_3.png" alt="Hem Angle from Plans" className="mt-2 w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Hem Angle from Plans</p>
-      </div>
+      <CmsImage src="/images/cms/flashing-apron-hem--docx_2.png" alt="Hem Angle from Plans" />
+      <CmsImage src="/images/cms/flashing-apron-hem--docx_3.png" alt="Hem Angle from Plans" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Identify any dormers or clipped gables from the elevations page.</li>
@@ -59,10 +51,7 @@ export default function FlashingApronHem() {
         <li>Round up, then place the result into the appropriate cell in the <strong>Flashing For Real Material Touching Roof</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/flashing-apron-hem--flashing-apron-hem_1.png" alt="Hem Flashing XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Hem Flashing XL</p>
-      </div>
+      <CmsImage src="/images/cms/flashing-apron-hem--flashing-apron-hem_1.png" alt="Hem Flashing XL" />
 
       <Note>
         Gutter Apron and Hem Angle are both sold in 10-foot sections. Always

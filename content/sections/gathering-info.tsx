@@ -1,6 +1,7 @@
 import Note from "@/components/callouts/Note";
 import Tip from "@/components/callouts/Tip";
 import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
+import CmsImage from "@/components/CmsImage";
 
 export default function GatheringInfo() {
   return (
@@ -14,19 +15,10 @@ export default function GatheringInfo() {
 
       <h3 className="font-medium text-base text-dsld-text">AutoCAD Setup</h3>
       <ol className="list-decimal pl-6 space-y-1 text-sm">
-        <li>Select &apos;Open a project&apos; in AutoCAD. AutoCAD&apos;s Project Browser window should pop up, and you will click the following icon: <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-          <img src="/images/cms/gathering-info--docx_0.png" alt="Project Browser Folder" className="w-full rounded" />
-          <p className="mt-1 text-center text-xs text-gray-500">Project Browser Folder</p>
-        </div></li>
+        <li>Select &apos;Open a project&apos; in AutoCAD. AutoCAD&apos;s Project Browser window should pop up, and you will click the following icon: <CmsImage src="/images/cms/gathering-info--docx_0.png" alt="Project Browser Folder" /></li>
         <li>Navigate as follows: Desktop &gt; AutoCAD Architecture-Projects &gt; 01 AutoCAD Projects.</li>
-        <li>Refer to the PDF plan drawing for the Plan Family name in the title section, then find that corresponding name in the 01 AutoCAD Projects folder. <strong><u>NOTE:</u></strong> Plan family names will not always match the name of the plan name itself. <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-          <img src="/images/cms/gathering-info--docx_1.png" alt="Plan Family" className="w-full rounded" />
-          <p className="mt-1 text-center text-xs text-gray-500">Plan Family</p>
-        </div></li>
-        <li>Navigate as follows: Plan Family Name &gt; Plan Family Name (yes, again) &gt; Plan Family Project link. Select the project link and open the file. <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-          <img src="/images/cms/gathering-info--docx_2.png" alt="Plan Family Project Link" className="w-full rounded" />
-          <p className="mt-1 text-center text-xs text-gray-500">Plan Family Project Link</p>
-        </div></li>
+        <li>Refer to the PDF plan drawing for the Plan Family name in the title section, then find that corresponding name in the 01 AutoCAD Projects folder. <strong><u>NOTE:</u></strong> Plan family names will not always match the name of the plan name itself. <CmsImage src="/images/cms/gathering-info--docx_1.png" alt="Plan Family" /></li>
+        <li>Navigate as follows: Plan Family Name &gt; Plan Family Name (yes, again) &gt; Plan Family Project link. Select the project link and open the file. <CmsImage src="/images/cms/gathering-info--docx_2.png" alt="Plan Family Project Link" /></li>
         <li>Close the Project Browser and Project Files windows to allow AutoCAD to load the constructs into the project you&apos;re working on. <strong><u>NOTE:</u></strong> You may get a pop-up that asks you about re-pathing your project. <u>Always click re-path later.</u></li>
         <li>Once the project is opened, there may or may not be a current takeoff construct within the project. The name of the takeoff also may be different than the plan name you are working on, but it is all the same. If a takeoff construct is already there, simply click into that construct and begin pulling in the constructs mentioned below. If there isn&apos;t a takeoff construct already created, move onto step 7.</li>
         <li>Add a new construct to your project. <ImagePlaceholder label="New Construct" /></li>

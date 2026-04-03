@@ -1,6 +1,7 @@
 import ColorSwatch from "@/components/ColorSwatch";
 
 import Tip from "@/components/callouts/Tip";
+import CmsImage from "@/components/CmsImage";
 
 export default function Granite() {
   return (
@@ -20,10 +21,7 @@ export default function Granite() {
         1 1/2&quot; from the cabinet.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/granite--docx_0.png" alt="Granite CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Granite CAD</p>
-      </div>
+      <CmsImage src="/images/cms/granite--docx_0.png" alt="Granite CAD" />
 
       <h3 className="font-medium text-base text-dsld-text">What to Include</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -44,10 +42,7 @@ export default function Granite() {
         <li>Do the same for the <ColorSwatch color="yellow" /> yellow boxes and enter the resulting total into the <strong>SFT of Vanity Top</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/granite--granite_0.png" alt="Granite XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Granite XL</p>
-      </div>
+      <CmsImage src="/images/cms/granite--granite_0.png" alt="Granite XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Backsplash Measurement</h3>
       <ul className="list-disc pl-6 space-y-1 text-sm">
@@ -57,10 +52,7 @@ export default function Granite() {
         <li>Convert to <strong>linear inches.</strong></li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/granite--docx_1.png" alt="Backsplash CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Backsplash CAD</p>
-      </div>
+      <CmsImage src="/images/cms/granite--docx_1.png" alt="Backsplash CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Place total linear inches of the <ColorSwatch color="red" /> red lines in the <strong>Kitchen 4&quot; splash</strong> section of the spreadsheet.</li>

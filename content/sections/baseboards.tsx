@@ -1,4 +1,5 @@
 import ColorSwatch from "@/components/ColorSwatch";
+import CmsImage from "@/components/CmsImage";
 
 
 export default function Baseboards() {
@@ -17,11 +18,8 @@ export default function Baseboards() {
         <li>Exclude doorways, cased openings, tubs, and showers.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/baseboards--docx_0.png" alt="Baseboards CAD tracing" className="w-full rounded" />
-        <img src="/images/cms/baseboards--docx_1.png" alt="Baseboards CAD sketch" className="mt-2 w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Baseboards CAD</p>
-      </div>
+      <CmsImage src="/images/cms/baseboards--docx_0.png" alt="Baseboards CAD tracing" />
+      <CmsImage src="/images/cms/baseboards--docx_1.png" alt="Baseboards CAD sketch" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the total linear footage of both your <ColorSwatch color="red" /> red and <ColorSwatch color="yellow" /> yellow polylines.</li>
@@ -30,10 +28,7 @@ export default function Baseboards() {
         <li>Round up, then place your count in the <strong>Trim</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/baseboards--baseboards_0.png" alt="Baseboards XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Baseboards XL</p>
-      </div>
+      <CmsImage src="/images/cms/baseboards--baseboards_0.png" alt="Baseboards XL" />
     </div>
   );
 }

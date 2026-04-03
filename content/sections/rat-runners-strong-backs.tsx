@@ -1,5 +1,6 @@
 import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function RatRunnersStrongBacks() {
   return (
@@ -36,29 +37,20 @@ export default function RatRunnersStrongBacks() {
         <li>Use <strong>LINE</strong> to trace <strong>yellow lines</strong> for everything circled in red in the image below:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/rat-runners-strong-backs--docx_0.png" alt="Strong Backs from Plans" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Strong Backs from Plans</p>
-      </div>
+      <CmsImage src="/images/cms/rat-runners-strong-backs--docx_0.png" alt="Strong Backs from Plans" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Pull those lines off to the side.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/rat-runners-strong-backs--docx_1.png" alt="Strong Backs CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Strong Backs CAD</p>
-      </div>
+      <CmsImage src="/images/cms/rat-runners-strong-backs--docx_1.png" alt="Strong Backs CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of all lines traced.</li>
         <li>Round up, then place your number into the <strong>Strong Back Materials</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/rat-runners-strong-backs--rat-runners-strong-backs_0.png" alt="Strong Backs XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Strong Backs XL</p>
-      </div>
+      <CmsImage src="/images/cms/rat-runners-strong-backs--rat-runners-strong-backs_0.png" alt="Strong Backs XL" />
 
       <p className="text-sm leading-relaxed">
         <strong><u>NOTE:</u></strong> Strong backs are not needed for areas that are 3&apos; or smaller.

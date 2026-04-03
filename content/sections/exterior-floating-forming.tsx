@@ -3,6 +3,7 @@ import Tip from "@/components/callouts/Tip";
 import ImagePlaceholder from "@/components/callouts/ImagePlaceholder";
 import ColorSwatch from "@/components/ColorSwatch";
 import SpreadsheetRef from "@/components/SpreadsheetRef";
+import CmsImage from "@/components/CmsImage";
 
 export default function ExteriorFloatingForming() {
   return (
@@ -57,10 +58,7 @@ export default function ExteriorFloatingForming() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/exterior-floating-forming--exterior-floating-forming_0.png" alt="Exterior and Floating Forming CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Exterior and Floating Forming CAD</p>
-      </div>
+      <CmsImage src="/images/cms/exterior-floating-forming--exterior-floating-forming_0.png" alt="Exterior and Floating Forming CAD" />
 
       <Tip>
         Remember: red is for the full outside perimeter (including porches and the garage opening),

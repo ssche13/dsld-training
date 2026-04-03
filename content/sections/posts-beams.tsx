@@ -1,3 +1,4 @@
+import CmsImage from "@/components/CmsImage";
 export default function PostsBeams() {
   return (
     <div className="space-y-4">
@@ -15,20 +16,14 @@ export default function PostsBeams() {
         <li>Use <strong>LINE</strong> to measure the length of each horizontal beam on the front and back porches. Be sure to measure these beams where they are shown on each elevation. These are usually called out on the elevations.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_0.png" alt="Dropped Beams PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Dropped Beams PDF</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_0.png" alt="Dropped Beams PDF" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Use <strong>TLEN</strong> to get the total linear footage of each line traced.</li>
         <li>Round to the next whole number, then enter into the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_1.png" alt="Lf of Dropped Beams XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Lf of Dropped Beams XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_1.png" alt="Lf of Dropped Beams XL" />
 
       <p className="text-sm leading-relaxed">
         The outside of the beam gets covered with <strong>12&quot;x12&apos; Non-Vented Cement Soffit Smooth</strong> and
@@ -42,10 +37,7 @@ export default function PostsBeams() {
         <li>Round to the next whole number and add onto the totals in the following cells:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_10.png" alt="12x12 & 16x12 soffit XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">12x12 & 16x12 soffit XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_10.png" alt="12x12 & 16x12 soffit XL" />
 
       <p className="text-sm leading-relaxed">
         Hardie uses the <strong>5/4x4x12 Fiber Cement Smooth Trim</strong> on the front and back of beams.
@@ -56,10 +48,7 @@ export default function PostsBeams() {
         <li>Add to the total that may already be present in the following cell:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_11.png" alt="5/4x4x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">5/4x4x12 XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_11.png" alt="5/4x4x12 XL" />
 
       <p className="text-sm leading-relaxed">
         For the bottom of Hardie beams, we use <strong>6 1/4x12 Smooth Fiber Cement Siding</strong>.
@@ -71,10 +60,7 @@ export default function PostsBeams() {
         <li>Add to the total that may already be present in the following cell.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_2.png" alt="6 1/4x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">6 1/4x12 XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_2.png" alt="6 1/4x12 XL" />
 
       {/* ---- Vinyl/Hardie Posts ---- */}
       <h3 className="font-medium text-base text-dsld-text">Vinyl/Hardie Posts</h3>
@@ -90,10 +76,7 @@ export default function PostsBeams() {
         <li>Round to the next whole number, then enter into the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_3.png" alt="Lf of Posts XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Lf of Posts XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_3.png" alt="Lf of Posts XL" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Just like the calculations for cypress posts, note the size of each vinyl post called out on the plans.</li>
@@ -101,10 +84,7 @@ export default function PostsBeams() {
         <li>Enter each count into its corresponding cell in the <strong>Framing Accessories/Cornice</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_4.png" alt="Framing Acc XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Framing Acc XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_4.png" alt="Framing Acc XL" />
 
       <p className="text-sm leading-relaxed">
         For the Hardie wrap around the post, cement smooth trim is needed.
@@ -116,10 +96,7 @@ export default function PostsBeams() {
         <li>Enter the total count of pieces needed in its corresponding cell of the <strong>Real Material Soffit and Fascia</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_5.png" alt="1x6x12 and 1x8x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">1x6x12 and 1x8x12 XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_5.png" alt="1x6x12 and 1x8x12 XL" />
 
       <p className="text-sm leading-relaxed">
         Hardie post caps and bases need <strong>5/4 8x12 Fiber Cement Smooth Trim</strong>.
@@ -131,10 +108,7 @@ export default function PostsBeams() {
         <li>Enter the total count of pieces needed in its corresponding cell of the <strong>Real Material Soffit and Fascia</strong> section of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_9.png" alt="5/4 8x12 XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">5/4 8x12 XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_9.png" alt="5/4 8x12 XL" />
 
       <p className="text-sm leading-relaxed">
         <strong>1x4 nailers</strong> are needed for vinyl/hardie posts.
@@ -145,10 +119,7 @@ export default function PostsBeams() {
         <li>Round up, then add to the total that is already present.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_6.png" alt="1x4 porches" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">1x4 porches</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_6.png" alt="1x4 porches" />
 
       {/* ---- Tapered Posts ---- */}
       <h3 className="font-medium text-base text-dsld-text">Tapered Posts</h3>
@@ -166,10 +137,7 @@ export default function PostsBeams() {
         <li>Round up, then add to the total that may already be present.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_7.png" alt="4x8 Non-vented smooth cement XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">4x8 Non-vented smooth cement XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_7.png" alt="4x8 Non-vented smooth cement XL" />
 
       <p className="text-sm leading-relaxed">
         If the post measured over 8&apos;, you would need to go into the parts lists and find the
@@ -186,34 +154,22 @@ export default function PostsBeams() {
         and carports. They are counted from the Elevations of the PDF and verified from the floor plan.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--docx_1.png" alt="Cypress Post PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Cypress Post PDF</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--docx_1.png" alt="Cypress Post PDF" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Count every cypress post called out on the elevations. Include the front and rear porches, side entries, and carports.</li>
         <li>Place the total count in the following sections:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--posts-beams_8.png" alt="Cypress Posts Trim XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Cypress Posts Trim XL</p>
-      </div>
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--docx_2.png" alt="Cypress Posts Bid Rates XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Cypress Posts Bid Rates XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--posts-beams_8.png" alt="Cypress Posts Trim XL" />
+      <CmsImage src="/images/cms/posts-beams--docx_2.png" alt="Cypress Posts Bid Rates XL" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Note the size of each post called out on the plans (e.g. 6x6, 8x8).</li>
         <li>Count how many posts of each size you will need and enter each count in its corresponding cell:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--docx_3.png" alt="Cypress Decorative XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Cypress Decorative XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--docx_3.png" alt="Cypress Decorative XL" />
 
       <h3 className="font-medium text-base text-dsld-text">Cypress Post Trim</h3>
       <p className="text-sm leading-relaxed">
@@ -243,10 +199,7 @@ export default function PostsBeams() {
         <li>Enter into the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/posts-beams--docx_6.png" alt="Cypress Beams on Porches XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Cypress Beams on Porches XL</p>
-      </div>
+      <CmsImage src="/images/cms/posts-beams--docx_6.png" alt="Cypress Beams on Porches XL" />
     </div>
   );
 }

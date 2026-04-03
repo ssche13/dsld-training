@@ -1,6 +1,7 @@
 import ColorSwatch from "@/components/ColorSwatch";
 
 import Note from "@/components/callouts/Note";
+import CmsImage from "@/components/CmsImage";
 
 export default function Shelving() {
   return (
@@ -13,10 +14,7 @@ export default function Shelving() {
         <strong>Finishes</strong> page of the PDF plan drawing for this section.
       </p>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/shelving--docx_0.png" alt="Closet Elevations PDF" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Closet Elevations PDF</p>
-      </div>
+      <CmsImage src="/images/cms/shelving--docx_0.png" alt="Closet Elevations PDF" />
 
       <h3 className="font-medium text-base text-dsld-text">Estimation</h3>
       <p className="text-sm leading-relaxed">
@@ -47,10 +45,7 @@ export default function Shelving() {
         <li>Once you have finished drawing the shelving and copying the appropriate quantities, keep one set unedited and copy over another set to the side.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/shelving--docx_1.png" alt="Shelving CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Shelving CAD</p>
-      </div>
+      <CmsImage src="/images/cms/shelving--docx_1.png" alt="Shelving CAD" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Draw a <strong>white 16x40 rectangle.</strong></li>
@@ -58,37 +53,25 @@ export default function Shelving() {
         <li>Group each color together to minimize confusion.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/shelving--docx_2.png" alt="Shelving count cad" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Shelving count cad</p>
-      </div>
+      <CmsImage src="/images/cms/shelving--docx_2.png" alt="Shelving count cad" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Count the <ColorSwatch color="green" /> green lines and place them here:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/shelving--shelving_0.png" alt="Shelf Support Count XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Shelf Support Count XL</p>
-      </div>
+      <CmsImage src="/images/cms/shelving--shelving_0.png" alt="Shelf Support Count XL" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Count the <ColorSwatch color="red" /> red lines and place them here:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/shelving--shelving_1.png" alt="Shelf count XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Shelf count XL</p>
-      </div>
+      <CmsImage src="/images/cms/shelving--shelving_1.png" alt="Shelf count XL" />
 
       <ul className="list-disc pl-6 space-y-1 text-sm">
         <li>Count the <ColorSwatch color="cyan" /> cyan lines and place them here:</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/shelving--shelving_2.png" alt="Rod Count XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Rod Count XL</p>
-      </div>
+      <CmsImage src="/images/cms/shelving--shelving_2.png" alt="Rod Count XL" />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Note from "@/components/callouts/Note";
 import Tip from "@/components/callouts/Tip";
 import ColorSwatch from "@/components/ColorSwatch";
 import SpreadsheetRef from "@/components/SpreadsheetRef";
+import CmsImage from "@/components/CmsImage";
 
 export default function SillSealExterior() {
   return (
@@ -27,10 +28,7 @@ export default function SillSealExterior() {
         </li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/sill-seal-exterior--docx_0.png" alt="Sill Seal CAD" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Sill Seal CAD</p>
-      </div>
+      <CmsImage src="/images/cms/sill-seal-exterior--docx_0.png" alt="Sill Seal CAD" />
 
       <Tip>
         Focus only on walls where sill seal material will actually be installed. Porches do not
@@ -42,10 +40,7 @@ export default function SillSealExterior() {
         <li>Round up, then enter the resulting total into the <strong>Exterior Perimeter (Including Garage Wall) Seal</strong> cell of the spreadsheet.</li>
       </ul>
 
-      <div className="my-4 rounded-lg border border-gray-200 bg-gray-50 p-2">
-        <img src="/images/cms/sill-seal-exterior--sill-seal-exterior_0.png" alt="Sill Seal XL" className="w-full rounded" />
-        <p className="mt-1 text-center text-xs text-gray-500">Sill Seal XL</p>
-      </div>
+      <CmsImage src="/images/cms/sill-seal-exterior--sill-seal-exterior_0.png" alt="Sill Seal XL" />
 
       <SpreadsheetRef section="Wall Takeoffs" cell="Exterior Perimeter Seal" />
 
