@@ -36,7 +36,7 @@ export default function CmsImage({ src, alt }: { src: string; alt: string }) {
             className="mx-auto max-h-64 w-auto max-w-full rounded"
           />
         </button>
-        <figcaption className="mt-1 flex items-center justify-center gap-1 text-center text-sm text-gray-500">
+        <figcaption className="mt-1 flex items-center justify-center gap-1 text-center text-base text-gray-500">
           <svg className="h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M11 8v6M8 11h6M19 11a8 8 0 11-16 0 8 8 0 0116 0z" />
           </svg>

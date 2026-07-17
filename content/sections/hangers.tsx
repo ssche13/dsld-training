@@ -72,7 +72,7 @@ export default function Hangers() {
 
       <CmsImage src="/images/cms/hangers--course_5.png" alt="Home Wrap – example 1" />
 
-      <h3 className="font-medium text-lg text-dsld-text">Poly Black</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Poly <ColorWord c="black">Black</ColorWord></h3>
 
       <p className="text-base leading-relaxed">6MIL Poly <ColorWord c="black">Black</ColorWord> is needed anywhere were brick connects to the concrete foundation.</p>
 

@@ -86,7 +86,7 @@ export default function Doors() {
 
       <CmsImage src="/images/cms/doors--course_7.png" alt="Door Hardware – example 4" />
 
-      <h3 className="font-medium text-lg text-dsld-text">Black Aluminum House Number</h3>
+      <h3 className="font-medium text-lg text-dsld-text"><ColorWord c="black">Black</ColorWord> Aluminum House Number</h3>
 
       <ul className="list-disc pl-6 space-y-2 text-base">
 
