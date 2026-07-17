@@ -6,110 +6,107 @@ export default function Lighting() {
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Lighting</h2>
 
-      <p className="text-sm leading-relaxed">
-        Lighting estimation is based on the <strong>electrical plan</strong>, which shows the
-        location and type of every light fixture. Count each type and place totals into the{" "}
-        <strong>Lighting</strong> section.
-      </p>
+      <p className="text-sm leading-relaxed">Lighting estimation is based on the <strong>electrical plan</strong>, which shows the location and type of every light fixture in the house. Count each fixture type and place each total into its respective cell of the <strong>Lighting</strong> section of the spreadsheet.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Base Lighting</h3>
+      <h3 className="font-medium text-base text-dsld-text">Base Lighting Package</h3>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Count each fixture type into the <strong>Lighting</strong> section.</li>
-        <li>Each fixture type has a unique symbol (recessed, surface mount, pendant, etc.).</li>
+      <p className="text-sm leading-relaxed">Count each fixture type and place each total into its respective cell of the <strong>Lighting</strong> section of the spreadsheet.</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Each fixture type has a unique symbol on the plan (recessed, surface mount, pendant, etc.).</li>
+
         <li>Smoke/CO detectors will be counted.</li>
+
         <li>Exterior fixtures will be counted.</li>
-        <li>
-          Down rods <strong>only</strong> go on ceiling fan fixtures, where call outs indicate size.
-        </li>
-        <li>9&apos; ceilings do not get down rods.</li>
-        <li>
-          The attic is given <strong>2</strong> lights.
-        </li>
+
+        <li>Down rods <strong>only</strong> go on ceiling fan fixtures, where call outs indicate which size.</li>
+
+        <li>9' ceilings do not get down rods.</li>
+
+        <li>The attic is given <strong>2</strong> lights.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/lighting--docx_0.png" alt="Lighting XL" />
+      <CmsImage src="/images/cms/lighting--course_0.png" alt="Base Lighting Package – example 1" />
 
       <h3 className="font-medium text-base text-dsld-text">Fixture Types</h3>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>2x4 Fluorescent Fixture &rarr; <strong>Garage Wrap includes LED Bulbs</strong></li>
-        <li>Recessed Can &rarr; <strong>Interior Flood with LED Bulb</strong></li>
-        <li>Wall Sconce &rarr; <strong>1LT Wall Sconce</strong></li>
-        <li>Hanging Light &rarr; <strong>5LT Chandelier</strong></li>
-        <li>
-          Mushroom Surface Mount &rarr; <strong>13&apos;&apos; Flush Mount</strong> for hallways,
-          drop zones, above countertops; <strong>15&apos;&apos; Flush Mount</strong> for utility
-          rooms, offices, bedrooms, over desks
-        </li>
-        <li>Pendant Light &rarr; <strong>Disc Light - White</strong></li>
-        <li>Vanity Lighting &rarr; <strong>3LT Vanity</strong> and <strong>4LT Vanity</strong></li>
-        <li>
-          Ceiling Fan &rarr;{" "}
-          <strong>5 Blade Contemporary MB Interior Ceiling Fan w/ Bulbs</strong>
-        </li>
-        <li>Exterior Hanging &rarr; <strong>Hanging Outdoor Light</strong></li>
-        <li>Exterior Surface Mount &rarr; <strong>Disc Light - Matte Black</strong></li>
-        <li>Exterior Flood &rarr; <strong>Flood Light Kit</strong></li>
-        <li>Pendant in foyer &rarr; <strong>1LT Foyer Light</strong></li>
-        <li>Recessed cans over showers &rarr; <strong>Shower Trim - LED Recessed</strong></li>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Disc Light - referred to as <strong>Disc Light - White</strong> in our spreadsheet</li>
+
+        <li>Recessed Can - referred to as <strong>Interior Flood with LED Bulb</strong> in our spreadsheet</li>
+
+        <li>Wall Sconce - referred to as <strong>1LT Wall Sconce</strong> in our spreadsheet</li>
+
+        <li>Hanging Light - referred to as a <strong>5LT Chandelier</strong> in our spreadsheet</li>
+
+        <li>Mushroom Surface Mount - referred to as <strong>12’’ LED Chip Light </strong>in our spreadsheet</li>
+
+        <li>Pendant Light – referred to as a <strong>1LT Foyer Light</strong> in our spreadsheet</li>
+
+        <li>Pendant lights above kitchen islands will be the same</li>
+
+        <li>Vanity Lighting - referred to as <strong>3LT Vanity</strong> and <strong>4LT Vanity</strong> in our spreadsheet</li>
+
+        <li>Ceiling Fan - referred to as <strong>5 Blade Contemporary MB Interior Ceiling Fan w/ Bulbs</strong> in our spreadsheet</li>
+
+        <li>Exterior Hanging - referred to as <strong>Hanging Outdoor Light</strong> in our spreadsheet</li>
+
+        <li>Exterior Surface Mount - referred to as <strong>Disc Light - Matte Black</strong> in our spreadsheet.</li>
+
+        <li>Exterior Flood - referred to as <strong>Flood Light Kit</strong> in our spreadsheet</li>
+
       </ul>
 
       <h3 className="font-medium text-base text-dsld-text">Under Cabinet Lighting Option</h3>
 
-      <p className="text-sm leading-relaxed">
-        Cabinet elevations from the PDF are needed for this section.
-      </p>
+      <p className="text-sm leading-relaxed">The <strong>cabinet elevations</strong> from the PDF will need to be used for this section.</p>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>12&apos;&apos; lights in turns.</li>
-        <li>18&apos;&apos; lights in regular cabinets.</li>
-        <li>24&apos;&apos; lights in cabinets longer than 26&apos;&apos;.</li>
-        <li>
-          Double check by deducting 2&apos;&apos; from each cabinet width. Lighting only fits under
-          cabinets 2&apos;&apos; larger or more.
-        </li>
-        <li>
-          Place the count by size in the <strong>Under Cabinet Light Option</strong> section.
-        </li>
+      <Note>Under cabinet lighting is not taken off in North Alabama or Tennessee.</Note>
+
+      <CmsImage src="/images/cms/lighting--course_1.png" alt="Under Cabinet Lighting Option – example 1" />
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>The numbers circled will be the numbers you use to determine what size light will be purchased at each location.</li>
+
+        <li>Use math. W36 can have a 24’’ and a 12’’ undermount light. Follow this logic for your calculations.</li>
+
+        <li>Place the count of each cabinet based on size in its respective cell of the <strong>Under Cabinet Light Option</strong> section of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/lighting--docx_1.png" alt="Under Cabinet XL" />
+      <CmsImage src="/images/cms/lighting--course_2.png" alt="Under Cabinet Lighting Option – example 2" />
 
       <h3 className="font-medium text-base text-dsld-text">Bathroom Vent Lighting</h3>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Count bathroom vents from the electrical plan in the PDF.</li>
-        <li>
-          Place into the <strong>HV</strong> section, to the right of the{" "}
-          <strong>Bid Rates</strong> section.
-        </li>
+      <p className="text-sm leading-relaxed">These counts go into their own section.</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Count each from the bathrooms in the electrical plan in the PDF.</li>
+
+        <li>Place total counts into the spreadsheet, which is to the right of the <strong>Bid Rates</strong> section.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/lighting--docx_2.png" alt="Bathroom Vents XL" />
+      <CmsImage src="/images/cms/lighting--course_3.png" alt="Bathroom Vent Lighting – example 1" />
 
       <h3 className="font-medium text-base text-dsld-text">Electrical Labor</h3>
 
-      <p className="text-sm leading-relaxed">
-        Electrical labor is a built-in cost on standard homes. For artist series, manually enter
-        labor costs.
-      </p>
+      <p className="text-sm leading-relaxed">This is a <strong>built-in cost</strong> on standard homes, so there is nothing for you to input into the spreadsheet. For artist series homes, you must manually enter in the labor costs.</p>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>
-          Always count <strong>1</strong>.
-        </li>
-        <li>
-          Place into the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong> section based on living
-          square footage.
-        </li>
-        <li>
-          Artist series will get <strong>2</strong> (for trim nails, not labor &mdash; trim nails is
-          actually in the paint section).
-        </li>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Always count <strong>1</strong>.</li>
+
+        <li>Place into the appropriate cell of the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong> section of the spreadsheet based on living square footage.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/lighting--docx_3.png" alt="Electrical Labor XL" />
+      <CmsImage src="/images/cms/lighting--course_4.png" alt="Electrical Labor – example 1" />
     </div>
   );
 }

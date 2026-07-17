@@ -1,7 +1,4 @@
 import Note from "@/components/callouts/Note";
-import Tip from "@/components/callouts/Tip";
-import ColorSwatch from "@/components/ColorSwatch";
-import SpreadsheetRef from "@/components/SpreadsheetRef";
 import CmsImage from "@/components/CmsImage";
 
 export default function SillSealExterior() {
@@ -9,45 +6,31 @@ export default function SillSealExterior() {
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Sill Seal Exterior</h2>
 
-      <p className="text-sm leading-relaxed">
-        The sill seal measurement captures the <strong>total exterior perimeter</strong> of the
-        foundation, including garage walls that interface with the home interior. This value feeds
-        directly into the Wall Takeoffs section of the estimating spreadsheet.
-      </p>
+      <p className="text-sm leading-relaxed">The sill seal measurement captures the <strong>total exterior perimeter</strong> of the foundation, including garage walls that interface with the home interior. Sill sealer acts as a moisture barrier to prevent wood-rot and reduce air leakage between the foundation wall and sill plate. This quantity feeds directly into the Wall Takeoffs section of the estimating spreadsheet.</p>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>
-          Use a <ColorSwatch color="red" /> <strong>red PolyLine</strong> to trace the exterior walls
-          of the foundation plan.
-        </li>
-        <li>
-          <strong>Include</strong> garage walls that meet the interior of the home.
-        </li>
-        <li>
-          <strong>Exclude</strong> porches and garage doors from this trace.
-        </li>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Use <strong>POLYLINE</strong> to trace a <strong>red </strong>line on the exterior walls of the foundation plan.</li>
+
+        <li>Include garage walls that meet the interior of the home.</li>
+
+        <li>Exclude porches and garage doors from this trace.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/sill-seal-exterior--docx_0.png" alt="Sill Seal CAD" />
+      <CmsImage src="/images/cms/sill-seal-exterior--course_0.png" alt="Sill Seal Exterior – example 1" />
 
-      <Tip>
-        Focus only on walls where sill seal material will actually be installed. Porches do not
-        receive sill seal, so they are excluded from this measurement.
-      </Tip>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use <strong>TLEN</strong> to get the <strong>total linear feet</strong> of the <ColorSwatch color="red" /> red lines.</li>
-        <li>Round up, then enter the resulting total into the <strong>Exterior Perimeter (Including Garage Wall) Seal</strong> cell of the spreadsheet.</li>
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the <strong>red</strong> lines.</li>
+
+        <li>Round up, then enter the resulting total into the <strong>Exterior Perimeter (Including Garage Wall) Seal</strong> cell of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/sill-seal-exterior--sill-seal-exterior_0.png" alt="Sill Seal XL" />
+      <CmsImage src="/images/cms/sill-seal-exterior--course_1.png" alt="Sill Seal Exterior – example 2" />
 
-      <SpreadsheetRef section="Wall Takeoffs" cell="Exterior Perimeter Seal" />
-
-      <Note>
-        Double-check that the garage wall segments are included in your trace. Missing these is a
-        common error for new estimators.
-      </Note>
+      <Note>Double-check that the interior garage wall segments are included in your trace.</Note>
     </div>
   );
 }

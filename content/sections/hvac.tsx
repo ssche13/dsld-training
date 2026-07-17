@@ -6,76 +6,61 @@ export default function Hvac() {
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">HVAC</h2>
 
-      <p className="text-sm leading-relaxed">
-        HVAC estimation records the system type and component counts from the mechanical plan. DSLD
-        uses central forced-air systems.
-      </p>
+      <p className="text-sm leading-relaxed">HVAC (Heating, Ventilation, and Air Conditioning) estimation records the system type and component counts from the mechanical plan. DSLD homes typically use central forced-air systems.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Condensing Units</h3>
+      <h3 className="font-medium text-base text-dsld-text">Condensing Units and Air Handling Units</h3>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>
-          Count units of each tonnage from the <strong>HVAC plan</strong> on the PDF.
-        </li>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Count how many units of each tonnage from the<strong> HVAC plan </strong>on the PDF.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/hvac--docx_0.png" alt="HVAC PDF" />
-      <CmsImage src="/images/cms/hvac--docx_1.png" alt="HVAC PDF" />
+      <CmsImage src="/images/cms/hvac--course_0.png" alt="Condensing Units and Air Handling Units – example 1" />
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>
-          Place the total count into the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong>{" "}
-          section.
-        </li>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Place the total count into the appropriate cell of the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong> section of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/hvac--docx_2.png" alt="HVAC Tonnage XL" />
+      <CmsImage src="/images/cms/hvac--course_1.png" alt="Condensing Units and Air Handling Units – example 2" />
 
       <h3 className="font-medium text-base text-dsld-text">Secondary Returns</h3>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>
-          Found in all bedrooms except the master, plus any enclosed office with a door.
-        </li>
-        <li>
-          Count returns from the <strong>HVAC plan</strong>, excluding the master.
-        </li>
-        <li>
-          Place into the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong> section.
-        </li>
+      <p className="text-sm leading-relaxed">Secondary returns pull stale air from bedrooms and open spaces back to the air handling unit.</p>
+
+      <CmsImage src="/images/cms/hvac--course_2.png" alt="Secondary Returns – example 1" />
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Count how many returns from the<strong> HVAC plan </strong>on the PDF, <strong>excluding the master.</strong></li>
+
+        <li>Place the total count into the appropriate cell of the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong> section of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/hvac--docx_3.png" alt="Return HVAC XL" />
+      <CmsImage src="/images/cms/hvac--course_3.png" alt="Secondary Returns – example 2" />
 
       <h3 className="font-medium text-base text-dsld-text">Hood Vents</h3>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Look at the HVAC plan for micro-hood kitchen venting.</li>
+      <p className="text-sm leading-relaxed">Look at the HVAC plan to show where the micro-hood in the kitchen is venting.</p>
+
+      <CmsImage src="/images/cms/hvac--course_4.png" alt="Hood Vents – example 1" />
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Place <strong>1</strong> in the appropriate cell of the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong> section of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/hvac--docx_4.png" alt="Micro Hood PDF" />
+      <p className="text-sm leading-relaxed">For any two-story unit that does not use a dual unit, <strong>1</strong> zoning kit must be selected.</p>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>
-          Place <strong>1</strong> in the <strong>Plumbing, Elec. &amp; HVAC Top Out</strong>{" "}
-          section.
-        </li>
-      </ul>
+      <CmsImage src="/images/cms/hvac--course_5.png" alt="Hood Vents – example 2" />
 
-      <CmsImage src="/images/cms/hvac--docx_5.png" alt="Micro Hood XL" />
+      <CmsImage src="/images/cms/hvac--course_6.png" alt="Hood Vents – example 3" />
 
-      <h3 className="font-medium text-base text-dsld-text">Zoning Kit</h3>
-
-      <p className="text-sm leading-relaxed">
-        For a two-story home without a dual unit, enter <strong>1</strong> zoning kit.
-      </p>
-
-      <CmsImage src="/images/cms/hvac--docx_6.png" alt="HVAC zoning XL" />
-
-      <Note>
-        HVAC system sizing is determined by the mechanical engineer. Record the specified size and
-        count distribution components &mdash; do not attempt to resize the system.
-      </Note>
+      <Note>HVAC system sizing is determined by the mechanical engineer. Your job is to record the specified size and count the distribution components — do not attempt to resize the system.</Note>
     </div>
   );
 }

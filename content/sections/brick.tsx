@@ -1,46 +1,87 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
-import Note from "@/components/callouts/Note";
 import CmsImage from "@/components/CmsImage";
-
 
 export default function Brick() {
   return (
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Brick</h2>
 
-      <p className="text-sm leading-relaxed">
-        Brick is the <strong>most common</strong> exterior cladding that you will identify on the
-        elevation drawings.
-      </p>
+      <p className="text-sm leading-relaxed">Brick is the <strong>most common</strong> exterior cladding that you will identify on elevation drawings.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">How to Estimate</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use <strong>POLYAREA</strong> to get the <strong>total square footage</strong> of all polylines indicative of brick.</li>
-        <li>Subtract out doors, windows, vents, and garage doors.</li>
-        <li>Add 3sqft for each window.</li>
-        <li>Add 1sqft per linear foot of turned brick or water table cap.</li>
-        <li>Round up, then place the resulting total into the one white cell in the <strong>Exterior Brick</strong> section of the spreadsheet.</li>
+      <h3 className="font-medium text-base text-dsld-text">Brick Area</h3>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>
+          Use <strong>POLYLINE</strong> in <strong>blue</strong> to trace where brick rowlock, brick soldier course, and brick water tables are present.
+          <CmsImage src="/images/cms/brick--course_0.png" alt="Brick Area – example 1" />
+          <CmsImage src="/images/cms/brick--course_1.png" alt="Brick Area – example 2" />
+        </li>
+
+        <li>Use <strong>POLYAREA</strong> to get the <strong>total square footage</strong> of all <strong>red</strong> polylines indicative of brick.</li>
+
+        <li>Add<strong> 3sqft</strong> per window (only on brick cladding).</li>
+
+        <li>Add the <strong>total linear footage</strong> of the <strong>blue</strong> lines indicative of brick rowlock, soldier course, or water table.</li>
+
+        <li>Use <strong>POLYAREA</strong> to subtract the total square footage of all doors, windows, louvered vents, and garage doors from the total square footage of the brick cladding areas.</li>
+
+        <li>Round up, then place the resulting total into the white cell of the <strong>Exterior Brick</strong> section of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/brick--brick_0.png" alt="Exterior Brick XL" />
+      <CmsImage src="/images/cms/brick--course_2.png" alt="Brick Area – example 3" />
 
-      <p className="text-sm leading-relaxed">
-        Having to cut bricks around windows requires us to consider the extra exterior finishes of
-        brick as well.
-      </p>
+      <h3 className="font-medium text-base text-dsld-text">North Alabama and Tennessee Plans</h3>
 
-      <h3 className="font-medium text-base text-dsld-text">Soldier Course &amp; Lintels</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of soldier course above windows and garage doors. (This will be called out on the elevations.)</li>
-        <li>Convert opening width to <strong>linear inches + 3in on each side.</strong> <em>(This creates a ledge for the brick build above the openings.)</em></li>
-        <li>If the separation between two windows is 6&quot; or less, count as <strong>1</strong> window.</li>
-        <li>Your resulting total for each run will match its corresponding lintel size in the <strong>Brick - King (Standard)</strong> section of the spreadsheet.</li>
-        <li>Round up to the nearest available lintel and place each count into its corresponding cell.</li>
+      <p className="text-sm leading-relaxed">These regions require one extra step for calculating brick. The logic for brick area is the same as all other regions and will go in the following cell:</p>
+
+      <CmsImage src="/images/cms/brick--course_3.png" alt="North Alabama and Tennessee Plans – example 1" />
+
+      <p className="text-sm leading-relaxed">In North Alabama and Tennessee, the base where brick meets the foundation at the<strong> front</strong> of the home is also taken off.</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Use <strong>LINE</strong> to trace where brick meets the concrete base of the house.</li>
+
+        <li>If the front porch shows brick cladding, trace the perimeter of the porch as well.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/brick--brick_1.png" alt="Brick Lintel XL" />
+      <CmsImage src="/images/cms/brick--course_4.png" alt="North Alabama and Tennessee Plans – example 2" />
 
-      <SpreadsheetRef section="Exterior" cell="Exterior Brick" />
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the lines you traced.</li>
+
+        <li>Place the resulting quantity into the following cell of the spreadsheet:</li>
+
+      </ul>
+
+      <CmsImage src="/images/cms/brick--course_5.png" alt="North Alabama and Tennessee Plans – example 3" />
+
+      <h3 className="font-medium text-base text-dsld-text">Brick Lintels</h3>
+
+      <p className="text-sm leading-relaxed">Having to cut bricks around windows requires us to consider the extra exterior finishes of brick as well.</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Identify any door, garage door, louvered vent, or window present in the elevation on brick cladding.</li>
+
+        <li>Use the schedules in the PDF plan drawing or callouts on the elevations to determine the width.</li>
+
+        <li>If the separation between two windows is 6'' or less, count as <strong>1</strong> window.</li>
+
+        <li>Convert the width to linear inches and add 6’’.</li>
+
+        <li>The resulting total will be the brick lintel size for that door, garage door, vent, or window.</li>
+
+        <li>Repeat these steps for each opening present in the elevation on brick cladding.</li>
+
+        <li>Place the count of each lintel size into its corresponding cell.</li>
+
+      </ul>
+
+      <CmsImage src="/images/cms/brick--course_6.png" alt="Brick Lintels – example 1" />
     </div>
   );
 }

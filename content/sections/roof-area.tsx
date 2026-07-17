@@ -1,5 +1,3 @@
-import ColorSwatch from "@/components/ColorSwatch";
-import SpreadsheetRef from "@/components/SpreadsheetRef";
 import CmsImage from "@/components/CmsImage";
 
 export default function RoofArea() {
@@ -7,27 +5,23 @@ export default function RoofArea() {
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Roof Area</h2>
 
-      <h3 className="font-semibold text-base text-dsld-teal">Drawing Instructions</h3>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>
-          Use a <ColorSwatch color="green" /> <strong>green polyline</strong> to trace the
-          outermost outline of the roof.
-        </li>
+        <li>Use <strong>POLYLINE</strong> to trace a <strong>green </strong>line along the perimeter of the roof.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/roof-area--docx_0.png" alt="Roof Area CAD" />
+      <CmsImage src="/images/cms/roof-area--course_0.png" alt="Roof Area – example 1" />
 
-      <h3 className="font-semibold text-base text-dsld-teal">Entering the Value</h3>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
 
-      <p className="text-sm leading-relaxed">
-        Place the <strong>total square footage</strong> in the Roof Area section of the estimating
-        spreadsheet.
-      </p>
+        <li>Use <strong>POLYAREA</strong> to get the <strong>total square footage</strong> of the polyline.</li>
 
-      <CmsImage src="/images/cms/roof-area--roof-area_0.png" alt="Roof Area XL" />
+        <li>Round up, then place the resulting total into the <strong>Roof Area</strong> cell of the estimating spreadsheet.</li>
 
-      <SpreadsheetRef section="Roof" cell="Roof Area" />
+      </ul>
+
+      <CmsImage src="/images/cms/roof-area--course_1.png" alt="Roof Area – example 2" />
     </div>
   );
 }

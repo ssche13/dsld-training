@@ -1,4 +1,3 @@
-import SpreadsheetRef from "@/components/SpreadsheetRef";
 import Note from "@/components/callouts/Note";
 import CmsImage from "@/components/CmsImage";
 
@@ -7,62 +6,59 @@ export default function RatRunnersStrongBacks() {
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Rat Runners &amp; Strong Backs</h2>
 
-      <p className="text-sm leading-relaxed">
-        Rat runners and strong backs are horizontal framing members that provide structural support
-        between ceiling joists. They prevent joists from twisting and help distribute loads evenly
-        across the framing system. You will refer to the <strong>Ceiling Framing Layout</strong> in
-        the PDF plan drawing for this section.
-      </p>
+      <p className="text-sm leading-relaxed">Rat runners and strong backs are horizontal framing members that provide structural support between ceiling joists. They prevent joists from twisting and help distribute loads evenly across the framing system. You will refer to the <strong>ceiling framing layout</strong> in the PDF drawing plan for Louisiana and Texas plans, and you will refer to the<strong> engineering plans</strong> for Mississippi and South Alabama plans.</p>
+
+      <Note>Rat runners and strong backs will not be taken off in Florida, North Alabama, or Tennessee.</Note>
 
       <h3 className="font-medium text-base text-dsld-text">Rat Runners</h3>
-      <p className="text-sm leading-relaxed">
-        Rat runners are continuous bracing members nailed perpendicular to the ceiling joists. They
-        run the length of the joist span and keep the joists aligned.
-      </p>
 
-      <p className="text-sm leading-relaxed">
-        <strong>The Rat Runner materials section will be auto calculated from the information
-        inputted regarding the strong backs.</strong>
-      </p>
+      <p className="text-sm leading-relaxed">Rat runners are continuous bracing members nailed perpendicular to the ceiling joists. They run the length of the joist span on each side and keep the joists aligned. The rat runner materials section will be auto calculated from the strong back quantities. <strong>No calculations are required.</strong></p>
 
       <h3 className="font-medium text-base text-dsld-text">Strong Backs</h3>
-      <p className="text-sm leading-relaxed">
-        Strong backs are L-shaped or T-shaped assemblies installed at mid-span of ceiling joists to
-        prevent sagging. They are typically made from 2x6 or 2x8 lumber fastened vertically to a
-        continuous horizontal member.
-      </p>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Pull the Ceiling Framing construct into your AutoCAD drawing.</li>
-        <li>Use <strong>LINE</strong> to trace <strong>yellow lines</strong> for everything circled in red in the image below:</li>
+      <p className="text-sm leading-relaxed">Strong backs are L-shaped or T-shaped assemblies installed at mid-span of ceiling joists to prevent sagging. They are typically made from 2x6 or 2x8 lumber fastened vertically to a continuous horizontal member.<strong> Strong backs are not needed for porches or areas that are 3' or smaller.</strong></p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li><strong>LA/TX</strong></li>
+
       </ul>
 
-      <CmsImage src="/images/cms/rat-runners-strong-backs--docx_0.png" alt="Strong Backs from Plans" />
+      <p className="text-sm leading-relaxed">Pull the <strong>Ceiling Framing </strong>construct into your AutoCAD drawing and use LINE in a distinctive color to trace everything circled in red in the image below:</p>
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
+      <CmsImage src="/images/cms/rat-runners-strong-backs--course_0.png" alt="Strong Backs – example 1" />
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
         <li>Pull those lines off to the side.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/rat-runners-strong-backs--docx_1.png" alt="Strong Backs CAD" />
+      <CmsImage src="/images/cms/rat-runners-strong-backs--course_1.png" alt="Strong Backs – example 2" />
 
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of all lines traced.</li>
-        <li>Round up, then place your number into the <strong>Strong Back Materials</strong> section of the spreadsheet.</li>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage </strong>of all lines traced.</li>
+
+        <li>Round up, then place your number into the <strong>Strong Back Materials</strong> section of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/rat-runners-strong-backs--rat-runners-strong-backs_0.png" alt="Strong Backs XL" />
+      <CmsImage src="/images/cms/rat-runners-strong-backs--course_2.png" alt="Strong Backs – example 3" />
 
-      <p className="text-sm leading-relaxed">
-        <strong><u>NOTE:</u></strong> Strong backs are not needed for areas that are 3&apos; or smaller.
-      </p>
+      <ul className="list-disc pl-6 space-y-2 text-sm">
 
-      <SpreadsheetRef section="Framing" cell="Rat Runners" />
-      <SpreadsheetRef section="Framing" cell="Strong Backs" />
+        <li><strong>MS/SAL</strong></li>
 
-      <Note>
-        Strong backs are required whenever ceiling joist spans exceed the threshold specified in the
-        framing plan. Check the structural notes on the plan before skipping this item.
-      </Note>
+      </ul>
+
+      <p className="text-sm leading-relaxed">Reference engineering to determine where the strong backs are located.</p>
+
+      <CmsImage src="/images/cms/rat-runners-strong-backs--course_3.png" alt="Strong Backs – example 4" />
+
+      <p className="text-sm leading-relaxed">The <strong>total liner footage</strong> of the lines can be taken off in 2 ways: 1) through <strong>PDFIMPORT</strong> in AutoCAD or 2) with the <strong>MEASURE</strong> tool in Foxit PDF Editor.</p>
+
+      <CmsImage src="/images/cms/rat-runners-strong-backs--course_4.png" alt="Strong Backs – example 5" />
     </div>
   );
 }

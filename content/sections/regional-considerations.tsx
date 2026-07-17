@@ -1,44 +1,74 @@
-import Note from "@/components/callouts/Note";
-
 export default function RegionalConsiderations() {
   return (
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Regional Considerations</h2>
 
-      <Note>
-        Always check the regional requirements for your assigned area before starting an estimate.
-        Construction methods and code requirements vary significantly between regions.
-      </Note>
+      <p className="text-sm leading-relaxed">The spreadsheets you use may be formatted differently or have different parts, but your method of estimating will always remain the same.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Stick &amp; Frame vs Truss Frame</h3>
-      <p className="text-sm leading-relaxed">
-        DSLD uses two primary roof framing methods. <strong>Stick &amp; Frame</strong> construction
-        uses individual rafters, ridge boards, and ceiling joists built on-site. <strong>Truss
-        Frame</strong> construction uses pre-engineered trusses delivered to the site and set in
-        place. The framing method affects how you estimate rafters, ceiling joists, and bracing.
-      </p>
+      <h3 className="font-medium text-base text-dsld-text">Texas Plans</h3>
 
-      <h3 className="font-medium text-base text-dsld-text">Florida</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Florida homes must meet wind zone requirements — check the plan for the specific wind speed rating.</li>
-        <li>Hurricane straps and additional bracing are required in high-wind zones.</li>
-        <li>Some Florida plans use pier and piling foundations instead of slab-on-grade.</li>
-        <li>Impact-rated windows may be required depending on the wind zone.</li>
+      <p className="text-sm leading-relaxed">Houston regions use different part names/pieces. Below is a list of the LA part, then the Houston counterpart:</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>1x4x14 SYP = 3/4x4x12 Primed Fiber Cement Trim Cedarmill</li>
+
+        <li>1x6x12 Cement Smooth Trim = 3/4x6x12 Primed Fiber Cement Trim Cedarmill</li>
+
+        <li>1x12x12 Cement Smooth Trim = 3/4x12x12 Primed Fiber Cement Trim Cedarmill</li>
+
+        <li>4x8-1/4 Non-vented Smooth Cement Soffit = 5/16x4x8 Fiber Cement Sheet Cedarmill</li>
+
+        <li>8’, 9’, and 10’ options are available.</li>
+
+        <li>Flashing Z – 1’’ Galvanized Steel – 10’ PC = 2x1-1/2x10 Window Z Flashing (2112WF)</li>
+
+        <li>There is also a 1’’ strictly for water tables.</li>
+
+        <li>1x2x12 Fiber Cement Smooth Trim = 3/4x2.5x12 Prime Fiber Cement Trim Cedarmill</li>
+
+        <li>Flashing Z – 5/8’’ Galvanized Steel – 10’ PC = 3/8’’ Z Bar Flashing.</li>
+
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Houston</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Houston-area plans typically use slab-on-grade foundations with post-tension cables.</li>
-        <li>Soil conditions may require deeper footings or additional foundation reinforcement.</li>
-        <li>Check for energy code requirements specific to the Houston climate zone.</li>
+      <h3 className="font-medium text-base text-dsld-text">Mississippi and South Alabama Plans</h3>
+
+      <p className="text-sm leading-relaxed">It is critical that you use the engineering alongside of the plan PDF for takeoffs. Because of the stick frame construction in these regions, their engineering plans take precedence over our plan PDFs.</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Beams, ceiling joists, bracing, and stud configurations are called out by engineering.</li>
+
+        <li>Mississippi typically uses 2x12 headers.</li>
+
+        <li>South Alabama uses 2x10 headers.</li>
+
+        <li>OSB is required on the ceilings of porches and on designated interior shear walls.</li>
+
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">North Alabama &amp; Nashville</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>These regions may use crawl-space or basement foundations rather than slab-on-grade.</li>
-        <li>Insulation requirements differ from Gulf Coast regions due to the colder climate zone.</li>
-        <li>Check for seismic design requirements in the structural notes.</li>
-        <li>Frost line depth affects footing requirements — verify against local code.</li>
+      <h3 className="font-medium text-base text-dsld-text">Florida, North Alabama, and Tennessee Plans</h3>
+
+      <p className="text-sm leading-relaxed">It is also critical that you use the engineering in these regions alongside the plan PDF for takeoffs. Because of the truss systems in these regions, their engineering plans take precedence over our plan PDFs.</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Truss layouts are used for determining wall plate heights, load-bearing points, and where specialized trusses are used (e.g. piggyback or girders).</li>
+
+        <li><strong>In Florida: </strong></li>
+
+        <li>OSB is used on porch ceilings.</li>
+
+        <li>Thermoply is used behind tubs, showers, and any fireplace on an exterior wall.</li>
+
+        <li>Hardie is turnkey and no take off is needed.</li>
+
+        <li><strong>In North Alabama and Tennessee:</strong></li>
+
+        <li>Stone veneer is applied over a metal lath and double felt paper.</li>
+
+        <li>Precast keystones are required over all brick windows on the front elevation and any side-entry garage doors.</li>
+
       </ul>
     </div>
   );

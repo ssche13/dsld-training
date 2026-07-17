@@ -6,34 +6,32 @@ export default function Purlins() {
     <div className="space-y-4">
       <h2 className="font-semibold text-lg text-dsld-teal">Purlins</h2>
 
-      <p className="text-sm leading-relaxed">
-        Purlins are horizontal members that run perpendicular to the rafters, providing additional
-        support to the roof structure. They are visible on the <strong>roof framing layout</strong> in
-        the PDF as lines running through the bracing circles.
-      </p>
+      <p className="text-sm leading-relaxed">Purlins are horizontal structural members that support roof or wall panels and transfer loads to the main structural frame. Refer to the <strong>roof framing plan</strong> to complete this section.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Identifying Purlins</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Locate the purlins on the roof framing layout — they appear as lines running through the bracing circles with an &apos;X&apos;.</li>
-        <li>Purlins run in straight lines and connect multiple bracing points.</li>
-        <li>They are separate from the bracing calculation but are identified during the same process.</li>
+      <Note>Purlins are not taken off in Florida, North Alabama, or Tennessee.</Note>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>
+          <strong>LA/TX</strong>
+          <CmsImage src="/images/cms/purlins--course_0.png" alt="Purlins – example 1" />
+        </li>
+
+        <li><strong>MS/SAL</strong></li>
+
       </ul>
 
-      <CmsImage src="/images/cms/purlins--docx_0.png" alt="Purlins PDF" />
+      <CmsImage src="/images/cms/purlins--course_1.png" alt="Purlins – example 2" />
 
-      <h3 className="font-medium text-base text-dsld-text">How to Count</h3>
-      <ul className="list-disc pl-6 space-y-1 text-sm">
-        <li>Count each purlin run from the roof framing plan on the PDF.</li>
-        <li>Note the size and length of each purlin as called out on the plans.</li>
-        <li>Place the total counts based on size into their respective cells of the spreadsheet.</li>
+      <p className="text-sm leading-relaxed">Purlins are represented differently in these regions, and the purlin sizes will not be called out on the engineering plans. You will need to use <strong>MEASURE</strong> in Foxit PDF Editor to get the lengths of each purlin.</p>
+
+      <ul className="list-disc pl-6 space-y-2 text-sm">
+
+        <li>Raw counts of each purlin size will go into its corresponding cell of the <strong>Purlins</strong> section of the spreadsheet.</li>
+
       </ul>
 
-      <CmsImage src="/images/cms/purlins--docx_1.png" alt="Purlins XL" />
-
-      <Note>
-        Purlins are only used in stick-frame construction (Louisiana, Mississippi, and South Alabama).
-        If your plan uses trusses, purlins are not applicable.
-      </Note>
+      <CmsImage src="/images/cms/purlins--course_2.png" alt="Purlins – example 3" />
     </div>
   );
 }
