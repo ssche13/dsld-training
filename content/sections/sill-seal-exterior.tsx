@@ -1,16 +1,17 @@
 import Note from "@/components/callouts/Note";
 import CmsImage from "@/components/CmsImage";
+import ColorWord from "@/components/ColorWord";
 
 export default function SillSealExterior() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Sill Seal Exterior</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Sill Seal Exterior</h2>
 
-      <p className="text-sm leading-relaxed">The sill seal measurement captures the <strong>total exterior perimeter</strong> of the foundation, including garage walls that interface with the home interior. Sill sealer acts as a moisture barrier to prevent wood-rot and reduce air leakage between the foundation wall and sill plate. This quantity feeds directly into the Wall Takeoffs section of the estimating spreadsheet.</p>
+      <p className="text-base leading-relaxed">The sill seal measurement captures the <strong>total exterior perimeter</strong> of the foundation, including garage walls that interface with the home interior. Sill sealer acts as a moisture barrier to prevent wood-rot and reduce air leakage between the foundation wall and sill plate. This quantity feeds directly into the Wall Takeoffs section of the estimating spreadsheet.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
-        <li>Use <strong>POLYLINE</strong> to trace a <strong>red </strong>line on the exterior walls of the foundation plan.</li>
+        <li>Use <strong>POLYLINE</strong> to trace a <strong><ColorWord c="red">red</ColorWord> </strong>line on the exterior walls of the foundation plan.</li>
 
         <li>Include garage walls that meet the interior of the home.</li>
 
@@ -20,9 +21,9 @@ export default function SillSealExterior() {
 
       <CmsImage src="/images/cms/sill-seal-exterior--course_0.png" alt="Sill Seal Exterior – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
-        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the <strong>red</strong> lines.</li>
+        <li>Use <strong>TLEN</strong> to get the <strong>total linear footage</strong> of the <strong><ColorWord c="red">red</ColorWord></strong> lines.</li>
 
         <li>Round up, then enter the resulting total into the <strong>Exterior Perimeter (Including Garage Wall) Seal</strong> cell of the spreadsheet.</li>
 

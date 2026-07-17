@@ -1,16 +1,17 @@
 import Note from "@/components/callouts/Note";
 import CmsImage from "@/components/CmsImage";
+import ColorWord from "@/components/ColorWord";
 
 export default function Elevations() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Elevations</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Elevations</h2>
 
-      <p className="text-sm leading-relaxed">Elevation pages show the exterior appearance of each side of the house — front, rear, left, and right. These drawings are essential for estimating exterior finishes, trim, windows, and roof details. It is recommended to use the <strong>Elevations</strong> page in the PDF plan drawing to assist with the calculations that follow.</p>
+      <p className="text-base leading-relaxed">Elevation pages show the exterior appearance of each side of the house — front, rear, left, and right. These drawings are essential for estimating exterior finishes, trim, windows, and roof details. It is recommended to use the <strong>Elevations</strong> page in the PDF plan drawing to assist with the calculations that follow.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Reading Elevation Pages</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Reading Elevation Pages</h3>
 
-      <ol className="list-decimal pl-6 space-y-2 text-sm">
+      <ol className="list-decimal pl-6 space-y-2 text-base">
 
         <li>Identify which elevation letter you are working with</li>
 
@@ -20,39 +21,39 @@ export default function Elevations() {
 
       </ol>
 
-      <h3 className="font-medium text-base text-dsld-text">Elevation Correlations</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Elevation Correlations</h3>
 
-      <p className="text-sm leading-relaxed">Different plan variants share the same basic structure but have different exterior styling. The elevation correlation groups are: <strong>A/G/S, B/H/T, C/I/U, D/J/V, E/K/W, and F/L/X.</strong> Make sure you are referencing the correct elevation group for your assigned plan.</p>
+      <p className="text-base leading-relaxed">Different plan variants share the same basic structure but have different exterior styling. The elevation correlation groups are: <strong>A/G/S, B/H/T, C/I/U, D/J/V, E/K/W, and F/L/X.</strong> Make sure you are referencing the correct elevation group for your assigned plan.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">AutoCAD Setup</h3>
+      <h3 className="font-medium text-lg text-dsld-text">AutoCAD Setup</h3>
 
-      <p className="text-sm leading-relaxed">Color-coded polylines are used to represent the different types of cladding:</p>
+      <p className="text-base leading-relaxed">Color-coded polylines are used to represent the different types of cladding:</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
-        <li><strong>Red</strong> = Brick</li>
+        <li><strong><ColorWord c="red">Red</ColorWord></strong> = Brick</li>
 
-        <li><strong>Magenta</strong> = Vinyl/Lapped Siding</li>
+        <li><strong><ColorWord c="magenta">Magenta</ColorWord></strong> = Vinyl/Lapped Siding</li>
 
-        <li><strong>Orange</strong> = Stucco</li>
+        <li><strong><ColorWord c="orange">Orange</ColorWord></strong> = Stucco</li>
 
-        <li><strong>Green</strong> = Board and Batten</li>
+        <li><strong><ColorWord c="green">Green</ColorWord></strong> = Board and Batten</li>
 
-        <li><strong>Cyan</strong> = Stone</li>
+        <li><strong><ColorWord c="cyan">Cyan</ColorWord></strong> = Stone</li>
 
-        <li><strong>Purple</strong> = Cedar Shakes</li>
+        <li><strong><ColorWord c="purple">Purple</ColorWord></strong> = Cedar Shakes</li>
 
-        <li><strong>Yellow</strong> = Doors, Windows, Vents, and Garage Doors</li>
+        <li><strong><ColorWord c="yellow">Yellow</ColorWord></strong> = Doors, Windows, Vents, and Garage Doors</li>
 
       </ul>
 
-      <p className="text-sm leading-relaxed">Start by using <strong>POLYLINE</strong> to trace <strong>yellow </strong>polylines along the perimeter of doors, windows, louvered vents, and garage doors. These items will be subtracted from your estimation.</p>
+      <p className="text-base leading-relaxed">Start by using <strong>POLYLINE</strong> to trace <strong><ColorWord c="yellow">yellow</ColorWord> </strong>polylines along the perimeter of doors, windows, louvered vents, and garage doors. These items will be subtracted from your estimation.</p>
 
-      <p className="text-sm leading-relaxed"><strong>Your polylines should always be inside the trim line, not outside of it.</strong></p>
+      <p className="text-base leading-relaxed"><strong>Your polylines should always be inside the trim line, not outside of it.</strong></p>
 
       <CmsImage src="/images/cms/elevations--course_0.png" alt="AutoCAD Setup – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use <strong>POLYLINE</strong> in the appropriate colors to trace each side of the elevation.</li>
 
@@ -62,21 +63,21 @@ export default function Elevations() {
 
       <CmsImage src="/images/cms/elevations--course_1.png" alt="AutoCAD Setup – example 2" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>For <strong>gables/dormers,</strong> trace separately from the walls.</li>
 
       </ul>
 
-      <p className="text-sm leading-relaxed">Copy everything off to the side. You should have something that looks like this:</p>
+      <p className="text-base leading-relaxed">Copy everything off to the side. You should have something that looks like this:</p>
 
       <CmsImage src="/images/cms/elevations--course_2.png" alt="AutoCAD Setup – example 3" />
 
       <Note>Polylines on clad areas representing porches will always go up to the plate height.</Note>
 
-      <h3 className="font-medium text-base text-dsld-text">Perimeter of Shutters and Windows</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Perimeter of Shutters and Windows</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use <strong>TLEN</strong> to get the total linear footage of all brick windows, non-brick windows, and recessed shutters, respectively.</li>
 

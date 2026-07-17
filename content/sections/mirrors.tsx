@@ -2,12 +2,12 @@ import CmsImage from "@/components/CmsImage";
 
 export default function Mirrors() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Mirrors</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Mirrors</h2>
 
-      <p className="text-sm leading-relaxed">Mirror estimation is straightforward — count the number of mirrors shown on the plan and record the size of each one. Mirrors are typically located above bathroom vanities.</p>
+      <p className="text-base leading-relaxed">Mirror estimation is straightforward — count the number of mirrors shown on the plan and record the size of each one. Mirrors are typically located above bathroom vanities.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Place each count based on size in its corresponding cell of the <strong>Mirrors and Shower Doors</strong> section of the spreadsheet.</li>
 
@@ -15,7 +15,7 @@ export default function Mirrors() {
 
       <CmsImage src="/images/cms/mirrors--course_0.png" alt="Mirrors – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use <strong>LINE</strong> to trace around the perimeter of each mirror.</li>
 

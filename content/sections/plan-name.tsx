@@ -3,16 +3,16 @@ import CmsImage from "@/components/CmsImage";
 
 export default function PlanName() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Plan Identification</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Plan Identification</h2>
 
-      <p className="text-sm leading-relaxed">The plan <strong>name</strong>, <strong>letter</strong>, and <strong>number</strong> will be found in the title section of the corresponding plan's PDF drawing. As mentioned before, most of these PDF drawings are in the Shared Files folder under<strong> House Plans</strong>.</p>
+      <p className="text-base leading-relaxed">The plan <strong>name</strong>, <strong>letter</strong>, and <strong>number</strong> will be found in the title section of the corresponding plan's PDF drawing. As mentioned before, most of these PDF drawings are in the Shared Files folder under<strong> House Plans</strong>.</p>
 
-      <p className="text-sm leading-relaxed"><strong>Identifying the Plan Information</strong></p>
+      <p className="text-base leading-relaxed"><strong>Identifying the Plan Information</strong></p>
 
-      <p className="text-sm leading-relaxed">The title section of each PDF drawing contains the plan name, elevation letter, and version number. For example, a plan labeled <strong>FALKNER-A/G/S-3</strong>, where:</p>
+      <p className="text-base leading-relaxed">The title section of each PDF drawing contains the plan name, elevation letter, and version number. For example, a plan labeled <strong>FALKNER-A/G/S-3</strong>, where:</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li><strong>FALKNER</strong> — the plan name.</li>
 
@@ -24,9 +24,9 @@ export default function PlanName() {
 
       <CmsImage src="/images/cms/plan-name--course_0.png" alt="Plan Identification – example 1" />
 
-      <p className="text-sm leading-relaxed"><strong>Entering into the Estimating Spreadsheet</strong></p>
+      <p className="text-base leading-relaxed"><strong>Entering into the Estimating Spreadsheet</strong></p>
 
-      <p className="text-sm leading-relaxed">Transfer this information over to the two appropriate sections in the estimating spreadsheet:<strong> Plan-A-II</strong> and <strong>Plan2</strong>. Once inserted, this information should auto-populate in columns <strong>I</strong> and <strong>J</strong> throughout the entire spreadsheet.</p>
+      <p className="text-base leading-relaxed">Transfer this information over to the two appropriate sections in the estimating spreadsheet:<strong> Plan-A-II</strong> and <strong>Plan2</strong>. Once inserted, this information should auto-populate in columns <strong>I</strong> and <strong>J</strong> throughout the entire spreadsheet.</p>
 
       <CmsImage src="/images/cms/plan-name--course_1.png" alt="Plan Identification – example 2" />
 

@@ -3,16 +3,16 @@ import CmsImage from "@/components/CmsImage";
 
 export default function MainRoofShingles() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Main Roof Shingles</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Main Roof Shingles</h2>
 
-      <p className="text-sm leading-relaxed">This quantity is calculated to determine the number of roof shingles needed to cover the entire roof. Refer to the PDF plan drawing of the roof plan that shows the pitches. You will use this page along with AutoCAD to calculate the square footage of each flat surface on the roof.</p>
+      <p className="text-base leading-relaxed">This quantity is calculated to determine the number of roof shingles needed to cover the entire roof. Refer to the PDF plan drawing of the roof plan that shows the pitches. You will use this page along with AutoCAD to calculate the square footage of each flat surface on the roof.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Color-Coded Pitch Areas</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Color-Coded Pitch Areas</h3>
 
-      <p className="text-sm leading-relaxed">Use <strong>POLYLINE</strong> in a color of your choice to trace each roof pitch area.</p>
+      <p className="text-base leading-relaxed">Use <strong>POLYLINE</strong> in a color of your choice to trace each roof pitch area.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>All items with the <strong>same pitch</strong> are given the <strong>same color</strong>.</li>
 
@@ -22,9 +22,9 @@ export default function MainRoofShingles() {
 
       <CmsImage src="/images/cms/main-roof-shingles--course_0.png" alt="Color-Coded Pitch Areas – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Calculation</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Calculation</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use <strong>POLYAREA</strong> to get the <strong>total square footage</strong> of each color, or pitch.</li>
 
@@ -36,7 +36,7 @@ export default function MainRoofShingles() {
 
       <Note>To check for accuracy, your total roof area should always be greater than or equal to the Net Free Vent Area Required by Roof.</Note>
 
-      <p className="text-sm leading-relaxed">For pitches that are not already present in the spreadsheet, simply use this table to replace unused values:</p>
+      <p className="text-base leading-relaxed">For pitches that are not already present in the spreadsheet, simply use this table to replace unused values:</p>
 
       <CmsImage src="/images/cms/main-roof-shingles--course_2.png" alt="Calculation – example 2" />
     </div>

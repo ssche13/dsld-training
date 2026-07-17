@@ -3,20 +3,20 @@ import CmsImage from "@/components/CmsImage";
 
 export default function FlashingApronHem() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Gutter Apron &amp; Hem Flashing</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Gutter Apron &amp; Hem Flashing</h2>
 
       <Note>These types of flashing will not be taken off in Florida, North Alabama, or Tennessee.</Note>
 
-      <h3 className="font-medium text-base text-dsld-text">Gutter Apron Flashing</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Gutter Apron Flashing</h3>
 
-      <p className="text-sm leading-relaxed">Gutter apron flashing is a pre-bent metal strip installed where the roof meets a wall at an obtuse angle. You will usually find this type of flashing on <strong>dormer fronts</strong> and <strong>clipped gables.</strong></p>
+      <p className="text-base leading-relaxed">Gutter apron flashing is a pre-bent metal strip installed where the roof meets a wall at an obtuse angle. You will usually find this type of flashing on <strong>dormer fronts</strong> and <strong>clipped gables.</strong></p>
 
       <CmsImage src="/images/cms/flashing-apron-hem--course_0.png" alt="Gutter Apron Flashing – example 1" />
 
       <CmsImage src="/images/cms/flashing-apron-hem--course_1.png" alt="Gutter Apron Flashing – example 2" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Identify any dormers or clipped gables from the elevations page.</li>
 
@@ -38,15 +38,15 @@ export default function FlashingApronHem() {
 
       <CmsImage src="/images/cms/flashing-apron-hem--course_3.png" alt="Gutter Apron Flashing – example 4" />
 
-      <h3 className="font-medium text-base text-dsld-text">Hem Angle Flashing</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Hem Angle Flashing</h3>
 
-      <p className="text-sm leading-relaxed">Hem Angle Flashing is installed where the roof meets a wall at a 90-degree angle. You will find this type of flashing on the <strong>same components</strong> as the gutter apron flashing.</p>
+      <p className="text-base leading-relaxed">Hem Angle Flashing is installed where the roof meets a wall at a 90-degree angle. You will find this type of flashing on the <strong>same components</strong> as the gutter apron flashing.</p>
 
       <CmsImage src="/images/cms/flashing-apron-hem--course_4.png" alt="Hem Angle Flashing – example 1" />
 
       <CmsImage src="/images/cms/flashing-apron-hem--course_5.png" alt="Hem Angle Flashing – example 2" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Identify any dormers or clipped gables from the elevations page.</li>
 

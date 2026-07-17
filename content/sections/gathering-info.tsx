@@ -3,14 +3,14 @@ import CmsImage from "@/components/CmsImage";
 
 export default function GatheringInfo() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Gathering the Information</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Gathering the Information</h2>
 
-      <p className="text-sm leading-relaxed">Before you begin estimating, you need to set up both AutoCAD and the estimating spreadsheet. This section walks through preparing your workspace.</p>
+      <p className="text-base leading-relaxed">Before you begin estimating, you need to set up both AutoCAD and the estimating spreadsheet. This section walks through preparing your workspace.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">AutoCAD Setup</h3>
+      <h3 className="font-medium text-lg text-dsld-text">AutoCAD Setup</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>
           Select 'Open a project' in AutoCAD. AutoCAD's Project Browser window should pop up, and you will click the following icon:
@@ -55,9 +55,9 @@ export default function GatheringInfo() {
 
       </ul>
 
-      <p className="text-sm leading-relaxed"><strong>Constructs to Pull In:</strong></p>
+      <p className="text-base leading-relaxed"><strong>Constructs to Pull In:</strong></p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Cabinets</li>
 
@@ -83,11 +83,11 @@ export default function GatheringInfo() {
 
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Estimating Spreadsheet</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Estimating Spreadsheet</h3>
 
-      <p className="text-sm leading-relaxed">Open the estimating spreadsheet from the Shared Admin Drive.</p>
+      <p className="text-base leading-relaxed">Open the estimating spreadsheet from the Shared Admin Drive.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Navigate as follows: <strong>Shared Admin &gt; Estimating &gt; Worksheets &gt; New &gt; Z spreadsheets currently being used</strong></li>
 
@@ -99,11 +99,11 @@ export default function GatheringInfo() {
 
       <CmsImage src="/images/cms/gathering-info--course_5.png" alt="Estimating Spreadsheet – example 1" />
 
-      <p className="text-sm leading-relaxed"><strong>Elevation Correlations</strong></p>
+      <p className="text-base leading-relaxed"><strong>Elevation Correlations</strong></p>
 
-      <p className="text-sm leading-relaxed">Elevation letters map across plan variants. Use this table to match elevations correctly:</p>
+      <p className="text-base leading-relaxed">Elevation letters map across plan variants. Use this table to match elevations correctly:</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li><strong>A / G / S</strong></li>
 

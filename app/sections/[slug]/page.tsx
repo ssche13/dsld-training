@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import Link from "@/components/StaticLink";
 import PrintButton from "@/components/PrintButton";
 import ProgressTracker from "@/components/ProgressTracker";
+import FlagButton from "@/components/FlagButton";
+import SectionNotes from "@/components/SectionNotes";
 import { sectionContent } from "@/content/all-sections";
 import EditableArticle from "@/components/EditableArticle";
 
@@ -27,7 +29,7 @@ export default async function SectionPage({ params }: { params: Promise<{ slug: 
         <span>{section.category}</span>
       </div>
       <div className="mb-6 flex items-start justify-between gap-4">
-        <h1 className="text-2xl font-bold text-dsld-text">{section.title}</h1>
+        <h1 className="text-3xl font-bold text-dsld-text">{section.title}</h1>
         <PrintButton />
       </div>
 
@@ -43,9 +45,15 @@ export default async function SectionPage({ params }: { params: Promise<{ slug: 
         </EditableArticle>
       </article>
 
+      {/* Notes */}
+      <SectionNotes slug={slug} />
+
       {/* Footer */}
-      <div className="mt-8 flex items-center justify-between border-t pt-6">
-        <ProgressTracker slug={slug} />
+      <div className="mt-8 flex flex-wrap items-center justify-between gap-3 border-t pt-6">
+        <div className="flex flex-wrap gap-2">
+          <ProgressTracker slug={slug} />
+          <FlagButton slug={slug} />
+        </div>
         <div className="flex gap-2">
           {prev && (
             <Link

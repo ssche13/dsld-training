@@ -5,17 +5,20 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { getSectionsByCategory, categories } from "@/content/sections";
 import { getProgress } from "@/lib/progress";
+import { getFlags } from "@/lib/flags";
 import SearchDialog from "./SearchDialog";
 
 export default function Sidebar() {
   const pathname = usePathname();
   const grouped = getSectionsByCategory();
   const [progress, setProgress] = useState<Record<string, boolean>>({});
+  const [flags, setFlags] = useState<Record<string, boolean>>({});
   const [collapsed, setCollapsed] = useState<Record<string, boolean>>({});
   const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     setProgress(getProgress());
+    setFlags(getFlags());
   }, [pathname]);
 
   const toggleCategory = (cat: string) => {
@@ -58,6 +61,7 @@ export default function Sidebar() {
                   {secs.map((s) => {
                     const active = pathname === `/sections/${s.slug}`;
                     const done = progress[s.slug];
+                    const flagged = flags[s.slug];
                     return (
                       <li key={s.slug}>
                         <Link
@@ -69,12 +73,19 @@ export default function Sidebar() {
                               : "text-white/70 hover:bg-white/10 hover:text-white"
                           }`}
                         >
-                          {done && (
+                          {done ? (
                             <svg className="h-3.5 w-3.5 shrink-0 text-dsld-green" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
+                          ) : (
+                            <span className="h-3.5 w-3.5 shrink-0" />
                           )}
-                          <span className={done ? "ml-0" : "ml-5"}>{s.title}</span>
+                          <span className="flex-1 truncate">{s.title}</span>
+                          {flagged && (
+                            <svg className="h-3.5 w-3.5 shrink-0 text-dsld-orange" fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 2H21l-3 6 3 6h-8.5l-1-2H5a2 2 0 00-2 2z" />
+                            </svg>
+                          )}
                         </Link>
                       </li>
                     );
@@ -84,6 +95,31 @@ export default function Sidebar() {
             </div>
           );
         })}
+
+        <div className="mt-3 border-t border-white/10 pt-3">
+          <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-wider text-white/50">Reference</p>
+          {[
+            { href: "/glossary", label: "Glossary of Terms", d: "M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" },
+            { href: "/irc-codes", label: "IRC Code Links", d: "M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" },
+          ].map((item) => {
+            const active = pathname === item.href;
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setMobileOpen(false)}
+                className={`flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm transition ${
+                  active ? "bg-white/15 font-medium text-white" : "text-white/70 hover:bg-white/10 hover:text-white"
+                }`}
+              >
+                <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={item.d} />
+                </svg>
+                {item.label}
+              </Link>
+            );
+          })}
+        </div>
       </nav>
     </>
   );

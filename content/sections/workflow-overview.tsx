@@ -2,14 +2,14 @@ import Note from "@/components/callouts/Note";
 
 export default function WorkflowOverview() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Estimating Workflow Overview</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Estimating Workflow Overview</h2>
 
-      <p className="text-sm leading-relaxed">Every estimate follows the same high-level workflow. Understanding each step will help you stay organized and avoid rework.</p>
+      <p className="text-base leading-relaxed">Every estimate follows the same high-level workflow. Understanding each step will help you stay organized and avoid rework.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Step-by-Step Process</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Step-by-Step Process</h3>
 
-      <ol className="list-decimal pl-6 space-y-2 text-sm">
+      <ol className="list-decimal pl-6 space-y-2 text-base">
 
         <li><strong>Receive request </strong>— A new estimation request arrives via the Monday meeting or the Estimating Sheet on SharePoint.</li>
 

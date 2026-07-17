@@ -3,18 +3,18 @@ import CmsImage from "@/components/CmsImage";
 
 export default function TwoStoryHomes() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Two Story Homes</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Two Story Homes</h2>
 
-      <p className="text-sm leading-relaxed">Extra elements are required to be taken off in two-story plans of any region. You will use the stair section of the PDF along with AutoCAD for these calculations.</p>
+      <p className="text-base leading-relaxed">Extra elements are required to be taken off in two-story plans of any region. You will use the stair section of the PDF along with AutoCAD for these calculations.</p>
 
       <CmsImage src="/images/cms/two-story-homes--course_0.png" alt="Two Story Homes – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Sloped Stair Walls</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Sloped Stair Walls</h3>
 
-      <p className="text-sm leading-relaxed">The walls behind or enclosing any stairs present that are at an angle will need wall lumber. <strong>This is taken off separately from your regular walls.</strong></p>
+      <p className="text-base leading-relaxed">The walls behind or enclosing any stairs present that are at an angle will need wall lumber. <strong>This is taken off separately from your regular walls.</strong></p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Pull in the <strong>Stair section</strong> construct into your CAD workspace.</li>
 
@@ -24,7 +24,7 @@ export default function TwoStoryHomes() {
 
       <CmsImage src="/images/cms/two-story-homes--course_1.png" alt="Sloped Stair Walls – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>
           Pull your polyline out and hatch at 16’’ O.C.
@@ -41,11 +41,11 @@ export default function TwoStoryHomes() {
 
       <CmsImage src="/images/cms/two-story-homes--course_3.png" alt="Sloped Stair Walls – example 3" />
 
-      <h3 className="font-medium text-base text-dsld-text">Additional Lumber for Stairs</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Additional Lumber for Stairs</h3>
 
-      <p className="text-sm leading-relaxed">The lumber to build the stairs also needs to be taken off. Stairs are built with<strong> 2x12s, </strong>and get a standard count of <strong>4 </strong>2x10x14s,<strong> 4 </strong>2x12x8s, and<strong> 4 </strong>2x12x14s.</p>
+      <p className="text-base leading-relaxed">The lumber to build the stairs also needs to be taken off. Stairs are built with<strong> 2x12s, </strong>and get a standard count of <strong>4 </strong>2x10x14s,<strong> 4 </strong>2x12x8s, and<strong> 4 </strong>2x12x14s.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Enter those quantities into the spreadsheet below. Use the parts list if parts are not already populated into this section.</li>
 
@@ -53,7 +53,7 @@ export default function TwoStoryHomes() {
 
       <CmsImage src="/images/cms/two-story-homes--course_4.png" alt="Additional Lumber for Stairs – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>
           Use LINE to draw from the top of the stairs to the bottom.
@@ -68,13 +68,13 @@ export default function TwoStoryHomes() {
 
       <CmsImage src="/images/cms/two-story-homes--course_6.png" alt="Additional Lumber for Stairs – example 3" />
 
-      <h3 className="font-medium text-base text-dsld-text">Stair Landings</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Stair Landings</h3>
 
-      <p className="text-sm leading-relaxed">If a set of stairs has a landing, ¾’’ Plywood will be needed.</p>
+      <p className="text-base leading-relaxed">If a set of stairs has a landing, ¾’’ Plywood will be needed.</p>
 
       <CmsImage src="/images/cms/two-story-homes--course_7.png" alt="Stair Landings – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count how many landings appear on the floor plan of the PDF.</li>
 
@@ -84,11 +84,11 @@ export default function TwoStoryHomes() {
 
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">OSB and Glue</h3>
+      <h3 className="font-medium text-lg text-dsld-text">OSB and Glue</h3>
 
       <Note>This is auto calculated in Florida.</Note>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Draw 4x8 boxes over the second floor floor plan in AutoCAD.</li>
 
@@ -98,7 +98,7 @@ export default function TwoStoryHomes() {
 
       <CmsImage src="/images/cms/two-story-homes--course_8.png" alt="OSB and Glue – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count how many boxes are present.</li>
 
@@ -108,9 +108,9 @@ export default function TwoStoryHomes() {
 
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Stairs Trim Punch</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Stairs Trim Punch</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Each plan gets a standard count of <strong>5</strong> for the handrail and <strong>2</strong> for the stair rail brackets.</li>
 

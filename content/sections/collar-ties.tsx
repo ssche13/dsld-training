@@ -3,14 +3,14 @@ import CmsImage from "@/components/CmsImage";
 
 export default function CollarTies() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Collar Ties</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Collar Ties</h2>
 
-      <p className="text-sm leading-relaxed">Collar ties are used to connect opposing rafters and to prevent separation of the roof at the ridge. You will use the roof plan to <strong>count every other rafter where there are ridges</strong>.</p>
+      <p className="text-base leading-relaxed">Collar ties are used to connect opposing rafters and to prevent separation of the roof at the ridge. You will use the roof plan to <strong>count every other rafter where there are ridges</strong>.</p>
 
       <Note>Collar ties are not taken off in Florida, North Alabama, or Tennessee.</Note>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>
           <strong>LA/TX</strong>
@@ -20,7 +20,7 @@ export default function CollarTies() {
         <li>
           <strong>MS/SAL</strong>
           <CmsImage src="/images/cms/collar-ties--course_1.png" alt="Collar Ties – example 2" />
-          <p className="mt-2 leading-relaxed">In AutoCAD, use <strong>LINE</strong> and <strong>TLEN</strong> to measure the linear length from the top of the roof to the plate height where the rafter lands.</p>
+          <p className="mt-2 text-base leading-relaxed">In AutoCAD, use <strong>LINE</strong> and <strong>TLEN</strong> to measure the linear length from the top of the roof to the plate height where the rafter lands.</p>
           <CmsImage src="/images/cms/collar-ties--course_2.png" alt="Collar Ties – example 3" />
         </li>
 
@@ -30,7 +30,7 @@ export default function CollarTies() {
 
       </ul>
 
-      <ol className="list-decimal pl-6 space-y-2 text-sm">
+      <ol className="list-decimal pl-6 space-y-2 text-base">
 
         <li>Use <strong>LINE</strong> and <strong>TLEN</strong> to get the linear footage of the span from the top of the roof to the plate height where the rafter lands.</li>
 
@@ -50,7 +50,7 @@ export default function CollarTies() {
 
       </ol>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Add together all totals for each ridge/rafter calculation and place into <strong>Bracing </strong>section of the spreadsheet here:</li>
 

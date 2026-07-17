@@ -1,18 +1,19 @@
 import Note from "@/components/callouts/Note";
 import CmsImage from "@/components/CmsImage";
+import ColorWord from "@/components/ColorWord";
 
 export default function Lighting() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Lighting</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Lighting</h2>
 
-      <p className="text-sm leading-relaxed">Lighting estimation is based on the <strong>electrical plan</strong>, which shows the location and type of every light fixture in the house. Count each fixture type and place each total into its respective cell of the <strong>Lighting</strong> section of the spreadsheet.</p>
+      <p className="text-base leading-relaxed">Lighting estimation is based on the <strong>electrical plan</strong>, which shows the location and type of every light fixture in the house. Count each fixture type and place each total into its respective cell of the <strong>Lighting</strong> section of the spreadsheet.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Base Lighting Package</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Base Lighting Package</h3>
 
-      <p className="text-sm leading-relaxed">Count each fixture type and place each total into its respective cell of the <strong>Lighting</strong> section of the spreadsheet.</p>
+      <p className="text-base leading-relaxed">Count each fixture type and place each total into its respective cell of the <strong>Lighting</strong> section of the spreadsheet.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Each fixture type has a unique symbol on the plan (recessed, surface mount, pendant, etc.).</li>
 
@@ -30,11 +31,11 @@ export default function Lighting() {
 
       <CmsImage src="/images/cms/lighting--course_0.png" alt="Base Lighting Package – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Fixture Types</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Fixture Types</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
-        <li>Disc Light - referred to as <strong>Disc Light - White</strong> in our spreadsheet</li>
+        <li>Disc Light - referred to as <strong>Disc Light - <ColorWord c="white">White</ColorWord></strong> in our spreadsheet</li>
 
         <li>Recessed Can - referred to as <strong>Interior Flood with LED Bulb</strong> in our spreadsheet</li>
 
@@ -54,21 +55,21 @@ export default function Lighting() {
 
         <li>Exterior Hanging - referred to as <strong>Hanging Outdoor Light</strong> in our spreadsheet</li>
 
-        <li>Exterior Surface Mount - referred to as <strong>Disc Light - Matte Black</strong> in our spreadsheet.</li>
+        <li>Exterior Surface Mount - referred to as <strong>Disc Light - Matte <ColorWord c="black">Black</ColorWord></strong> in our spreadsheet.</li>
 
         <li>Exterior Flood - referred to as <strong>Flood Light Kit</strong> in our spreadsheet</li>
 
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Under Cabinet Lighting Option</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Under Cabinet Lighting Option</h3>
 
-      <p className="text-sm leading-relaxed">The <strong>cabinet elevations</strong> from the PDF will need to be used for this section.</p>
+      <p className="text-base leading-relaxed">The <strong>cabinet elevations</strong> from the PDF will need to be used for this section.</p>
 
       <Note>Under cabinet lighting is not taken off in North Alabama or Tennessee.</Note>
 
       <CmsImage src="/images/cms/lighting--course_1.png" alt="Under Cabinet Lighting Option – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>The numbers circled will be the numbers you use to determine what size light will be purchased at each location.</li>
 
@@ -80,11 +81,11 @@ export default function Lighting() {
 
       <CmsImage src="/images/cms/lighting--course_2.png" alt="Under Cabinet Lighting Option – example 2" />
 
-      <h3 className="font-medium text-base text-dsld-text">Bathroom Vent Lighting</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Bathroom Vent Lighting</h3>
 
-      <p className="text-sm leading-relaxed">These counts go into their own section.</p>
+      <p className="text-base leading-relaxed">These counts go into their own section.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count each from the bathrooms in the electrical plan in the PDF.</li>
 
@@ -94,11 +95,11 @@ export default function Lighting() {
 
       <CmsImage src="/images/cms/lighting--course_3.png" alt="Bathroom Vent Lighting – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Electrical Labor</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Electrical Labor</h3>
 
-      <p className="text-sm leading-relaxed">This is a <strong>built-in cost</strong> on standard homes, so there is nothing for you to input into the spreadsheet. For artist series homes, you must manually enter in the labor costs.</p>
+      <p className="text-base leading-relaxed">This is a <strong>built-in cost</strong> on standard homes, so there is nothing for you to input into the spreadsheet. For artist series homes, you must manually enter in the labor costs.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Always count <strong>1</strong>.</li>
 

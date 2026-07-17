@@ -2,14 +2,14 @@ import CmsImage from "@/components/CmsImage";
 
 export default function Plumbing() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Plumbing</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Plumbing</h2>
 
-      <p className="text-sm leading-relaxed">Plumbing estimation involves counting all plumbing fixtures shown on the floor plan. Each fixture type is tracked separately in the spreadsheet.</p>
+      <p className="text-base leading-relaxed">Plumbing estimation involves counting all plumbing fixtures shown on the floor plan. Each fixture type is tracked separately in the spreadsheet.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Tubs, Showers, and Tub-Showers</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Tubs, Showers, and Tub-Showers</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count each in the<strong> floor plan</strong> of the PDF.</li>
 
@@ -21,9 +21,9 @@ export default function Plumbing() {
 
       <CmsImage src="/images/cms/plumbing--course_0.png" alt="Tubs, Showers, and Tub-Showers – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Toilets</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Toilets</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count each in the<strong> floor plan</strong> of the PDF.</li>
 
@@ -33,9 +33,9 @@ export default function Plumbing() {
 
       <CmsImage src="/images/cms/plumbing--course_1.png" alt="Toilets – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Vanity Sinks</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Vanity Sinks</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count all vanities in the floor plan.</li>
 

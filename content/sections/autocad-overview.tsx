@@ -3,14 +3,14 @@ import CmsImage from "@/components/CmsImage";
 
 export default function AutocadOverview() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">AutoCAD Overview</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">AutoCAD Overview</h2>
 
-      <p className="text-sm leading-relaxed">AutoCAD is our primary tool for measuring and tracing plan elements. Keeping your drawings organized is critical — a messy workspace leads to missed measurements and errors in the spreadsheet.</p>
+      <p className="text-base leading-relaxed">AutoCAD is our primary tool for measuring and tracing plan elements. Keeping your drawings organized is critical — a messy workspace leads to missed measurements and errors in the spreadsheet.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Organizing Your Workspace</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Organizing Your Workspace</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>The organization structure of your estimate should mimic what is depicted in the image below.</li>
 
@@ -22,9 +22,9 @@ export default function AutocadOverview() {
 
       <CmsImage src="/images/cms/autocad-overview--course_0.png" alt="Organizing Your Workspace – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Common Commands</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Common Commands</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li><strong>PLINE</strong> — A connected sequence of line segments created as a single object</li>
 

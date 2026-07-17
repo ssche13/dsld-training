@@ -2,14 +2,14 @@ import CmsImage from "@/components/CmsImage";
 
 export default function Trusses() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Florida, North Alabama, and Tennessee Trusses</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Florida, North Alabama, and Tennessee Trusses</h2>
 
-      <p className="text-sm leading-relaxed">These regions utilize truss systems for roof framing. A truss is a rigid engineering structure made up of long, slender members connected at the ends. Because of this, <strong>through bracing</strong> and <strong>wind bracing</strong> are required to be taken off in these regions. You will use the layout page from Wilson Lumber to complete this section.</p>
+      <p className="text-base leading-relaxed">These regions utilize truss systems for roof framing. A truss is a rigid engineering structure made up of long, slender members connected at the ends. Because of this, <strong>through bracing</strong> and <strong>wind bracing</strong> are required to be taken off in these regions. You will use the layout page from Wilson Lumber to complete this section.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Through Bracing</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Through Bracing</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Copy up the roof polyline that you traced for the roof area previously.</li>
 
@@ -44,13 +44,13 @@ export default function Trusses() {
 
       <CmsImage src="/images/cms/trusses--course_3.png" alt="Through Bracing – example 4" />
 
-      <h3 className="font-medium text-base text-dsld-text">Wind Bracing</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Wind Bracing</h3>
 
-      <p className="text-sm leading-relaxed">Wind bracing is only taken off on hips of the roof where rafters are spanning horizontally instead of vertically.</p>
+      <p className="text-base leading-relaxed">Wind bracing is only taken off on hips of the roof where rafters are spanning horizontally instead of vertically.</p>
 
       <CmsImage src="/images/cms/trusses--course_4.png" alt="Wind Bracing – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>
           Use <strong>POLYLINE</strong> to trace the hips in AutoCAD that have horizontal rafter spans.
@@ -72,13 +72,13 @@ export default function Trusses() {
 
       <CmsImage src="/images/cms/trusses--course_7.png" alt="Wind Bracing – example 4" />
 
-      <h3 className="font-medium text-base text-dsld-text">North Alabama and Tennessee Plans</h3>
+      <h3 className="font-medium text-lg text-dsld-text">North Alabama and Tennessee Plans</h3>
 
-      <p className="text-sm leading-relaxed">Step-ups are also taken off in these regions. Step ups are traced on porch interior walls and garage interior walls when there is a ceiling height change.</p>
+      <p className="text-base leading-relaxed">Step-ups are also taken off in these regions. Step ups are traced on porch interior walls and garage interior walls when there is a ceiling height change.</p>
 
       <CmsImage src="/images/cms/trusses--course_8.png" alt="North Alabama and Tennessee Plans – example 1" />
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use <strong>TLEN</strong> to get the total linear footage of the lines traced.</li>
 

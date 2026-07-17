@@ -3,12 +3,12 @@ import CmsImage from "@/components/CmsImage";
 
 export default function CasedOpenings() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Cased Openings</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Cased Openings</h2>
 
-      <p className="text-sm leading-relaxed">Cased openings are interior openings that do not have a door installed. Instead, the opening is trimmed (cased) with door casing material on both sides. These are common for pass-throughs between rooms, hallway transitions, and closet openings without doors.</p>
+      <p className="text-base leading-relaxed">Cased openings are interior openings that do not have a door installed. Instead, the opening is trimmed (cased) with door casing material on both sides. These are common for pass-throughs between rooms, hallway transitions, and closet openings without doors.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use the <strong>door schedule</strong> from the Floor Plan page of the PDF to identify all cased openings.</li>
 
@@ -18,11 +18,11 @@ export default function CasedOpenings() {
 
       <CmsImage src="/images/cms/cased-openings--course_0.png" alt="Cased Openings – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Cased openings over 6 Feet</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Cased openings over 6 Feet</h3>
 
-      <p className="text-sm leading-relaxed">Sizes over 6' will need to be field built.</p>
+      <p className="text-base leading-relaxed">Sizes over 6' will need to be field built.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count how many cased openings are over 6'</li>
 

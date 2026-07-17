@@ -3,18 +3,18 @@ import CmsImage from "@/components/CmsImage";
 
 export default function RidgeVents() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Ridge &amp; Off Ridge Vents</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Ridge &amp; Off Ridge Vents</h2>
 
-      <p className="text-sm leading-relaxed">Vent counts and lengths are found on the <strong>elevation page</strong> of the PDF.</p>
+      <p className="text-base leading-relaxed">Vent counts and lengths are found on the <strong>elevation page</strong> of the PDF.</p>
 
       <CmsImage src="/images/cms/ridge-vents--course_0.png" alt="Ridge &amp; Off Ridge Vents – example 1" />
 
       <CmsImage src="/images/cms/ridge-vents--course_1.png" alt="Ridge &amp; Off Ridge Vents – example 2" />
 
-      <h3 className="font-medium text-base text-dsld-text">Off Ridge Vents</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Off Ridge Vents</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Count the total number of off ridge vents shown on the elevation page.</li>
 
@@ -24,9 +24,9 @@ export default function RidgeVents() {
 
       <Note>Off-Ridge Vents are counted as a pair.</Note>
 
-      <h3 className="font-medium text-base text-dsld-text">Ridge Vents</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Ridge Vents</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Add the<strong> total linear footage</strong> of all ridge vents called out on the elevations page.</li>
 

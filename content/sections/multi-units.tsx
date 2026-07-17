@@ -1,15 +1,15 @@
 export default function MultiUnits() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Multi-Units</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Multi-Units</h2>
 
-      <p className="text-sm leading-relaxed">Multi-units and townhomes are taken off the same as a standard home, but elements are separated in the spreadsheet.</p>
+      <p className="text-base leading-relaxed">Multi-units and townhomes are taken off the same as a standard home, but elements are separated in the spreadsheet.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Shell</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Shell</h3>
 
-      <p className="text-sm leading-relaxed">The shell takeoff will include:</p>
+      <p className="text-base leading-relaxed">The shell takeoff will include:</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Concrete</li>
 
@@ -71,9 +71,9 @@ export default function MultiUnits() {
 
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Interior</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Interior</h3>
 
-      <p className="text-sm leading-relaxed">The interior takeoff will include everything that was not listed for the shell takeoff. Remember to count quantities as many times as they appear. If there is 1 pendant light in both foyers of a two-unit plan, count <strong>2</strong> pendant lights.</p>
+      <p className="text-base leading-relaxed">The interior takeoff will include everything that was not listed for the shell takeoff. Remember to count quantities as many times as they appear. If there is 1 pendant light in both foyers of a two-unit plan, count <strong>2</strong> pendant lights.</p>
     </div>
   );
 }

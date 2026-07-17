@@ -1,16 +1,17 @@
 import Note from "@/components/callouts/Note";
 import CmsImage from "@/components/CmsImage";
+import ColorWord from "@/components/ColorWord";
 
 export default function Hangers() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Hangers</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Hangers</h2>
 
-      <p className="text-sm leading-relaxed">Hangers are structural connectors used to support and secure ceiling joists and beams. You will use the <strong>ceiling framing plan</strong> from the PDF for this section. It will be helpful to take notes and tallies during this section as well.</p>
+      <p className="text-base leading-relaxed">Hangers are structural connectors used to support and secure ceiling joists and beams. You will use the <strong>ceiling framing plan</strong> from the PDF for this section. It will be helpful to take notes and tallies during this section as well.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Hangers for Beams</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Hangers for Beams</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use the ceiling framing plan to identify any beam with<strong> ‘F.B.’ </strong>in its callout. This indicates that it is a<strong> floating beam</strong>, thus it will not be counted. <strong>Cross those out.</strong></li>
 
@@ -34,9 +35,9 @@ export default function Hangers() {
 
       <CmsImage src="/images/cms/hangers--course_2.png" alt="Hangers for Beams – example 3" />
 
-      <h3 className="font-medium text-base text-dsld-text">Hangers for Ceiling Joists</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Hangers for Ceiling Joists</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Continue to exclude floating beams and porches from your count.</li>
 
@@ -57,11 +58,11 @@ export default function Hangers() {
 
       <Note>The Parts List will need to be utilized if there is a beam or hanger that is not already in the spreadsheet under the Hangers and Misc section.</Note>
 
-      <h3 className="font-medium text-base text-dsld-text">Home Wrap</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Home Wrap</h3>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
-        <li>Use <strong>POLYAREA</strong> to get the <strong>total square footage </strong>of all of the elevations you traced, including yellow areas. Stucco and synthetic stone areas are wrapped twice, so those areas should be doubled.</li>
+        <li>Use <strong>POLYAREA</strong> to get the <strong>total square footage </strong>of all of the elevations you traced, including <ColorWord c="yellow">yellow</ColorWord> areas. Stucco and synthetic stone areas are wrapped twice, so those areas should be doubled.</li>
 
         <li>Divide by 1350.</li>
 
@@ -71,11 +72,11 @@ export default function Hangers() {
 
       <CmsImage src="/images/cms/hangers--course_5.png" alt="Home Wrap – example 1" />
 
-      <h3 className="font-medium text-base text-dsld-text">Poly Black</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Poly Black</h3>
 
-      <p className="text-sm leading-relaxed">6MIL Poly Black is needed anywhere were brick connects to the concrete foundation.</p>
+      <p className="text-base leading-relaxed">6MIL Poly <ColorWord c="black">Black</ColorWord> is needed anywhere were brick connects to the concrete foundation.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Use <strong>LINE</strong> and <strong>TLEN</strong> to get the total linear footage of where brick connects to the foundation.</li>
 

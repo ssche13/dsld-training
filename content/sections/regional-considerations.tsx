@@ -1,15 +1,15 @@
 export default function RegionalConsiderations() {
   return (
-    <div className="space-y-4">
-      <h2 className="font-semibold text-lg text-dsld-teal">Regional Considerations</h2>
+    <div className="space-y-5">
+      <h2 className="font-semibold text-xl text-dsld-teal">Regional Considerations</h2>
 
-      <p className="text-sm leading-relaxed">The spreadsheets you use may be formatted differently or have different parts, but your method of estimating will always remain the same.</p>
+      <p className="text-base leading-relaxed">The spreadsheets you use may be formatted differently or have different parts, but your method of estimating will always remain the same.</p>
 
-      <h3 className="font-medium text-base text-dsld-text">Texas Plans</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Texas Plans</h3>
 
-      <p className="text-sm leading-relaxed">Houston regions use different part names/pieces. Below is a list of the LA part, then the Houston counterpart:</p>
+      <p className="text-base leading-relaxed">Houston regions use different part names/pieces. Below is a list of the LA part, then the Houston counterpart:</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>1x4x14 SYP = 3/4x4x12 Primed Fiber Cement Trim Cedarmill</li>
 
@@ -31,11 +31,11 @@ export default function RegionalConsiderations() {
 
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Mississippi and South Alabama Plans</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Mississippi and South Alabama Plans</h3>
 
-      <p className="text-sm leading-relaxed">It is critical that you use the engineering alongside of the plan PDF for takeoffs. Because of the stick frame construction in these regions, their engineering plans take precedence over our plan PDFs.</p>
+      <p className="text-base leading-relaxed">It is critical that you use the engineering alongside of the plan PDF for takeoffs. Because of the stick frame construction in these regions, their engineering plans take precedence over our plan PDFs.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Beams, ceiling joists, bracing, and stud configurations are called out by engineering.</li>
 
@@ -47,11 +47,11 @@ export default function RegionalConsiderations() {
 
       </ul>
 
-      <h3 className="font-medium text-base text-dsld-text">Florida, North Alabama, and Tennessee Plans</h3>
+      <h3 className="font-medium text-lg text-dsld-text">Florida, North Alabama, and Tennessee Plans</h3>
 
-      <p className="text-sm leading-relaxed">It is also critical that you use the engineering in these regions alongside the plan PDF for takeoffs. Because of the truss systems in these regions, their engineering plans take precedence over our plan PDFs.</p>
+      <p className="text-base leading-relaxed">It is also critical that you use the engineering in these regions alongside the plan PDF for takeoffs. Because of the truss systems in these regions, their engineering plans take precedence over our plan PDFs.</p>
 
-      <ul className="list-disc pl-6 space-y-2 text-sm">
+      <ul className="list-disc pl-6 space-y-2 text-base">
 
         <li>Truss layouts are used for determining wall plate heights, load-bearing points, and where specialized trusses are used (e.g. piggyback or girders).</li>
 
